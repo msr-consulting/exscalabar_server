@@ -1,0 +1,22 @@
+22:27:25.74	Controller is on line.
+22:27:27.77	Instrument "ePAS" is in configuration.
+22:27:27.78	[inst] Configuration of insrument with ID ePAS successful!
+22:27:27.78	Instrument "eCRDS" is in configuration.
+22:27:27.96	[inst] Configuration of insrument with ID eCRDS successful!
+22:27:28.91	[ERROR] -1801: Start value too large in Get Waveform Subset.VI.
+22:27:29.91	[ERROR] -23026: maximum iterations exceeded
+22:27:30.91	[ERROR] -23026: maximum iterations exceeded
+22:27:31.91	[ERROR] -23026: maximum iterations exceeded
+22:27:32.91	[ERROR] -23026: maximum iterations exceeded
+22:27:35.91	[ERROR] -23026: maximum iterations exceeded
+22:27:36.91	[ERROR] -23026: maximum iterations exceeded
+22:27:39.91	[ERROR] -23026: maximum iterations exceeded
+22:27:40.91	[ERROR] -23026: maximum iterations exceeded
+22:27:41.91	[ERROR] -23026: maximum iterations exceeded
+22:27:42.91	[ERROR] -23026: maximum iterations exceeded
+22:27:47.91	[ERROR] -23026: maximum iterations exceeded
+22:27:48.91	[ERROR] -23026: maximum iterations exceeded
+22:27:49.91	[ERROR] -23026: maximum iterations exceeded
+22:27:50.91	[ERROR] -23026: maximum iterations exceeded
+22:27:51.91	[ERROR] -23026: maximum iterations exceeded
+22:27:51.96	Controller is closing

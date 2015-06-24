@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UI Design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* Markdown.css */
+/* Authors: Kevin Burke: http://kev.inburke.com/, modified by Evan Wondrasek  */
+/* https://bitbucket.org/kevinburke/markdowncss */
+
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+</style>
+</head>
+<body>
+<h1>GUI Description</h1>
+<p>EXSCALABAR consists of two primary instruments - a photoacoustic spectrometer and a cavity ringdown spectrometer.  Each of these instruments consists of several cavities (5 in the case of the photoacoustic and 6 in the case of the cavity ringdown) into which light is injected and we derive a key measurement concerning the optical properties at a specific wavelength of light.  The key optical properties that these instruments measure are absorption (photoacoustic) and extinction (cavity ringdown).  Along with these measurements are a <em>lot</em> of ancillary measurements that are necessary to make these fundamental measurements.</p>
+<p>The user interface communicates with a server located on a real-time controller in a data acquisition chassis (<a href="http://sine.ni.com/nips/cds/view/p/lang/en/nid/210545">NI PXIe-8135</a>).  The user interface will communicate with the controller via a set of requests through a single web service (called <em>xService</em>).  The user interface must coherently provide information regarding <em>all</em> of these measurements as well as allow the user access to those parameters that can be reliably changed at run time.</p>
+<p>The instrument is expected to operate on multiple platforms with the primary target being an aircraft.  The controller may operate in stand alone, but user intervention will require a user interface.  The user interface may run on platforms as small as a tablet; we will not provide guarantee of reliable operation beyond this as it will require too much flexibility that the Met Office is likely not willing to pay for.</p>
+<p>Below, I have tried to provide some framework for what I anticipate the user interface to look like.  I am relying on you to provide the woowoodingdings and the prettying up.  Right now, we want something that we can get running even if it is not perfect so that we can move forward with confidence to the third phase of the project.</p>
+<p>Where possible, I have tried to include some descriptions of the controls that I would very much like to have below.  These are the same signals that I sent out in an email with an attachment called <strong>Signals List.xlsx</strong>.  If you do not have this list or need me to provide it in a different format, let me know.</p>
+<h2>Size</h2>
+<p>Let's shoot for a <em>minimum</em> legible size of an 8&quot; tablet with a resolution of 1280x800.  It is not clear to me that this is reasonable, but this should be the very minimum.   The maximum size should be undefined, but we need to make sure that the page looks reasonable on larger monitors.</p>
+<h2>Layout</h2>
+<p>My suggestion is that the view should consist of the following:</p>
+<ul>
+<li>Banner</li>
+<li>Navigation</li>
+<li>Sidebar</li>
+<li>Main content </li>
+<li>System messages</li>
+</ul>
+<p>I have included an image of how I <em>think</em> it ought to be laid out.  But, I am not a graphics design guru, so if you have a better suggestion, please let me know.</p>
+<h3>Banner</h3>
+<p>For now, the banner should be simple.  The name of the instrument is EXSCALABAR and the entity in charge of it is the <a href="http://www.metoffice.gov.uk/">Met Office</a> (see the link for how they use graphics on their own website.</p>
+<h3>Navigation</h3>
+<p>I am thinking that we might want to use a navigational layout similar to that of the Met Office web site (simple text running below the banner).  However, I am open to suggestions.  I would like the navigational menu to collapse when the screen size falls below the value that would allow us to reasonably display the menu on <strong>one line</strong>.</p>
+<p>Right now, I am not sure that I want any drop down aspect to the menu as I feel that this might be difficult to navigate on a smaller screen.</p>
+<p>Each menu item corresponds to a separate link which will take the user to <strong>another page</strong> (I know in the past that I have said maybe everything should be on the same page, but this seems completely unreasonable from a maintenance standpoint).  Each page will be distinguishable by the content area (Main content); the rest of the page should appear static (except that the navigation bar should provide indication as to what page you are on, i.e. some type of highlight).</p>
+<h3>System Messages</h3>
+<p>This section will be a simple text box (with a label?) across the bottom.  The text box should allow input for </p>
+<ol>
+<li>Informational messages</li>
+<li>Warnings</li>
+<li>System errors</li>
+</ol>
+<p>The messages should be color coded appropriately and we should have clear methods for controlling exactly how that color is set when the message is updated (through Javascript).  The mechanics of this can be worked out, but this should be clear.</p>
+<h3>Sidebar</h3>
+<p>The sidebar will be used for providing access to controls and indicators that are necessary on every screen.  It might be worthwhile to make the sidebar slide off screen and have sticky functionality, but for right now, just make the sidebar a fixture (unless you know that this is straightforward and can't wait to get it rolling).  </p>
+<p>Examples of some functionality that will be represented on the sidebar:</p>
+<ul>
+<li><strong>Save</strong> - Button. Allows the user to turn on and off file saving on the server.  This button is latching and will indicate whether the file is currently being saved or not.</li>
+<li><strong>Filter</strong> - Button.  Allows the user to change the sample stream.  This button will be latching and will either indicate <em>Sample</em> (false or off) or <em>Filter</em> (true or on).</li>
+<li><strong>Error</strong> - Indicating button that is read only.  Should <strong>clearly</strong> display current system status regarding any errors.  This may be broken down into more buttons that provide some granularity as to where errors might be occurring.  The user will look to the system message field to see what these are.</li>
+<li><strong>Time</strong> - Indicating text box that is read only.  This will provide the time of the current measurement returned.</li>
+<li><strong>Calibration</strong> - Indicating button that is read only.  This button will indicate whether a calibration is currently underway.</li>
+</ul>
+<p>It may be that we can find a way to do away with the sidebar, so I am open to suggestions.</p>
+<h3>Main Content</h3>
+<p>This should be the focus of the page and will contain the actual content.  I will leave it up to as to whether it should be scrollable (i.e. framed such that the content can project further down the screen than what is totally visible).  The main content may contain: </p>
+<ul>
+<li>Static text that provides some details to the user.</li>
+<li>Text fields used for display (read-only; set with in the code via Javascript but are not accessible to the user) or those used for control (these may be set within the code or by the user).</li>
+<li>Buttons for control of processes (settable within the code or by the user) and indication (read-only; set by incoming data only).</li>
+<li>Dynamic graphics such as plots which may or may not contain historical data (i.e. running traces).</li>
+</ul>
+<h2>Breaking Out the Main Content</h2>
+<p>The subtitles below are not intended to be the actual names.  If you can come up with something better, that would be ok with me.  And let's make sure that we can move things around.  The order in which things are presented is not necessarily the order that I am set on nor do I think is best.  </p>
+<h3>Overview</h3>
+<p>The overview page will be the index.  My intention is that this page will contain the key information in the form of historical graphs and likely some text.  It is not clear to me what information the text would convey or how the graphs would be presented.  But, this should be a page that, if the user does not wish to change any of the input parameters and only wishes to know what the instrument is doing, the user may stay on and get all of the information they need.</p>
+<h3>Calibration Control</h3>
+<p>This screen will allow access to parameters that the user may change during/prior to a calibration.  This is something that will be fleshed out in the next phase so just a blank page is fine right now.  However, the calibration is a sequence of events that is well defined and what we will want here is something that allows us to build the sequence.  A graphic would be cool, but again, this is something that we will flesh out later.</p>
+<h3>Cavity Ringdown Control</h3>
+<p>This page will contain some fundamental controls for the operation of the cavity ringdown (also known as the CRDS).  These include:</p>
+<ul>
+<li>
+Two clusters of controls for two different blue lasers each containing:
+<ul>
+<li>Frequency of laser repetition (in Hz).  This value is a integer number ranging from 0 to 4000.</li>
+<li>Duty Cycle.  This value is an integer number representing the percentage of time that the laser is on during each repetition.  This value ranges from 1 to 99.</li>
+<li>A latching button that toggles the laser on or off.  The button should somehow indicate the correct state of the laser.  Latched (TRUE) == ON; Unlatched (FALSE) == OFF.</li>
+</ul>
+</li>
+<li>One cluster as above of controls for a red laser.  </li>
+<li>A cluster of five numeric controls (html tag <code>input</code>) that control the gain on the five CRDS photomultiplier tubes (PMTs).  These values range from 0-10 V.</li>
+</ul>
+<p>I may like to include some text describing the CRDS functionality and possibly a graph.  But, that right now is bonus and not fleshed out.</p>
+<h3>Photoacoustic Control</h3>
+<p>This page contains all of the controls required to operate the photoacoustic (PAS) specifically.  These include:</p>
+<ul>
+<li>
+Five clusters containing 
+<ul>
+<li>A numeric input for laser frequency (in Hz) that ranges in value between 0 and 5000 Hz.</li>
+<li>A voltage range for laser operation that ranges in value between 0 and 20 V.</li>
+<li>A voltage offset for laser operation that ranges in value between 0 and 20 V.</li>
+<li>A drop down box using the <code>select</code> tag that contains two elements: sine and square.  These indicate the laser modulation type.</li>
+<li>A latching button which enables or disables individual speaker operation</li>
+<li>A numeric input that allows the user to set the temperature of the cell</li>
+<li>A latching button that allows the user to enable/disable the thermoelectric cooler on the cell.  The state of the button should indicate the state of the system.</li>
+</ul>
+</li>
+<li>A latching button which toggles operation between a speaker and a laser (the button state should indicate the current state of the system).</li>
+<li>
+A cluster of controls that allows the user to control these automatic cycling between laser and speaker.  The controls are
+<ul>
+<li>A latching button which allows the user to toggle the cycle on and off</li>
+<li>A numeric input that controls the period of the cycle (in seconds)</li>
+<li>A numeric input that controls how long the speaker is on during a cycle</li>
+</ul>
+</li>
+</ul>
+<p>As with the CRDS, I imagine that we will have some text describing the operation of the system as well as some graphic or other type of indicators that will provide an overview of the current state of the system.</p>
+<h3>Flow Control</h3>
+<p>This page will contain information relevant to flow control and measurement in the system.  On this page, we need numeric inputs to control the eleven flows in the system. In addition, we need some kind of feedback, either in the form of graphs or numeric outputs that provide some of the operational parameters returned by the controllers.</p>
+<h3>Other areas</h3>
+<p>I fear that I am missing a lot or am not finding a good place to put things on the pages described above.  I probably need to talk to you about this and how best to lay out pages or present information.  Anyway, this should provide you with a good start.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

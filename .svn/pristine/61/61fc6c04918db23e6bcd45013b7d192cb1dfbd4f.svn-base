@@ -1,0 +1,238 @@
+; This is the configuration file for the EXSCALABAR instrument.
+; Author: M. Richardson
+; Initial Creation: 20 August 2014
+
+
+; Last Revision
+; =============
+; Date: 20 August 2014
+; Author: M. Richardson
+
+; The following section defines the behavior of pressure calibrations.
+; Pressure will run both up and down from Pcurrent-25 to Pmin.
+; The pressure will change through Nsteps, evenly divided, and will
+; remain at a pressure for a period of twait seconds.
+[PPT]
+Port = COM8
+Serial Config.baud rate = 9600
+Serial Config.data bits = 8
+Serial Config.stop bits = 10
+Serial Config.parity = 0
+Serial Config.flow control = 0
+Serial Config.endModeforReads = 2
+Serial Config.endModeforWrites = 2
+Msg Config.sendEndEn = TRUE
+Msg Config.suppEnEnRd = FALSE
+Msg Config.termChar = 13
+Msg Config.EnTermChar = TRUE
+ID = test, test1, test2
+test.address = 1
+test1.address = 2
+test2.address = 3
+Units = mb
+Nsteps = 10
+Pmin = 200
+twait = 30
+
+; The following section defines the behavior of ozone calibrations
+[Ozone]	
+O3 Power = TRUE
+fO3 = 5
+ncal_lev = 1000, 800,600,400,200
+QO3	= 1,0.8,0.6,0.4
+twait = 30
+tacq = 60
+; Calibration mode.  TRUE = automatic, FALSE = manual.
+mode = TRUE
+twarm_u = 60
+	
+
+; Flows defind as in specifications, Fig 1.
+; Flows go in order - A,B,C,D,E,F,G,H are related to the instrument flows;
+; K goes through the purafil scrubber and J is the mirror purge flow.
+; There should be 10 flows in all. 
+[Alicat]
+Port = COM7
+Serial Config.baud rate = 19200
+Serial Config.data bits = 8
+Serial Config.stop bits = 10
+Serial Config.parity = 0
+Serial Config.flow control = 0
+Serial Config.endModeforReads = 2
+Serial Config.endModeforWrites = 2
+Msg Config.sendEndEn = TRUE
+Msg Config.suppEnEnRd = FALSE
+Msg Config.termChar = 13
+Msg Config.EnTermChar = TRUE
+IDs = A,B,C,D
+A.Address = A
+A.Q0 = 0
+B.Address = B
+B.Q0 = 0
+C.Address = C
+C.Q0 = 0
+D.Address = D
+D.Q0 = 0
+
+[Filter]
+; filter position
+fpos = TRUE
+; time in seconds between the start of a filter 
+period = 240
+; length in seconds of filter
+length = 60
+; auto_cycle? determines whether the system will automatically cycle between 
+; filter and sample at startup.
+auto_cycle? = FALSE
+
+; The following section defines the parameters that determine ho the 
+; CRDS behaves in the system.  There are five cells and they are defined as per
+; Fig 1 in the Software Specifications
+[CRDS]
+flaser = 1000,2000
+DClaser = 0.5,0.5
+Coadd = 1,1,1,1,1
+lambda = 660,405,405,405,405
+ncells = 5
+; Initial RH setpoints; these refer to cells 2 and 5 respectively
+RH = 90, 70
+; Optical lengths of cavities
+lcell = 1,1,1,1,1
+expFit = LRS,LRS,LRS,LRS,LRS
+PMTGains = 1,1,1,1,1
+Cell_1.T = 
+Cell_1.P = 
+Cell_1.Q = 
+Cell_2.T = 
+Cell_2.P = 
+Cell_2.Q = 
+Cell_3.T = 
+Cell_3.P = 
+Cell_3.Q = 
+Cell_4.T = 
+Cell_4.P = 
+Cell_4.Q = 
+Cell_5.T = 
+Cell_5.P = 
+Cell_5.Q = 
+
+; Section defining initial PAS behavior.  According to Fig 1 in Software
+; Specifications, there are 5 cells.
+
+[PAS]
+ncells = 5
+m = 1,1,1,1,1
+b = 0,0,0,0,0
+TEC.T0 = 21,21,21,21,21
+TEC.En = TRUE, TRUE, TRUE, TRUE, TRUE
+chirp.center = 1350
+chirp.band = 100
+# Speaker is set to autocycle, switching every 5 minutes 
+# and is on for 20 s.
+spk.cycle = TRUE
+spk.period = 300
+spk.length = 20
+spk.enabled = TRUE
+spk.ienabled = TRUE, TRUE, TRUE, TRUE, TRUE
+spk.vrange = 5
+spk.voffset = 0
+las.vrange = 5,5,5,5,5
+las.offset = 2.5,2.5,2.5,2.5,2.5
+las.f0 = 1000,1000,1000,1000,1000
+las.mod = Sine,Sine,Sine,Sine,Sine
+las.en = TRUE, TRUE, TRUE, TRUE, TRUE
+
+; This is for the TEC which will be communicating on an RS485 
+; connection
+[TEC]
+T0 = 18
+Port = COM2
+Serial Config.baud rate = 19200
+Serial Config.data bits = 8
+Serial Config.stop bits = 10
+Serial Config.parity = 0
+Serial Config.flow control = 0
+Serial Config.endModeforReads = 2
+Serial Config.endModeforWrites = 2
+Msg Config.sendEndEn = TRUE
+Msg Config.suppEnEnRd = FALSE
+Msg Config.termChar = 13
+Msg Config.EnTermChar = TRUE
+P = 1
+I = 0.75
+D = 0
+
+[Meerstetter TECs]
+Port = COM7
+Serial Config.baud rate = 57600
+Serial Config.data bits = 8
+Serial Config.stop bits = 10
+Serial Config.parity = 0
+Serial Config.flow control = 0
+Serial Config.endModeforReads = 2
+Serial Config.endModeforWrites = 2
+Msg Config.sendEndEn = TRUE
+Msg Config.suppEnEnRd = FALSE
+Msg Config.termChar = 13
+Msg Config.EnTermChar = TRUE
+ID = test0
+; We can control on Power or Temperature.
+; If the control is set to power, then we 
+; will read in the V and I settings prior to 
+; operation.  Otherwise, we will read in T.
+test0.ctl = V
+; Temperature in degrees Celsius
+test0.T = 15
+; Control voltage in volts
+test0.V = 10
+; Control current in amps
+test0.I = 0
+test0.address = 2
+
+
+
+; For Vaisala probes HMP60's, these are on a multidrop network.
+; They will be talking over a RS485 port.
+[Vaisala]
+Port = COM3
+test1.Address = 1
+Serial Config.baud rate = 19200
+Serial Config.data bits = 8
+Serial Config.stop bits = 10
+Serial Config.parity = 0
+Serial Config.flow control = 0
+Serial Config.endModeforReads = 2
+Serial Config.endModeforWrites = 2
+Msg Config.sendEndEn = TRUE
+Msg Config.suppEnEnRd = FALSE
+Msg Config.termChar = 13
+Msg Config.EnTermChar = TRUE
+
+
+[MainFile]
+f = 1
+folder = exscalabar\Data
+MainPath = u:\
+; Empty string indicates that data will not be mirrored.
+MirrorPath =
+; added to the beginning of a file name
+prefix = test_
+; file extension (should be .txt for text files - default)
+ext = .txt
+Save? = TRUE
+header = xTime, pTime, Spk, T00, T01, f0, IA0, Q0, max_loc_0, max_val_0, p0, abs0, Qfit00, Qfit01,Qfit02, Qfit03, IAback0,lRMS0,T10, T11, f1, IA1, Q1, max_loc_1, max_val_1, p1, abs1, Qfit10, Qfit11,Qfit12, Qfit13, IAback1,lRMS1,T20, T21, f2, IA2, Q2, max_loc_2, max_val_2, p2, abs2, Qfit20, Qfit21,Qfit22, Qfit23, IAback2,lRMS2,T30, T31, f3, IA3, Q3, max_loc_3, max_val_3, p3, abs3, Qfit30, Qfit31,Qfit32, Qfit33, IAback3,lRMS3,T40, T41, f4, IA4, Q4, max_loc_4, max_val_4, p4, abs4, Qfit40, Qfit41,Qfit42, Qfit43, IAback4,lRMS4, cTime, tau_0, tau0corr_0
+; Maximum file size before a new file is opened for writing (in Mb)
+max_file_size = 10
+
+; Entries for handling the aircraft network
+[AC Network]
+; Network address to listen on
+address = 239.1.4.6
+port = 50001
+; Will not launch if active? is FALSE
+active?=TRUE
+file=c:\exscalabar\packet.xml
+
+[General]
+;Solenoid positions	Boolean	Initial solenoid valve positions.  TRUE = open, FALSE = closed.
+msg_log = ALL

@@ -1,0 +1,37 @@
+; This is the definition for the CPC configuration file.
+; Use this template to for configuring the CPC.  DO NOT 
+; deviate from the defined format below when configuring
+; the CPC.
+
+; Last Update: March 7, 2013
+; Matt Richardson
+; National Oceanic and Atmospheric Administration
+; 325 Broadway
+; Boulder, CO 80305
+; mailto: matt.richardson@noaa.gov
+
+; Current allowable types for 'CPC Type':
+;
+; TSI 3010
+; TSI 3022
+; TSI 3025
+;
+
+; The variable Flow is a boolean - False == Low Flow
+; and True == High Flow
+
+[CPC]
+Port = "COM10"
+CPC Type = "TSI 3022"
+Flow = "FALSE"
+Serial Config.baud rate = "9600"
+Serial Config.data bits = "7"
+Serial Config.stop bits = "10"
+Serial Config.parity = "2"
+Serial Config.flow control = "0"
+Serial Config.endModeforReads = "2"
+Serial Config.endModeforWrites = "2"
+Msg Config.sendEndEn = "TRUE"
+Msg Config.suppEnEnRd = "FALSE"
+Msg Config.termChar = "13"
+Msg Config.EnTermChar = "TRUE"

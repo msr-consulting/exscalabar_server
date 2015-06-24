@@ -1,0 +1,112 @@
+; This is the configuration file for the EXSCALABAR instrument.
+; Author: M. Richardson
+; Initial Creation: 20 August 2014
+
+
+; Last Revision
+; =============
+; Date: 20 August 2014
+; Author: M. Richardson
+
+; The following section defines the behavior of pressure calibrations.
+; Pressure will run both up and down from Pcurrent-25 to Pmin.
+; The pressure will change through Nsteps, evenly divided, and will
+; remain at a pressure for a period of twait seconds.
+[PPT]
+Port = COM4
+Addr = 00,01,02,03,04,05,06
+Nsteps = 10
+Pmin = 200
+twait = 30
+
+; The following sectio defines the behavior of ozone calibrations
+[Ozone]	
+O3 Power = TRUE
+fO3 = 5
+ncal_lev = 1000, 800,600,400,200
+QO3	= 1,0.8,0.6,0.4
+twait = 30
+tacq = 60
+; Calibration mode.  TRUE = automatic, FALSE = manual.
+mode = TRUE
+twarm_u = 60
+	
+
+; Flows defind as in specifications, Fig 1.
+; Flows go in order - A,B,C,D,E,F,G,H are related to the instrument flows;
+; K goes through the purafil scrubber and J is the mirror purge flow.
+; There should be 10 flows in all. 
+[MFC]
+Q0 = 5,5,5,5,5,5,5,5,1,1
+Port = COM1
+Addr = A,B,C,D,E,F,G,H,J,K
+
+[Filter]
+fpos = TRUE
+fmode = TRUE
+tfilter = 60
+tsample = 240
+
+; The following section defines the parameters that determine ho the 
+; CRDS behaves in the system.  There are five cells and they are defined as per
+; Fig 1 in the Software Specifications
+[CRDS]
+flaser = 1000,2000
+DClaser = 0.5,0.5
+Coadd = 1,1,1,1,1,1
+lambda = 660,405,405,,405,405
+ncells = 6
+; Initial RH setpoints; these refer to cells 2 and 5 respectively
+RH = 90, 70
+; Optical lengths of cavities
+lcell = 1,1,1,1,1,1
+
+; Section defining initial PAS behavior.  According to Fig 1 in Software
+; Specifications, there are 5 cells.
+
+[PAS]
+
+Vspeak	= 0.1,0.1,0.1,0.1,0.1
+
+ncells = 5
+
+m = 1,1,1,1,1
+b = 0,0,0,0,0
+Tcell = 21,21,21,21,21
+las_pow = TRUE, TRUE, TRUE, TRUE, TRUE
+tec_pow = TRUE, TRUE, TRUE, TRUE, TRUE
+chirp.center = 1350
+chirp.band = 100
+
+; This is for the TEC which will be communicating on an RS485 
+; connection
+[TEC]
+T0 = 18
+Port = COM2
+
+; For Vaisala probes HMP60's, these are on a multidrop network.
+; They will be talking over a RS485 port.
+[RH]
+Port = COM3
+Addr = 0,1,2,3,4,5,6
+
+
+[File]
+f = 1
+folder = EXSCALABAR/Data
+Write? = TRUE
+drive1 = u
+; Empty string indicates that data will not be mirrored.
+drive2 = ''
+tau.period = 3600
+tau.length = 10
+
+[General]
+;Solenoid positions	Boolean	Initial solenoid valve positions.  TRUE = open, FALSE = closed.
+msg_log = ALL
+
+[CRDS]
+blue.rate = 2000
+red.rate = 1000
+red.dc = 0.5
+blue.dc = 0.5

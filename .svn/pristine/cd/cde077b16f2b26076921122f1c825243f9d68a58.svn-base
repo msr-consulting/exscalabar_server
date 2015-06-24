@@ -1,0 +1,27 @@
+03:23:47.07	Instrument "ePAS" is in configuration.
+03:23:51.00	[pas] Configuration complete!
+03:23:51.68	[inst] Configuration of insrument with ID ePAS successful!
+03:23:51.70	Instrument "eCRDS" is in configuration.
+03:23:51.99	[crd] Blue laser and analog input armed for operation.
+03:23:52.11	[crd] Start laser operation and acquistion.
+03:23:52.15	[crd] Configuration complete!
+03:23:52.17	[inst] Configuration of insrument with ID eCRDS successful!
+03:23:52.20	[file] New file opened at u:\exscalabar\Data\test_20150422_032352.txt.
+03:23:52.22	[file] Initialization successful.
+03:23:52.32	[ctl] Filter state changed to TRUE
+03:23:52.35	[ctl] Filter cycle parameters updated.  Period is now 240 s; length of filter is 60 s; and the system set auto to FALSE.
+03:23:53.01	[ERROR] -1801: Start value too large in Get Waveform Subset.VI.
+03:23:53.03	[pas] Speaker state changed to TRUE.
+03:23:53.05	[pas] Speaker state changed to TRUE.
+03:23:53.12	[ERROR] -200561: DAQmx Write (Analog 1D DBL NChan 1Samp).vi:3480001<append>
+<B>Data: </B> 21.0
+<B>Specified Range Minimum: </B>-10.0
+<B>Specified Range Maximum: </B> 10.0
+
+<B>Task Name: </B>PAS_TEC_AO
+03:23:53.23	[pas] Changing TEC enabled state to TRUE, FALSE, FALSE, FALSE, and FALSE.
+03:23:53.24	[pas] Speaker voltage parameters changed to : Vrange = 0.00, Voffset = 5.00.
+03:24:14.01	[pas] Speaker state changed to FALSE.
+03:25:35.26	[instr] Instrument with name ePAS exiting with error code 0.
+03:25:35.30	[instr] Instrument with name eCRDS exiting with error code 0.
+03:25:35.32	[controller] Shutting down with error code 0.

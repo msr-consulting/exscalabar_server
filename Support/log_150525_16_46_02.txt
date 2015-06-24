@@ -1,0 +1,26 @@
+16:46:03.09	Instrument "ePAS" is in configuration.
+16:46:09.02	[pas] Configuration complete!
+16:46:09.04	[inst] Configuration of insrument with ID ePAS successful!
+16:46:09.05	Instrument "eCRDS" is in configuration.
+16:46:09.31	[crd] Blue laser and analog input armed for operation.
+16:46:09.44	[crd] Start laser operation and acquistion.
+16:46:09.46	[crd] Configuration complete!
+16:46:09.48	[inst] Configuration of insrument with ID eCRDS successful!
+16:46:09.51	[file] New file opened at u:\exscalabar\Data\test_20150525_164609.txt.
+16:46:09.53	[file] Initialization successful.
+16:46:09.55	[udp] Listening for data on 239.1.4.6:50001.
+16:46:09.81	[ctl] Filter state changed to TRUE
+16:46:09.84	[ctl] Filter cycle parameters updated.  Period is now 240 s; length of filter is 60 s; and the system set auto to FALSE.
+16:46:10.28	[ERROR] -1801: Start value too large in Get Waveform Subset.VI.
+16:46:10.30	[pas] Speaker state changed to TRUE.
+16:46:10.32	[pas] Speaker state changed to TRUE.
+16:46:10.37	[pas] Speaker voltage parameters changed to : Vrange = 0.00, Voffset = 5.00.
+16:46:31.29	[pas] Speaker state changed to FALSE.
+16:51:11.29	[pas] Speaker state changed to TRUE.
+16:51:31.29	[pas] Speaker state changed to FALSE.
+16:54:16.36	[instr] Instrument with name ePAS exiting with error code 0.
+16:54:16.65	[ERROR] 66: UDP Read in Network Actor Library.lvlib:Network Actor.lvclass:Get Packet Data.vi->Network Actor Library.lvlib:Network Actor.lvclass:Actor Core.vi:5880001->Actor Framework.lvlib:Actor.lvclass:Actor.vi:6640011->Actor Framework.lvlib:Actor.lvclass:Actor.vi.ACBRProxyCaller.DC100006
+16:54:16.67	[udp] Connection has been closed.
+16:54:16.69	[instr] Instrument with name eCRDS exiting with error code 0.
+16:54:16.71	[instr] Instrument "eCRDS" shutting down.
+16:54:16.72	[controller] Shutting down with error code 0.
