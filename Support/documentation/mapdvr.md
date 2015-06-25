@@ -1,3 +1,5 @@
 # MAP DVR Contents
 
 The MAP data value reference in the ``Controller`` object contains information about the data structures that are returned to the client and written to file.  The DVR contains a variant object which contains the data stored as attributes.  The data is stored using the device or instrument ID.  In addition to the data objects stored using the IDs as keys, the keys themselves are stored in an attribute with the key IDs.  The data object is registerd with the MAP object when the first data packet is sent.
+
+Since we are not certain what objects might be contained by the MAP and some file operations require all objects be registered, we have a VI method in the ``Controller`` object that is called ``Register Emitters``.  This method registers the IDs with the MAP and adds a boolean array entry in the map called ``Registered``.  There is one value for each of the data IDs.  When the first object is registered, it will flip that corresponding value to ``TRUE``.  Once all values in this array are ``TRUE``, another entry titled ``Registration Complete`` will be added with a ``TRUE`` value.
