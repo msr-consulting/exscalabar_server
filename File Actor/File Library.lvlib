@@ -13,7 +13,9 @@
 		<Item Name="Change File Writing State MSG.lvclass" Type="LVClass" URL="../Messages/To/Save/Change File Writing State MSG.lvclass"/>
 		<Item Name="Check File Size MSG.lvclass" Type="LVClass" URL="../Messages/To/Check File Size MSG/Check File Size MSG.lvclass"/>
 		<Item Name="File Data Message.lvclass" Type="LVClass" URL="../Messages/To/Data/File Data Message.lvclass"/>
+		<Item Name="Registration Complete MSG.lvclass" Type="LVClass" URL="../Messages/To/Registration Complete MSG/Registration Complete MSG.lvclass"/>
 		<Item Name="Update Caller with File State.lvclass" Type="LVClass" URL="../Messages/From/Update Save State/Update Caller with File State.lvclass"/>
+		<Item Name="Update Header MSG.lvclass" Type="LVClass" URL="../Messages/To/Update File Header MSG/Update Header MSG.lvclass"/>
 	</Item>
 	<Item Name="File Actor.lvclass" Type="LVClass" URL="../File Actor.lvclass"/>
 </Library>

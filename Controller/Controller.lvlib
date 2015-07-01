@@ -13,8 +13,8 @@
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
 		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Messages/Stop Subactors/Stop Subactors.lvclass"/>
+		<Item Name="Update Controller Data MSG.lvclass" Type="LVClass" URL="../Update Controller Data MSG.lvclass"/>
 		<Item Name="Update CVT Data.lvclass" Type="LVClass" URL="../Messages/Update CVT/Update CVT Data.lvclass"/>
-		<Item Name="Update Data MSG.lvclass" Type="LVClass" URL="../Update Data MSG.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
 		<Item Name="Update Housekeeping MSG.lvclass" Type="LVClass" URL="../Messages/Update Housekeeping/Update Housekeeping MSG.lvclass"/>
 	</Item>
