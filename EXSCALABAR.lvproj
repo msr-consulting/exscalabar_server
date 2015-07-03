@@ -24,7 +24,6 @@
 			<Item Name="CVT" Type="Folder">
 				<Item Name="CVT Add.vi" Type="VI" URL="../Controller/CVT/Test CVT/CVT Add.vi"/>
 				<Item Name="CVT to JSON.vi" Type="VI" URL="../Controller/CVT/Test CVT/CVT to JSON.vi"/>
-				<Item Name="Test CVT.vi" Type="VI" URL="../Controller/CVT/Test CVT/Test CVT.vi"/>
 			</Item>
 		</Item>
 		<Item Name="EXSCALABAR Wiki.htm" Type="Document" URL="../EXSCALABAR Wiki.htm"/>
@@ -840,7 +839,6 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="extParam Ctl.ctl" Type="VI" URL="../reusable/CRDS/Cell/extParam Ctl.ctl"/>
-			<Item Name="Test CVT.vi" Type="VI" URL="../Test/Test CVT.vi"/>
 			<Item Name="New Launcher.vi" Type="VI" URL="../New Launcher.vi"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
@@ -853,7 +851,6 @@ DirectoryIndex index.htm
 			<Item Name="Test Build.vi" Type="VI" URL="../Test/Test Build.vi"/>
 			<Item Name="Test Variant.vi" Type="VI" URL="../Test/Test Variant.vi"/>
 			<Item Name="Test XML.vi" Type="VI" URL="../Calibrations/Ozone/Test/Test XML.vi"/>
-			<Item Name="Read CVT.vi" Type="VI" URL="../Test/Read CVT.vi"/>
 		</Item>
 		<Item Name="FPGA Target" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
@@ -1804,7 +1801,6 @@ DirectoryIndex index.htm
 				<Item Name="JSON GetSet.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/JSON API/Get Polymorphic/JSON GetSet.lvlib"/>
 				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
-				<Item Name="Current Value Table.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Current Value Table/Current Value Table.lvlib"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
