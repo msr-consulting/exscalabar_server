@@ -6,6 +6,8 @@
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="Get Device Data MSG.lvclass" Type="LVClass" URL="../Device/Get Device Data MSG.lvclass"/>
 	</Item>
-	<Item Name="Messages to Caller" Type="Folder"/>
+	<Item Name="Messages to Caller" Type="Folder">
+		<Item Name="Generic Update Data Message.lvclass" Type="LVClass" URL="../Device/Generic Data Update Data MSG/Generic Update Data Message.lvclass"/>
+	</Item>
 	<Item Name="Device.lvclass" Type="LVClass" URL="../Device/Device.lvclass"/>
 </Library>
