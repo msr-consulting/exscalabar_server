@@ -211,6 +211,8 @@ Error message and password prompt
 
 <li>Humidifier</li>
 
+<li>Humidifier Development</li>
+
 <li>Integrating PAS Data</li>
 
 <li>Issue</li>
@@ -5635,7 +5637,7 @@ Error message and password prompt
 <div modified="20150211035805497" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div list="[[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
+<div list="[[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -5652,8 +5654,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20150210203151070" modified="20150622045227680" title="$:/temp/NewTagName">
-<pre></pre>
+<div created="20150210203151070" modified="20150706053632225" title="$:/temp/NewTagName">
+<pre>humidifier</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.7">
 <pre>{
@@ -5939,6 +5941,11 @@ The file is located in system32\drivers\etc and is called hosts.</pre>
 * I may (do) have a race condition regarding the setting of the ''RH Control'' flag and the ''SP'' value.  Right now, I have a single SP field - I may have to break this out into multiple setpoints.
 * The control loop running in the main actor uses the single control loop instance of the PID VI.  I am not sure if this is going to work out or if the control loops will step on each other.  I need to see what this might be doing (i.e. ''TEST'!!!!!''). 
 * Need to add two tasks for the temperature control of the two different humidifiers.  They will both be hardware timed, single point analog outputs.  Need to make sure these don't interfere with each other in terms of resource usage.  These probably should be used apart from  the PAS TEC tasks - they should be contained on the CRD 6225.</pre>
+</div>
+<div created="20150706053601328" modified="20150706053755605" tags="tec" title="Humidifier Development">
+<pre>Currently working on the development of the humidifier code for delivery to Justin.  I think that I might be almost there, but I need to actually run the Meerstetter code as a stand alone.
+
+Today I added an MFC ``Stop Core`` VI; not sure why that was not there.</pre>
 </div>
 <div created="20141124172558542" modified="20141124172646745" tags="PAS" title="Integrating PAS Data">
 <pre>I need to include a mechanism for integrating PAS data over longer periods which will provide higher resolution PAS data.</pre>

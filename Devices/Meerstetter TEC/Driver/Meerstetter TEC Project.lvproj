@@ -13,26 +13,40 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Actors" Type="Folder">
 			<Item Name="DAQ Device.lvlib" Type="Library" URL="../../../../reusable/DAQ Device/DAQ Device.lvlib"/>
+			<Item Name="Ex Nested.lvclass" Type="LVClass" URL="../../../../SuperActor/Ex Nested.lvclass"/>
 			<Item Name="Humidifier Test Lib.lvlib" Type="Library" URL="../../../../Humidifier Test/Controller/Humidifier Test Lib.lvlib"/>
 		</Item>
-		<Item Name="Alicat Lib.lvlib" Type="Library" URL="../../../Alicat/Session Based/Alicat Lib.lvlib"/>
+		<Item Name="Devices" Type="Folder">
+			<Item Name="Alicat Lib.lvlib" Type="Library" URL="../../../Alicat/Session Based/Alicat Lib.lvlib"/>
+			<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../../../Configurable Device/Configurable Device.lvclass"/>
+			<Item Name="M data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/M/M data.lvclass"/>
+			<Item Name="MC Data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/MC/MC Data.lvclass"/>
+			<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../../Meerstetter Lib.lvlib"/>
+			<Item Name="Vaisala.lvclass" Type="LVClass" URL="../../../Vaisala Probe/Vaisala.lvclass"/>
+		</Item>
+		<Item Name="Documentation" Type="Folder">
+			<Item Name="MeCom Protocol Specification 5117B.pdf" Type="Document" URL="../../Manufacturer Software/MeCom Protocol Specification 5117B.pdf"/>
+			<Item Name="TEC Controller Communication Protocol 5136X.pdf" Type="Document" URL="../../Manufacturer Software/TEC Controller Communication Protocol 5136X.pdf"/>
+			<Item Name="TEC Software Release Notes 5147S.pdf" Type="Document" URL="../../Manufacturer Software/TEC Software Release Notes 5147S.pdf"/>
+		</Item>
+		<Item Name="ESF" Type="Folder">
+			<Item Name="Config Data.lvclass" Type="LVClass" URL="../../../../reusable/Session APIs/File Access/Config Data/Config Data.lvclass"/>
+			<Item Name="Serial Session.lvclass" Type="LVClass" URL="../../../../reusable/Session APIs/Serial/Serial Session.lvclass"/>
+			<Item Name="System Log.lvclass" Type="LVClass" URL="../../../../reusable/Session APIs/Session Log/System Log.lvclass"/>
+		</Item>
+		<Item Name="Main" Type="Folder">
+			<Item Name="Launch Application.vi" Type="VI" URL="../../../../Humidifier Test/Launch Application.vi"/>
+		</Item>
+		<Item Name="Support" Type="Folder">
+			<Item Name="humidifier.ini" Type="Document" URL="../../../../Humidifier Test/Controller/humidifier.ini"/>
+		</Item>
 		<Item Name="Atmospheric Library.lvlib" Type="Library" URL="../../../../reusable/General/Atmospheric/Atmospheric Library.lvlib"/>
 		<Item Name="Base Data Class.lvlib" Type="Library" URL="../../../../reusable/Data/Base Data Class.lvlib"/>
-		<Item Name="Config Data.lvclass" Type="LVClass" URL="../../../../reusable/Session APIs/File Access/Config Data/Config Data.lvclass"/>
-		<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../../../Configurable Device/Configurable Device.lvclass"/>
 		<Item Name="Ctl Method.ctl" Type="VI" URL="../Controls/Ctl Method.ctl"/>
-		<Item Name="Ex Nested.lvclass" Type="LVClass" URL="../../../../SuperActor/Ex Nested.lvclass"/>
 		<Item Name="exscalabar.ini" Type="Document" URL="../../../../Support/exscalabar.ini"/>
 		<Item Name="Input Selection.ctl" Type="VI" URL="../Controls/Input Selection.ctl"/>
-		<Item Name="M data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/M/M data.lvclass"/>
-		<Item Name="MC Data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/MC/MC Data.lvclass"/>
-		<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../../Meerstetter Lib.lvlib"/>
 		<Item Name="Read Parameters.ctl" Type="VI" URL="../Controls/Read Parameters.ctl"/>
 		<Item Name="Retrieve Numeric String.vi" Type="VI" URL="../../../../reusable/General/String Utilities/Retrieve Numeric String.vi"/>
-		<Item Name="Send Data Msg.lvclass" Type="LVClass" URL="../../../../reusable/DAQ Device/Messages/Send Data Msg.lvclass"/>
-		<Item Name="Serial Session.lvclass" Type="LVClass" URL="../../../../reusable/Session APIs/Serial/Serial Session.lvclass"/>
-		<Item Name="System Log.lvclass" Type="LVClass" URL="../../../../reusable/Session APIs/Session Log/System Log.lvclass"/>
-		<Item Name="Vaisala.lvclass" Type="LVClass" URL="../../../Vaisala Probe/Vaisala.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
