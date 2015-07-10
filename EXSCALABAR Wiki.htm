@@ -323,6 +323,8 @@ Error message and password prompt
 
 <li>Vaisala Probe Communication</li>
 
+<li>Vaisala Probe Development</li>
+
 <li>Working on CVT: 062115</li>
 
 <li>Working Remotely</li>
@@ -5637,7 +5639,7 @@ Error message and password prompt
 <div modified="20150211035805497" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div list="[[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
+<div list="[[Vaisala Probe Development]] [[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -5654,8 +5656,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20150210203151070" modified="20150706053632225" title="$:/temp/NewTagName">
-<pre>humidifier</pre>
+<div created="20150210203151070" modified="20150708234659088" title="$:/temp/NewTagName">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.7">
 <pre>{
@@ -6502,6 +6504,21 @@ T= 26.97 'C RH= 36.22 %RH Td= 10.74 'C
 ```
 
 All data is returned with an EOL character that consists of a carriage return followed by a new line.  Commands are sent using a carriage return.</pre>
+</div>
+<div created="20150708233914273" modified="20150708235201369" tags="humidifier vaisala" title="Vaisala Probe Development">
+<pre>Have Vaisala probe up and running.  The positive output (black wire, pin 4) is connected to the positive terminals on the RS485 pins while the negative (white wire, pin 1) is connected to the negative RS485 pins.  
+
+I had some funniness when attempting to start communication.  I kept getting a response to commands that seemed like it was //asking// me what the address was supposed to be.  It went something like
+
+``Address   :     0 ?``
+
+Not certain what this meant but it went away when I sent the ``addr x`` command, where x is the new address.  
+
+I set probe with serial number ''K3150006'' to address 1.
+
+I have also set the baud rate for this device to 57600 to match the rate of the Meerstetter TECs.  In order for this change to take affect, the device had to be rebooted.
+
+''I now need to make sure I can talk to this via LV.''</pre>
 </div>
 <div created="20150622045209336" modified="20150622062832169" tags="CVT" title="Working on CVT: 062115">
 <pre>Working on the CVT currently.  I want to implement most CVT interactions in a single place, mostly in the messages for setting states.  Here is what is placed so far

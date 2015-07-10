@@ -22,7 +22,7 @@
 			<Item Name="M data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/M/M data.lvclass"/>
 			<Item Name="MC Data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/MC/MC Data.lvclass"/>
 			<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../../Meerstetter Lib.lvlib"/>
-			<Item Name="Vaisala.lvclass" Type="LVClass" URL="../../../Vaisala Probe/Vaisala.lvclass"/>
+			<Item Name="Vaisala Library.lvlib" Type="Library" URL="../../../Vaisala Probe/Vaisala Library.lvlib"/>
 		</Item>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="MeCom Protocol Specification 5117B.pdf" Type="Document" URL="../../Manufacturer Software/MeCom Protocol Specification 5117B.pdf"/>
