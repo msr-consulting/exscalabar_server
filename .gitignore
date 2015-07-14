@@ -1,0 +1,15 @@
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
+*.aliases
+*.lvlps
+
+# Ignore the subversion stuff...
+.svn/
