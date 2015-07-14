@@ -222,19 +222,15 @@ DirectoryIndex index.htm
 			<Item Name="Devices" Type="Folder">
 				<Item Name="Alicat" Type="Folder">
 					<Item Name="Data" Type="Folder">
-						<Item Name="Alicat Data.lvclass" Type="LVClass" URL="../Devices/Alicat/Session Based/Data/Alicat Data.lvclass"/>
 						<Item Name="M data.lvclass" Type="LVClass" URL="../Devices/Alicat/Session Based/Data/M/M data.lvclass"/>
 						<Item Name="MC Data.lvclass" Type="LVClass" URL="../Devices/Alicat/Session Based/Data/MC/MC Data.lvclass"/>
 					</Item>
-					<Item Name="Alicat Device.lvclass" Type="LVClass" URL="../Devices/Alicat/Session Based/Alicat Device.lvclass"/>
 				</Item>
 				<Item Name="PPT" Type="Folder">
 					<Item Name="PPT.lvclass" Type="LVClass" URL="../Devices/PPT/PPT.lvclass"/>
 					<Item Name="PPT Data.lvclass" Type="LVClass" URL="../Devices/PPT/Data/PPT Data.lvclass"/>
 				</Item>
-				<Item Name="Vaisala" Type="Folder">
-					<Item Name="Vaisala.lvclass" Type="LVClass" URL="../Devices/Vaisala Probe/Vaisala.lvclass"/>
-				</Item>
+				<Item Name="Vaisala" Type="Folder"/>
 				<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Configurable Device.lvclass"/>
 				<Item Name="Test Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Test/Test Device.lvclass"/>
 			</Item>
@@ -1896,6 +1892,7 @@ DirectoryIndex index.htm
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
