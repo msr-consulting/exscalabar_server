@@ -221,16 +221,19 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Devices" Type="Folder">
 				<Item Name="Alicat" Type="Folder">
-					<Item Name="Data" Type="Folder">
-						<Item Name="M data.lvclass" Type="LVClass" URL="../Devices/Alicat/Session Based/Data/M/M data.lvclass"/>
-						<Item Name="MC Data.lvclass" Type="LVClass" URL="../Devices/Alicat/Session Based/Data/MC/MC Data.lvclass"/>
-					</Item>
+					<Item Name="Data" Type="Folder"/>
+					<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
 				</Item>
 				<Item Name="PPT" Type="Folder">
 					<Item Name="PPT.lvclass" Type="LVClass" URL="../Devices/PPT/PPT.lvclass"/>
 					<Item Name="PPT Data.lvclass" Type="LVClass" URL="../Devices/PPT/Data/PPT Data.lvclass"/>
 				</Item>
-				<Item Name="Vaisala" Type="Folder"/>
+				<Item Name="Vaisala" Type="Folder">
+					<Item Name="Vaisala Library.lvlib" Type="Library" URL="../Devices/Vaisala Probe/Vaisala Library.lvlib"/>
+				</Item>
+				<Item Name="TECs" Type="Folder">
+					<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../Devices/Meerstetter TEC/Meerstetter Lib.lvlib"/>
+				</Item>
 				<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Configurable Device.lvclass"/>
 				<Item Name="Test Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Test/Test Device.lvclass"/>
 			</Item>
@@ -1892,7 +1895,9 @@ DirectoryIndex index.htm
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
+			<Item Name="Ctl Method.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Ctl Method.ctl"/>
+			<Item Name="Input Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Input Selection.ctl"/>
+			<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

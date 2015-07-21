@@ -10,4 +10,5 @@
 		<Item Name="Generic Update Data Message.lvclass" Type="LVClass" URL="../Device/Generic Data Update Data MSG/Generic Update Data Message.lvclass"/>
 	</Item>
 	<Item Name="Device.lvclass" Type="LVClass" URL="../Device/Device.lvclass"/>
+	<Item Name="Serialized Device Cfg FG.vi" Type="VI" URL="../../../Controller/Serialized Device Cfg FG.vi"/>
 </Library>

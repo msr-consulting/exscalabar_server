@@ -10,5 +10,7 @@
 	<Item Name="Core" Type="Folder">
 		<Item Name="Alicat Data.lvclass" Type="LVClass" URL="../Data/Alicat Data.lvclass"/>
 		<Item Name="Alicat Device.lvclass" Type="LVClass" URL="../Alicat Device.lvclass"/>
+		<Item Name="M data.lvclass" Type="LVClass" URL="../Data/M/M data.lvclass"/>
+		<Item Name="MC Data.lvclass" Type="LVClass" URL="../Data/MC/MC Data.lvclass"/>
 	</Item>
 </Library>
