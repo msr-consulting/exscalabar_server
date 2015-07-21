@@ -19,8 +19,6 @@
 		<Item Name="Devices" Type="Folder">
 			<Item Name="Alicat Lib.lvlib" Type="Library" URL="../../../Alicat/Session Based/Alicat Lib.lvlib"/>
 			<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../../../Configurable Device/Configurable Device.lvclass"/>
-			<Item Name="M data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/M/M data.lvclass"/>
-			<Item Name="MC Data.lvclass" Type="LVClass" URL="../../../Alicat/Session Based/Data/MC/MC Data.lvclass"/>
 			<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../../Meerstetter Lib.lvlib"/>
 			<Item Name="Vaisala Library.lvlib" Type="Library" URL="../../../Vaisala Probe/Vaisala Library.lvlib"/>
 		</Item>

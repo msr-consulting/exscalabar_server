@@ -220,10 +220,6 @@ DirectoryIndex index.htm
 				<Item Name="Ex Nested.lvclass" Type="LVClass" URL="../SuperActor/Ex Nested.lvclass"/>
 			</Item>
 			<Item Name="Devices" Type="Folder">
-				<Item Name="Alicat" Type="Folder">
-					<Item Name="Data" Type="Folder"/>
-					<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
-				</Item>
 				<Item Name="PPT" Type="Folder">
 					<Item Name="PPT.lvclass" Type="LVClass" URL="../Devices/PPT/PPT.lvclass"/>
 					<Item Name="PPT Data.lvclass" Type="LVClass" URL="../Devices/PPT/Data/PPT Data.lvclass"/>
@@ -236,6 +232,7 @@ DirectoryIndex index.htm
 				</Item>
 				<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Configurable Device.lvclass"/>
 				<Item Name="Test Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Test/Test Device.lvclass"/>
+				<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
 			</Item>
 			<Item Name="Instrument" Type="Folder">
 				<Item Name="CRDS" Type="Folder">

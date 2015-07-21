@@ -11,7 +11,6 @@
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Inlet MSG.lvclass" Type="LVClass" URL="../Messages/Change Inlet MSG/Change Inlet MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
-		<Item Name="Get Serialized Device Configuration MSG.lvclass" Type="LVClass" URL="../Messages/Device Configuration/Get Serialized Device Configuration MSG.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
 		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Messages/Stop Subactors/Stop Subactors.lvclass"/>
 		<Item Name="Update Controller Data MSG.lvclass" Type="LVClass" URL="../Update Controller Data MSG.lvclass"/>
