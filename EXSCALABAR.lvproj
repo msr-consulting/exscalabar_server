@@ -236,19 +236,14 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Instrument" Type="Folder">
 				<Item Name="CRDS" Type="Folder">
-					<Item Name="Data" Type="Folder">
-						<Item Name="CRDS Cell Data.lvclass" Type="LVClass" URL="../reusable/CRDS/Data/Cell/CRDS Cell Data.lvclass"/>
-						<Item Name="CRDS Data.lvclass" Type="LVClass" URL="../reusable/CRDS/Data/Main/CRDS Data.lvclass"/>
-					</Item>
 					<Item Name="Commands" Type="Folder">
 						<Item Name="Reset Blue Laser Rep Rate.lvclass" Type="LVClass" URL="../CRDS/Commands/Reset Blue Rep Rate/Reset Blue Laser Rep Rate.lvclass"/>
 						<Item Name="Reset Red Laser Rep Rate.lvclass" Type="LVClass" URL="../CRDS/Commands/Reset Red Rep Rate/Reset Red Laser Rep Rate.lvclass"/>
 						<Item Name="Update Housekeeping.lvclass" Type="LVClass" URL="../CRDS/Commands/Update Housekeeping/Update Housekeeping.lvclass"/>
 						<Item Name="Update Blue DC.lvclass" Type="LVClass" URL="../CRDS/Commands/Update Blue DC/Update Blue DC.lvclass"/>
 					</Item>
-					<Item Name="CRDS Cell.lvclass" Type="LVClass" URL="../reusable/CRDS/Cell/CRDS Cell.lvclass"/>
-					<Item Name="CRDS.lvclass" Type="LVClass" URL="../reusable/CRDS/Main/CRDS.lvclass"/>
 					<Item Name="eCRDS.lvclass" Type="LVClass" URL="../CRDS/Main/eCRDS.lvclass"/>
+					<Item Name="CRDS Lib.lvlib" Type="Library" URL="../reusable/CRDS/CRDS Lib.lvlib"/>
 				</Item>
 				<Item Name="PAS" Type="Folder">
 					<Item Name="Commands" Type="Folder">
@@ -834,8 +829,6 @@ DirectoryIndex index.htm
 				<Item Name="Sequence.lvproj" Type="Document" URL="../reusable/Sequence/Sequence.lvproj"/>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
-			<Item Name="extParam Ctl.ctl" Type="VI" URL="../reusable/CRDS/Cell/extParam Ctl.ctl"/>
-			<Item Name="New Launcher.vi" Type="VI" URL="../New Launcher.vi"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="error test.vi" Type="VI" URL="../Test/error test.vi"/>

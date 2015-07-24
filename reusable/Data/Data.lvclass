@@ -122,7 +122,7 @@
 		</Item>
 	</Item>
 	<Item Name="Generate Unique Header.vi" Type="VI" URL="../Generate Unique Header.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;0!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!-0````]'3'6B:'6S!!!51%!!!@````]!"1:):7&amp;E:8)!!$B!=!!?!!!E&amp;5*B=W5A2'&amp;U93"$&lt;'&amp;T=SZM&gt;GRJ9AR%982B,GRW9WRB=X-!!!B%982B)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!W1(!!(A!!*"6#98.F)%2B&gt;'%A1WRB=X-O&lt;(:M;7)-2'&amp;U93ZM&gt;G.M98.T!!!(2'&amp;U93"J&lt;A"5!0!!$!!$!!1!"A!(!!1!"!!%!!1!#!!%!!1!#1)!!(A!!!U)!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!E!!!!!!"!!I!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;&amp;!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!-0````]'3'6B:'6S!!!51%!!!@````]!"1:):7&amp;E:8)!!$B!=!!?!!!E&amp;5*B=W5A2'&amp;U93"$&lt;'&amp;T=SZM&gt;GRJ9AR%982B,GRW9WRB=X-!!!B%982B)'^V&gt;!!!&amp;E"1!!-!!!!"!!)):8*S&lt;X)A;7Y!!$:!=!!?!!!E&amp;5*B=W5A2'&amp;U93"$&lt;'&amp;T=SZM&gt;GRJ9AR%982B,GRW9WRB=X-!!!&gt;%982B)'FO!&amp;1!]!!-!!-!"!!'!!=!"!!%!!1!"!!)!!1!"!!*!A!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#1!!!!!!%!#A!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
