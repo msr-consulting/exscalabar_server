@@ -107,4 +107,31 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1351361040</Property>
 	</Item>
+	<Item Name="Generate Unique Header.vi" Type="VI" URL="../Generate Unique Header.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;F!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!-0````]'3'6B:'6S!!!51%!!!@````]!"1:):7&amp;E:8)!!%B!=!!?!!!M&amp;6:B;8.B&lt;'%A4'FC=G&amp;S?3ZM&gt;GRJ9B2797FT97RB)%2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!%&amp;:B;8.B&lt;'%A2'&amp;U93"P&gt;81!!":!5!!$!!!!!1!##'6S=G^S)'FO!!"'1(!!(A!!,"6797FT97RB)%RJ9H*B=HEO&lt;(:M;7)56G&amp;J=W&amp;M93"%982B,GRW9WRB=X-!!!^797FT97RB)%2B&gt;'%A;7Y!6!$Q!!Q!!Q!%!!9!"Q!%!!1!"!!%!!A!"!!%!!E$!!"Y!!!.#!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!*)!!!!!!1!+!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107825168</Property>
+	</Item>
+	<Item Name="Serialize - JSON.vi" Type="VI" URL="../Serialize - JSON.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;:!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"B!-0````]05W6S;7&amp;M;8JF:#"+5U^/!%B!=!!?!!!M&amp;6:B;8.B&lt;'%A4'FC=G&amp;S?3ZM&gt;GRJ9B2797FT97RB)%2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!%&amp;:B;8.B&lt;'%A2'&amp;U93"P&gt;81!!":!5!!$!!!!!1!##'6S=G^S)'FO!!"'1(!!(A!!,"6797FT97RB)%RJ9H*B=HEO&lt;(:M;7)56G&amp;J=W&amp;M93"%982B,GRW9WRB=X-!!!^797FT97RB)%2B&gt;'%A;7Y!6!$Q!!Q!!Q!%!!5!"A!%!!1!"!!%!!=!"!!%!!A$!!"Y!!!.#!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!*!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107825168</Property>
+	</Item>
+	<Item Name="Serialize - Text.vi" Type="VI" URL="../Serialize - Text.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;D!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"B!-0````]05W6S;7&amp;M;8JF:#"5:8BU!%B!=!!?!!!M&amp;6:B;8.B&lt;'%A4'FC=G&amp;S?3ZM&gt;GRJ9B2797FT97RB)%2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!%&amp;:B;8.B&lt;'%A2'&amp;U93"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!2E"Q!"Y!!#Q66G&amp;J=W&amp;M93"-;7*S98*Z,GRW&lt;'FC&amp;&amp;:B;8.B&lt;'%A2'&amp;U93ZM&gt;G.M98.T!!!06G&amp;J=W&amp;M93"%982B)'FO!&amp;1!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!Q!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!#3!!!!!!%!#1!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+	</Item>
 </LVClass>

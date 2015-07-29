@@ -221,8 +221,7 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Devices" Type="Folder">
 				<Item Name="PPT" Type="Folder">
-					<Item Name="PPT.lvclass" Type="LVClass" URL="../Devices/PPT/PPT.lvclass"/>
-					<Item Name="PPT Data.lvclass" Type="LVClass" URL="../Devices/PPT/Data/PPT Data.lvclass"/>
+					<Item Name="PPT Library.lvlib" Type="Library" URL="../Devices/PPT/PPT Library.lvlib"/>
 				</Item>
 				<Item Name="Vaisala" Type="Folder">
 					<Item Name="Vaisala Library.lvlib" Type="Library" URL="../Devices/Vaisala Probe/Vaisala Library.lvlib"/>

@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>Adding a Vaisala Probe</li>
+
 <li>Adding Functionality</li>
 
 <li>Adding in PAS Class</li>
@@ -275,6 +277,8 @@ Error message and password prompt
 
 <li>PPT Success</li>
 
+<li>PPT Update 07/28/2015</li>
+
 <li>Productive Evening</li>
 
 <li>Publish-Subscribe</li>
@@ -320,6 +324,8 @@ Error message and password prompt
 <li>Upgrading to 2014</li>
 
 <li>Using AngularJS</li>
+
+<li>Vaisala Framing Error</li>
 
 <li>Vaisala Probe Communication</li>
 
@@ -5639,7 +5645,7 @@ Error message and password prompt
 <div modified="20150211035805497" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div list="[[Vaisala Probe Development]] [[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
+<div list="[[PPT Update 07/28/2015]] [[Vaisala Framing Error]] [[Adding a Vaisala Probe]] [[Vaisala Probe Development]] [[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -5656,7 +5662,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20150210203151070" modified="20150708234659088" title="$:/temp/NewTagName">
+<div created="20150210203151070" modified="20150728171018854" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.7">
@@ -5735,6 +5741,13 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20150727044639452" modified="20150728171202764" tags="vaisala" title="Adding a Vaisala Probe">
+<pre>Tonight I am adding a probe to the Vaisala network.  Set the address to 2 for serial number ''K3150004''.  Both this and the previous probe seem to be communicating well on MAX.  The previous one seems to have integrated well into the full system.
+
+__''NOTE''__
+
+Make sure to power down the probe for the new serial settings to take affect.</pre>
 </div>
 <div created="20141109054224415" modified="20141109054806262" tags="Actor" title="Adding Functionality">
 <pre>Added a bunch of functionality.  The filter is now present in the controller core as a ``Switch`` and the ``Save Data`` functionality has been sketched in in the controller core.  Both of these parameters interact with the messaging queues via a notifier (for each).  The notification is used to tell the slave loops that parameters have changed.</pre>
@@ -6244,6 +6257,11 @@ This is the highest level of addressing and the address for a global command is 
 <div created="20150121074552536" modified="20150121075200480" tags="PPT" title="PPT Success">
 <pre>Success with getting the PPT up and running.  Operated with 2 PPTs.  ''TODO: wrap the code in the actor framework and test for shipping.''</pre>
 </div>
+<div created="20150728171010091" modified="20150728183234093" tags="PPT" title="PPT Update 07/28/2015">
+<pre>Had an issue with the PPT - for whatever reason it was sending back the initial controller startup response but then not responding to any commands.  Turns out, I was mixing up the wiring and had a positive and negative going to a positive (B) terminal on the device.
+
+And now I have a fully functional probe and the code is good.  The baud rate is set to ''28.8 kbs'' and I have a small example program to demonstrate how it works.  Restructured the code so that it is consistent with other devices.  ''HAVE NO WAY OF HANDLING GLOBAL COMMANDS!!'' in this setup.</pre>
+</div>
 <div created="20150429071013898" modified="20150429071936963" tags="data" title="Productive Evening">
 <pre>Added a data map DVR to the ``Controller`` object.  The DVR contains a variant which will store the data named by the actor ID.  The identifiers (which will be used for writing data) will be stored in the map using the name ``IDs``.  This value is the only constant.  
 
@@ -6444,6 +6462,9 @@ Tonight, I focused primarily on the calibration page as this is the most complex
 * XML file construction
 
 I think that after this, the rest should be pretty straight forward and hopefully I will get to a point where I can begin testing the data return.  This is a huge missing piece and I need to make sure that I can parse the data as necessary with the resources I have available.</pre>
+</div>
+<div created="20150727060221928" modified="20150728171152162" tags="vaisala" title="Vaisala Framing Error">
+<pre>Having an issue with framing errors when I added another probe.  Also displays a weakness in my system as it causes ''everything'' to shutdown.  Investigating...</pre>
 </div>
 <div created="20140824181315025" modified="20140824181329947" title="Vaisala Probe Communication">
 <pre>The Vaisalas come with a default of 19200, 8N1.  In the system, the network of probes is currently located on Port 3.
