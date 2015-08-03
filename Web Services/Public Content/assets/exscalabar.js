@@ -1,6 +1,6 @@
 /* Start with an IIFE */
 (function(){
-	angular.module('main',['ngRoute', 'ui.bootstrap.contextMenu']);
+	angular.module('main',['ngRoute', 'ui.bootstrap', 'ui.bootstrap.contextMenu']);
 })();
 
 /** This service handles network settings that can be set in the sidebar.
@@ -57,10 +57,14 @@
  */
 
 (function() {
-	angular.module('main').factory('cvt', ['$http','net', function($http,net) {
+	angular.module('main').factory('cvt', ['$http', 'net',
+	function($http, net) {
 
+		// TODO: Add broadcast to let everyone know when the cvt has been updated by the server.
 		var cvt = {
-			"save" : true
+			"save" : true,
+			"ozone" : false,
+			"fctl" : []
 		};
 
 		/* All controls that must be updated for the PAS
@@ -117,7 +121,7 @@
 		 */
 		cvt.checkCvt = function() {
 			promise = $http.get(net.address() + 'General/cvt').success(function(data, status, headers, config) {
-				
+
 			});
 		};
 
@@ -140,7 +144,10 @@
 		.when('/PAS',{templateUrl:'views/pas.html'})
 		.when('/O3',{templateUrl:'views/cals/ozone.html'})
 		.when('/', {templateUrl:'views/main.html'})
-		.when('/#', {templateUrl:'views/main.html'});
+		.when('/#', {templateUrl:'views/main.html'})
+		.when('/Flows', {templateUrl:'views/flows.html'})
+		.when('/Temperature', {templateUrl:'views/temperature.html'})
+		.when('/Humidifier', {templateUrl:'views/humidifier.html'});
 	}]);
 })();
 /** This is the main controller that is sucked into the entire program (this is placed
@@ -149,40 +156,46 @@
  */
 
 (function() {
-	angular.module('main').controller('MainCtlr', ['Data', '$scope', '$interval', 'cvt',
+	angular.module('main').controller('MainCtlr', ['Data', '$scope', '$interval', 'cvt', 
 	function(Data, $scope, $interval, cvt) {
 
 		/* Call the data service at regular intervals; this will force a regular update of the
 		 * data object.
 		 */
-		$interval(function(){
+		$interval(function() {
 			Data.getData();
-			cvt.checkCvt();}, 1000);
+			//cvt.checkCvt();
+			//deviceCfg.checkCfg();
+		}, 1000);
 
 	}]);
 })();
 
 (function() {
-	angular.module('main').directive('chart', function(){
-    	return{
-        	restrict: 'E',
-        	link: function(scope, elem, attrs){
-            
-	            var chart = null,
-    	            opts  = {xaxis: { mode: "time" } };
-                   
-        	    scope.$watch(attrs.ngModel, function(v){
-            	    if(!chart){
-                	    chart = $.plot(elem, v , opts);
-                    	elem.show();
-	                }else{
-    	                chart.setData(v);
-        	            chart.setupGrid();
-            	        chart.draw();
-                	}
-            	});
-        	}
-    	};
+	angular.module('main').directive('chart', function() {
+		return {
+			restrict : 'E',
+			link : function(scope, elem, attrs) {
+
+				var chart = null,
+				    opts = {
+					xaxis : {
+						mode : "time"
+					}
+				};
+
+				scope.$watch(attrs.ngModel, function(v) {
+					if (!chart) {
+						chart = $.plot(elem, v, opts);
+						elem.show();
+					} else {
+						chart.setData(v);
+						chart.setupGrid();
+						chart.draw();
+					}
+				});
+			}
+		};
 	});
 })();
 
@@ -244,12 +257,24 @@
 		// Defines array lengths - 100 == 100 seconds of data
 		var maxLength = 300;
 
+		/* This is the structure for the flow device data */
+		function fdevice(){
+			this.ID = "";
+			this.Q = 0;	// Volumetric flow rate
+			this.Q0 = 0;	// Mass flow rate
+			this.P = 0;	// Pressure in mb
+			this.T = 0;	// Temperature in degrees C
+			this.Qsp = 0;	// Flow setpoint
+		}
+
 		/* Variable that indicates everyone needs to shift... */
 		var shiftData = false;
 
 		dataObj.pas = {};
 		dataObj.pas.cell = [new pasData()];
 		dataObj.pas.drive = true;
+
+		dataObj.flowData = [new fdevice()];
 
 		dataObj.crd = {};
 		dataObj.crd.cell = [new crdObject()];
@@ -262,8 +287,8 @@
 					dataObj.time.pop();
 					shiftData = true;
 				}
-				
-				
+
+
 				dataObj.tObj = updateTime(data.Time);
 				var t = dataObj.tObj.getTime();
 				dataObj.time.unshift(t);
@@ -299,10 +324,11 @@
 
 				}
 				dataObj.pas.drive = data.PAS.Drive;
-				
+
 				$rootScope.$broadcast('dataAvailable');
 			}).error(function(){
 				$rootScope.$broadcast('dataNotAvailable');
+				$log.debug(status);
 			});
 		};
 
@@ -310,7 +336,6 @@
 
 	}]);
 })();
-
 
 (function() {
 	angular.module('main')
@@ -381,6 +406,28 @@
 	}]);
 })();
 
+(function() {
+	angular.module('main').controller('startCal', ['$scope', '$http', 'net', 'cvt', 
+	function($scope, $http, net, cvt) {
+
+		$scope.cal = cvt.ozone;
+
+		/* This is the primary function of this controller.  When the button is hit,
+		 * flip the switch on the calibration button so that it indicates the user can 
+		 * Start a cal or that a cal is currently running.  We will also send the current cal
+		 * state for storage in the cvt AND send the request to the server.
+		 */
+		// TODO: Test this on the server side.
+		$scope.startCalibration = function() {
+			$scope.cal = !$scope.cal;
+			var calState = $scope.cal ? 1 : 0;
+			cvt.ozone = $scope.cal;
+			$http.get(net.address() + 'General/ozone?start=' + calState.toString());
+		};
+	}]);
+
+})();
+
 /* This service returns the current value of a selected portion
  * of the calibration building table.  This service is required 
  * by the O3Table controller.  Load this service first before 
@@ -389,7 +436,7 @@
 
 (function(){
 	angular.module('main')
-	.factory('tableService', function($rootScope){
+	.factory('tableService', ["$rootScope", function($rootScope){
 		var tabService = {
 			curTab: '',
 			getTab: function(){return this.curTab;},
@@ -400,7 +447,7 @@
 		};
 		
 		return tabService;
-	});
+	}]);
 	
 })();
 
@@ -484,6 +531,8 @@
 		return savedData;
 	});
 })();
+
+/* This controller handles saving calibration data */
 
 (function() {
 	angular.module('main').controller('Save', ['$scope', 'SaveData', '$http','net', 
@@ -875,179 +924,66 @@ function buildPlotController(controllerName, fieldName, ylabel) {
 	buildPlotController('plotPASabs', 'abs', 'abs (???)');
 })();
 
-<<<<<<< HEAD
-=======
-/** This controller is placed on the O3 cal page and defines what will happen 
- * 	when a user double clicks on a table element.  
- * 
- * 	When the element containing this controller is first displayed, the values 
- * 	in the attribute table_vals will be used to populate the canned table for 
- * 	sequence building using the ng-repeat directive.
- * 
- * 	When the user double clicks on a row, the controller will call the tableService 
- * 	setTab method.  This in turn updates the attributes of that service with the ID 
- * 	of the row that was clicked.  That ID is then broadcast and picked up by the 
- * 	tableInput-ctlr which populates the table for the sequence with a default value
- * 	for the selected element.
- */
-
 (function() {
-	angular.module('main')
-	.controller('O3Table', ['$scope', 'tableService', function($scope, tableService) {
+	angular.module('main').controller("flowCtlr", ['$scope', "Data", "cvt",
+	function($scope, Data, cvt) {
 		
-		/* Contains the entries that will go into the canned table. */
-		$scope.table_vals = [ {
-			"id": "Wait",
-			"step" : "Wait",
-			"descr" : "Set a wait time in the ozone cal in seconds"
-		}, 
-		{
-			"id": "Filter",
-			"step" : "Filter",
-			"descr" : "Boolean that sets the filter state (<code>TRUE</code> or<code>FALSE</code>)"
-		}, 
-		{
-			"id": "Speaker",
-			"step" : "Speaker",
-			"descr" : "Boolean that sets the speaker state (<code>TRUE</code> or<code>FALSE</code>)"
-		}, 
-		{
-			"id": "O2 Valve",
-			"step" : "O2 Valve",
-			"descr" : "Boolean that sets the O2 valve position (<code>TRUE</code> or<code>FALSE</code>)"
-		}, 
-		{
-			"id": "O3 Valve",
-			"step" : "O3 Valve",
-			"descr" : "Boolean that sets the O3 valve state (<code>TRUE</code> or<code>FALSE</code>)"
-		}, 
-		{
-			"id": "O3 Generator",
-			"step" : "O3 Generator",
-			"descr" : "Boolean that sets the O3 generator state (<code>TRUE</code> or<code>FALSE</code>)"
-		}, 
-		{
-			"id": "QO2",
-			"step" : "O2 Flow Rate",
-			"descr" : "Numeric to set the oxygen flow rate"
-		}];
+		// Stores the position in the controller array
+		var i = -1;
 		
-		/* Handle row double clicks */
-		$scope.clickRow = function(row){
+		//Array that will hold the setpoints...
+		$scope.setpoints = [];
+ 
+		function flowDevice(id, t, isCtl, sp){
+			this.ID = id;
+			this.type = t;
+			this.isController = isCtl;
 			
-			/* tableService will broadcast the the listeners the current ID */
-			tableService.setTab(row.id.toString());
+			// TODO: This should be set by the CVT based on i
+			this.sp = sp;
 			
-		};
-	}]);
-})();
-
-(function(){
-	angular.module('main')
-	.factory('tableService', ["$rootScope", function($rootScope){
-		var tabService = {
-			curTab: '',
-			getTab: function(){return this.curTab;},
-			setTab: function(tab){
-				this.curTab = tab;
-				$rootScope.$broadcast('handleBroadcast');
-				}
+			// If this device is not a controller, the index will be -1...
+			this.index = -1;
 			
-		};
-		
-		return tabService;
-	}]);
-	
-})();
-
-(function(){
-	angular.module('main')
-	.factory('SaveData', function(){
-		var savedData = {
-			data: [],
-			setData: function(d){
-				this.data = d;
-			},
-			getData:function(){
-				return this.data;
+			/* If this device is a controller, push the new setpoint into the 
+			 * setpoint array and update the index.
+			 * REALLY, THIS SHOULD BE PURELY A FUNCTION OF THE CVT AND SHOULD
+			 * NOT BE CONTROLLED BY THIS HERE - THIS IS TEMPORARY....
+			 */
+			
+			// TESTED AND FUNCTIONAL
+			if (isCtl){
+				$scope.setpoints.push(sp);
+				// Update the global index
+				i += 1;
+				
+				// Update the instance controller index...
+				this.index = i;
 			}
-		};
-		return savedData;
-	});
-})();
-
-(function() {
-	angular.module('main').controller('Save', ['$scope', 'SaveData', '$http','net', 
-	function($scope, SaveData, $http, net) {
-
-		$scope.save = function() {
-			var xml = '<?xml version="1.0" encoding="utf-8"?>\r\n<OZONE>\r\n';
-			SaveData.getData().forEach(function(entry) {
-				xml += "\t<" + entry.id + ">" + entry.val + '<\\' + entry.id + '>\r\n';
-			});
-
-			xml += "<\\OZONE>";
-
-			/* Send the calibration profile as XML data. */
-			$http({
-				method : 'POST',
-				url : 'http://' + net.address() + '/xService/Calibration/saveCalFile?file_name=test_ang',
-				data : xml,
-				headers : {
-					"Content-Type" : 'application/x-www-form-urlencoded'
-				}
-			});
-
+		}
+		
+		/* TODO: This is hard coded now but should not be.  IDs should correspond to config 
+		 * file IDs.
+		 */		
+		$scope.Devices = [new flowDevice("Dry Red", "mflow", true,0), 
+							new flowDevice("Dry Blue", "mflow", false,0), 
+							new flowDevice("Denuded Blue", "mflow", false,0),
+							new flowDevice("Denuded Red", "mflow", true,0),
+							new flowDevice("PAS Green", "mflow", false,0),
+							new flowDevice("CRD High Humidified", "mflow", false,0),
+							new flowDevice("CRD Low Humidified", "mflow", false,0),
+							new flowDevice("Mirror Purge Flow", "mflow", false,0),
+							new flowDevice("Pressure Controller", "pressure", false,0),
+							new flowDevice("O3 Bypass", "mflow", true,0),
+						 ];
+		
+		/* Update the CVT - the CVT should call the server... */			 
+		$scope.updateSP = function(){
+			
 		};
 	}]);
 })();
 
-(function() {
-	angular.module('main')
-	.controller('InputTable', ['$scope', 'tableService', 'SaveData',
-	function($scope, tableService, SaveData) {
-
-		$scope.data = [];
-
-		/* Handle the broadcast from the buildCal-service */
-		$scope.$on('handleBroadcast', function() {
-
-			// The ID from the cal table
-			var tID = tableService.getTab();
-			// Value of the 
-			var val = "";
-			
-			/* The following switch statement defines the default values */
-			switch (tID) {
-			case "O3 Valve":
-			case"O2 Valve":
-			case"O3 Generator":
-			case "Filter":
-				val = 'FALSE';
-				break;
-			case "Wait":
-			case "Speaker":
-				val = "20";
-				break;
-
-			case "QO2":
-				val = "100";
-				break;
-			default:
-			}
-			
-			// Push the data into an array
-			$scope.data.push({
-				"id" : tID,
-				"val" :val
-			});
-			SaveData.setData($scope.data);
-		});
-
-	}]);
-})();
-
->>>>>>> 9fdc7bcf82648ae1df6d593d78c38ac8f9bae1f9
 (function() {
 	angular.module('main').directive('msg', msgFunc);
 
