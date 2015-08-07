@@ -267,6 +267,8 @@ Error message and password prompt
 
 <li>Next Steps in Phase III</li>
 
+<li>Note on FPGA IRQ</li>
+
 <li>Ozone Sequence</li>
 
 <li>PPT</li>
@@ -5645,7 +5647,7 @@ Error message and password prompt
 <div modified="20150211035805497" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div list="[[PPT Update 07/28/2015]] [[Vaisala Framing Error]] [[Adding a Vaisala Probe]] [[Vaisala Probe Development]] [[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
+<div list="[[Note on FPGA IRQ]] [[PPT Update 07/28/2015]] [[Vaisala Framing Error]] [[Adding a Vaisala Probe]] [[Vaisala Probe Development]] [[Humidifier Development]] [[Working on CVT: 062115]] [[UI Issues]] [[Working Remotely]] CVT [[May 22, 2015 Update]] [[May 12, 2015 Update]] [[UDP Appears to Work]] [[File Writing Error]] [[Ozone Sequence]] [[Using AngularJS]] Changes... [[Moved some of the actions up]] [[Productive Evening]] [[Data Map]] [[UDP Translation Works]] [[Routing Data]] [[UDP Communication Successful]] [[Network Actor Folded in]] [[Everything working?]] [[Logging Errors]] [[RESOLVED: Issue with Controller]] [[Mapping Data and Actors]] [[Network Actor is IN]] [[Futher UDP Development]] [[UDP Development]] [[Meerstetter TEC Functionality]] [[Meerstetter TEC Functional!!]] [[Meerstetter TEC: Expert Settings]] [[Updated Signals List]] [[Next Steps in Phase III]] [[Testing Filter Cycling]] [[Filter Cycling]] [[Integrating PAS Data]] [[Moving Data Around]] [[RT LEDs]] [[Executable Running]] [[Redundant errors]] [[Error associated with connections]] Serializable Builds [[Adding Functionality]] MkDocs [[Multiple Views Open]] Issue [[Formatting the date]] [[First build...]] [[Data Returned!]] [[Host name]] Data [[Returning Data]] [[Message Chain is Good]] [[Message Chain]] [[Handling incoming commands via SVs]] [[Meeting with Neil]] [[Yay, progress!!]] [[FPGA Issue]] Humidifier FPGA [[CRDS AI (cont.)]] [[CRDS AI]] [[Fixed problem]] [[Vaisala Probe Communication]] [[Debugging in RT]] [[Chassis Configuration]] [[PXI System Has Arrived]] [[Current Focus]] [[PPT Communication]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -5662,7 +5664,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20150210203151070" modified="20150728171018854" title="$:/temp/NewTagName">
+<div created="20150210203151070" modified="20150807153308580" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.7">
@@ -6156,6 +6158,9 @@ I think that I will probably remove the Alicat data type and change the type to 
 # Get Meerstetter TEC functioning.
 # Test TE Technology code and fold into main stream.
 # All the UI stuff!! </pre>
+</div>
+<div created="20150807153246388" modified="20150807153457296" tags="FPGA IRQ" title="Note on FPGA IRQ">
+<pre>It is important to note that if you shutdown the system and then try to restart without rebooting, the FPGA will throw a warning that the IRQ was not raised.  This is because the FPGA shuts down and will not restart until a reboot.  This  is expected behavior and we may want to add the FPGA to run continuously.</pre>
 </div>
 <div created="20150512161952261" modified="20150512162247127" tags="xml calibration" title="Ozone Sequence">
 <pre>With the ozone calibration, I think that I will run this dynamically with the user able to adjust the current step.  I need a way to

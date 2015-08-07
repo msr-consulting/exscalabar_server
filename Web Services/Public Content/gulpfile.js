@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var connect = require('gulp-connect');
 var open = require('gulp-open');
+var htmlmin = require('gulp-htmlmin');
 
 /* Since order matters, we can't just glob everything, but we must
 * make sure that the files are in the correct order. Since we have
@@ -36,11 +37,13 @@ var watch_list = ["app/shared/main.module.js",
 "views/cals/saveProfile-service.js",
 "views/cals/saveData-ctrl.js",
 "views/cals/tableInput-ctlr.js",
+"views/view-ctl/filter-ctlr.js",
 "views/view-ctl/crd.ctlr.js",
-"views/view-ctl/mainPas.ctlr.js",
 "views/view-ctl/pas-ctlr.js",
-"views/view-ctl/pasGraph.ctl.js",
+"views/view-ctl/pas-spk-ctlr.js",
+"views/view-ctl/pas-las-ctlr.js",
 "views/view-ctl/flow.ctlr.js",
+"views/view-ctl/humidifier-ctlr.js",
 "app/msg/msg-directive.js",
 "app/sidebar/sidebar-directive.js",
 "app/navigation/nav-directive.js",
@@ -82,5 +85,13 @@ gulp.task('open', function(){
 	.pipe(open({uri: 'http://localhost:8080'}));
 });
 
+/*gulp.task('minify', function() {
+  return gulp.src('views/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'))
+});*/
+
 // Default Task
 gulp.task('default', ['lint', 'scripts', 'connect', 'open', 'watch']);
+
+// TODO: add different builds for distribution and development...
