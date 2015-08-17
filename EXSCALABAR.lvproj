@@ -150,7 +150,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -319,40 +319,139 @@ DirectoryIndex index.htm
 						<Item Name="Web Resources" Type="HTTP WebResources Container">
 							<Item Name="General" Type="HTTP WebResources Container">
 								<Item Name="Data.vi" Type="VI" URL="../Web Services/Data.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">4</Property>
+									<Property Name="ws.outputType" Type="Int">1</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="Stop.vi" Type="VI" URL="../Web Services/Stop.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="Save.vi" Type="VI" URL="../Web Services/Save.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="UpdateFilter.vi" Type="VI" URL="../Web Services/UpdateFilter.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="NewFile.vi" Type="VI" URL="../Web Services/NewFile.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="FilterCycle.vi" Type="VI" URL="../Web Services/FilterCycle.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="SetTime.vi" Type="VI" URL="../Web Services/SetTime.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="Cabin.vi" Type="VI" URL="../Web Services/Cabin.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 								<Item Name="DevSP.vi" Type="VI" URL="../Web Services/DevSP.vi">
+									<Property Name="ws.buffered" Type="Bool">true</Property>
+									<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+									<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.outputFormat" Type="Int">2</Property>
+									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.permissions" Type="Str"></Property>
+									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
+									<Property Name="ws.uri" Type="Str"></Property>
+									<Property Name="ws.useHeaders" Type="Bool">true</Property>
+									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 								</Item>
 							</Item>
 							<Item Name="CRDS_CMD" Type="HTTP WebResources Container">
@@ -562,7 +661,7 @@ DirectoryIndex index.htm
 									<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 									<Property Name="ws.method" Type="Int">3</Property>
 									<Property Name="ws.outputFormat" Type="Int">2</Property>
-									<Property Name="ws.outputType" Type="Int">0</Property>
+									<Property Name="ws.outputType" Type="Int">1</Property>
 									<Property Name="ws.permissions" Type="Str"></Property>
 									<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 									<Property Name="ws.type" Type="Int">1</Property>
@@ -1817,48 +1916,6 @@ DirectoryIndex index.htm
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 MSR Consulting, LLC</Property>
 				<Property Name="TgtF_productName" Type="Str">EXSCALABAR EXE</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{90987AE5-FC97-47D3-87EC-7CE73B66664B}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
-			</Item>
-			<Item Name="Test Build" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{924217AC-B5F6-474F-9313-40117FD5B33A}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{3E259288-4606-4483-9747-46638CDB8C29}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{4125A405-D018-4542-9156-B904B569F601}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Test Build</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Test Build</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{DF7D6D84-065E-423B-A31D-93AB6E3568F9}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
-				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E67E92D5-6529-43C3-926A-445B5800376A}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/EXSCALABAR/Test/Test Build.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">MSR Consulting, LLC</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Test Build</Property>
-				<Property Name="TgtF_internalName" Type="Str">Test Build</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 MSR Consulting, LLC</Property>
-				<Property Name="TgtF_productName" Type="Str">Test Build</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{5CBA8843-A07A-4F02-BFED-69413699A15D}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
 		</Item>
