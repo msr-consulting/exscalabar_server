@@ -122,7 +122,7 @@
 	</Item>
 	<Item Name="EXSCALABAR" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">EXSCALABAR</Property>
-		<Property Name="alias.value" Type="Str">192.168.0.73</Property>
+		<Property Name="alias.value" Type="Str">67.6.168.131</Property>
 		<Property Name="CCSymbols" Type="Str">OS,PharLap;CPU,x86;TARGET_TYPE,RT;</Property>
 		<Property Name="DisableAutoDeployVariables" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
