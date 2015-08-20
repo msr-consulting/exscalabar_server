@@ -7,6 +7,7 @@
 		<Item Name="Get Device Data MSG.lvclass" Type="LVClass" URL="../Device/Get Device Data MSG.lvclass"/>
 	</Item>
 	<Item Name="Messages to Caller" Type="Folder">
+		<Item Name="Generic Init CVT Message.lvclass" Type="LVClass" URL="../Messages/Generic CVT Init/Generic Init CVT Message.lvclass"/>
 		<Item Name="Generic Update Data Message.lvclass" Type="LVClass" URL="../Device/Generic Data Update Data MSG/Generic Update Data Message.lvclass"/>
 		<Item Name="Get Serialized Device Configuration MSG.lvclass" Type="LVClass" URL="../../../Controller/Messages/Device Configuration/Get Serialized Device Configuration MSG.lvclass"/>
 	</Item>
