@@ -8,29 +8,6 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages" Type="Folder">
-		<Item Name="CRDS" Type="Folder">
-			<Item Name="Change Blue Laser Rate MSG.lvclass" Type="LVClass" URL="../Messages/Change Blue Laser Rate/Change Blue Laser Rate MSG.lvclass"/>
-			<Item Name="Change Laser Gain MSG.lvclass" Type="LVClass" URL="../Messages/Change CRD Laser Gain/Change Laser Gain MSG.lvclass"/>
-			<Item Name="Change Red Laser Rate MSG.lvclass" Type="LVClass" URL="../Messages/Change Red Laser Rate/Change Red Laser Rate MSG.lvclass"/>
-			<Item Name="Update Housekeeping MSG.lvclass" Type="LVClass" URL="../Messages/Update Housekeeping/Update Housekeeping MSG.lvclass"/>
-			<Item Name="Update PMT Gains MSG.lvclass" Type="LVClass" URL="../Messages/Update PMT Gains MSG/Update PMT Gains MSG.lvclass"/>
-		</Item>
-		<Item Name="PAS" Type="Folder">
-			<Item Name="Laser" Type="Folder">
-				<Item Name="Set f0 MSG.lvclass" Type="LVClass" URL="../Messages/Set f0 MSG/Set f0 MSG.lvclass"/>
-				<Item Name="Set Las Enable MSG.lvclass" Type="LVClass" URL="../Messages/Set Las Enable MSG/Set Las Enable MSG.lvclass"/>
-				<Item Name="Set Modulation MSG.lvclass" Type="LVClass" URL="../Messages/Set Modulation MSG/Set Modulation MSG.lvclass"/>
-				<Item Name="Set Voffset MSG.lvclass" Type="LVClass" URL="../Messages/Set Voffset MSG/Set Voffset MSG.lvclass"/>
-				<Item Name="Set Vrange MSG.lvclass" Type="LVClass" URL="../Messages/Set Vrange MSG/Set Vrange MSG.lvclass"/>
-			</Item>
-			<Item Name="Speaker" Type="Folder">
-				<Item Name="Change Speaker Switch MSG.lvclass" Type="LVClass" URL="../Messages/Change Speaker State/Change Speaker Switch MSG.lvclass"/>
-				<Item Name="Change Speaker Vparams MSG.lvclass" Type="LVClass" URL="../Messages/Change Speaker Vparams/Change Speaker Vparams MSG.lvclass"/>
-				<Item Name="Send New Chirp MSG.lvclass" Type="LVClass" URL="../Messages/Change Speaker Chirp/Send New Chirp MSG.lvclass"/>
-				<Item Name="Set iSpkEn MSG.lvclass" Type="LVClass" URL="../Messages/Set iSpkEn MSG/Set iSpkEn MSG.lvclass"/>
-				<Item Name="Spk Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Speaker Cycle MSG/Spk Cycle MSG.lvclass"/>
-			</Item>
-		</Item>
 		<Item Name="Data MSG.lvclass" Type="LVClass" URL="../../PAS/Actor/Messages/Data MSG/Data MSG.lvclass"/>
 	</Item>
 	<Item Name="Instr Actor.lvclass" Type="LVClass" URL="../Instr Actor.lvclass"/>
