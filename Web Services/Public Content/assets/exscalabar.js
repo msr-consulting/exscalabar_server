@@ -224,7 +224,7 @@
        * to check and will broadcast based on who has changed.
        */
       cvt.checkCvt = function() {
-        promise = $http.get(net.address() + 'General/cvt').success(function(data, status, headers, config) {
+        promise = $http.get(net.address() + 'General/cvt').then(function(data, status, headers, config) {
 
         });
       };
@@ -364,7 +364,7 @@
         /* Call this to poll the server for data */
         dataObj.getData = function() {
           promise = $http.get(net.address() + 'General/Data')
-            .success(function(data, status, headers, config) {
+            .then(function(data, status, headers, config) {
 
               /* The maximum length of the array is defined by the variable maxLength.
                * If the array is greater or equal than this, pop the array and then
@@ -622,13 +622,13 @@
 })();
 
 (function() {
-	angular.module('main').controller('startCal', ['$scope', '$http', 'net', 'cvt', 
+	angular.module('main').controller('startCal', ['$scope', '$http', 'net', 'cvt',
 	function($scope, $http, net, cvt) {
 
 		$scope.cal = cvt.ozone;
 
 		/* This is the primary function of this controller.  When the button is hit,
-		 * flip the switch on the calibration button so that it indicates the user can 
+		 * flip the switch on the calibration button so that it indicates the user can
 		 * Start a cal or that a cal is currently running.  We will also send the current cal
 		 * state for storage in the cvt AND send the request to the server.
 		 */
@@ -644,8 +644,8 @@
 })();
 
 /* This service returns the current value of a selected portion
- * of the calibration building table.  This service is required 
- * by the O3Table controller.  Load this service first before 
+ * of the calibration building table.  This service is required
+ * by the O3Table controller.  Load this service first before
  * loading the O3Table controller.
  */
 
@@ -660,10 +660,10 @@
 				$rootScope.$broadcast('handleBroadcast');
 				}
 		};
-		
+
 		return tabService;
 	}]);
-	
+
 })();
 
 /** This controller is placed on the O3 cal page and defines what will happen
@@ -788,9 +788,9 @@
 
 			// The ID from the cal table
 			var tID = tableService.getTab();
-			// Value of the 
+			// Value of the
 			var val = "";
-			
+
 			/* The following switch statement defines the default values */
 			switch (tID) {
 			case "O3 Valve":
@@ -809,7 +809,7 @@
 				break;
 			default:
 			}
-			
+
 			// Push the data into an array
 			$scope.data.push({
 				"id" : tID,
@@ -1383,7 +1383,7 @@
 		};
 	}
 
-})(); 
+})();
 angular.module('ui.bootstrap.contextMenu', [])
 
 .directive('contextMenu', ["$parse", function ($parse) {
