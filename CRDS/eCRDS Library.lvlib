@@ -6,12 +6,14 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Actor" Type="Folder">
 		<Item Name="Change Blue Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Blue Laser Rate/Change Blue Laser Rate MSG.lvclass"/>
+		<Item Name="Change Laser Enable State.lvclass" Type="LVClass" URL="../Actor Messages/Change Laser Enable State/Change Laser Enable State.lvclass"/>
 		<Item Name="Change Laser Gain MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change CRD Laser Gain/Change Laser Gain MSG.lvclass"/>
 		<Item Name="Change Red Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Red Laser Rate/Change Red Laser Rate MSG.lvclass"/>
 		<Item Name="Update Housekeeping MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Update Housekeeping/Update Housekeeping MSG.lvclass"/>
 		<Item Name="Update PMT Gains MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Update PMT Gains MSG/Update PMT Gains MSG.lvclass"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
+		<Item Name="Laser Enable CMD.lvclass" Type="LVClass" URL="../Commands/Change Laser Enable State/Laser Enable CMD.lvclass"/>
 		<Item Name="Reset Blue Laser Rep Rate.lvclass" Type="LVClass" URL="../Commands/Reset Blue Rep Rate/Reset Blue Laser Rep Rate.lvclass"/>
 		<Item Name="Reset Red Laser Rep Rate.lvclass" Type="LVClass" URL="../Commands/Reset Red Rep Rate/Reset Red Laser Rep Rate.lvclass"/>
 		<Item Name="Set Write Ringdowns CMD.lvclass" Type="LVClass" URL="../Commands/Write Ringdowns/Set Write Ringdowns CMD.lvclass"/>

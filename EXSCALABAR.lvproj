@@ -204,7 +204,7 @@ DirectoryIndex index.htm
 		<Item Name="Main Launch" Type="Folder">
 			<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 		</Item>
-		<Item Name="RT" Type="Folder">
+		<Item Name="Root" Type="Folder">
 			<Item Name="Controls" Type="Folder">
 				<Item Name="PAS Settings.ctl" Type="VI" URL="../Controls/PAS Settings.ctl"/>
 				<Item Name="CRD Settings.ctl" Type="VI" URL="../Controls/CRD Settings.ctl"/>
@@ -497,6 +497,10 @@ DirectoryIndex index.htm
 									<Property Name="ws.uri" Type="Str"></Property>
 									<Property Name="ws.useHeaders" Type="Bool">true</Property>
 									<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+								</Item>
+								<Item Name="LaserEnable.vi" Type="VI" URL="../Web Services/LaserEnable.vi">
+									<Property Name="ws.method" Type="Int">1</Property>
+									<Property Name="ws.type" Type="Int">1</Property>
 								</Item>
 							</Item>
 							<Item Name="PAS_CMD" Type="HTTP WebResources Container">
@@ -1826,7 +1830,7 @@ DirectoryIndex index.htm
 				<Property Name="App_INI_GUID" Type="Str">{BC061EB4-C982-44A8-99DD-D887D099C069}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_webService.count" Type="Int">1</Property>
-				<Property Name="App_webService[0].itemID" Type="Ref">/EXSCALABAR/RT/Communication/Web Services/xService</Property>
+				<Property Name="App_webService[0].itemID" Type="Ref">/EXSCALABAR/Root/Communication/Web Services/xService</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{05A42BFA-A5B8-4B4B-8E05-6EB6E08E84BF}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">EXSCALABAR EXE</Property>
@@ -1861,37 +1865,37 @@ DirectoryIndex index.htm
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[10].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/EXSCALABAR/RT/Actors/Controller.lvlib</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Controller.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Library</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/EXSCALABAR/RT/Actors/Instrument Library.lvlib</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Instrument Library.lvlib</Property>
 				<Property Name="Source[3].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/EXSCALABAR/RT/Base Data Class.lvlib</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/EXSCALABAR/Root/Base Data Class.lvlib</Property>
 				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[4].type" Type="Str">Library</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/EXSCALABAR/RT/Session APIs/Config Data.lvclass</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Config Data.lvclass</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Library</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/EXSCALABAR/RT/Session APIs/Serial Session.lvclass</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Serial Session.lvclass</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].type" Type="Str">Library</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/EXSCALABAR/RT/Session APIs/Session - Root.lvclass</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Session - Root.lvclass</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">Library</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/EXSCALABAR/RT/Session APIs/System Log.lvclass</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/System Log.lvclass</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">Library</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/EXSCALABAR/RT/Session APIs/Exscalabar FPGA.lvclass</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Exscalabar FPGA.lvclass</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">11</Property>
