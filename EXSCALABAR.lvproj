@@ -219,6 +219,7 @@ DirectoryIndex index.htm
 				<Item Name="DAQ Device.lvlib" Type="Library" URL="../reusable/DAQ Device/DAQ Device.lvlib"/>
 				<Item Name="Network Actor Library.lvlib" Type="Library" URL="../Network Actor/Network Actor Library.lvlib"/>
 				<Item Name="Ex Nested.lvclass" Type="LVClass" URL="../SuperActor/Ex Nested.lvclass"/>
+				<Item Name="Calibration.lvlib" Type="Library" URL="../Calibration/Calibration.lvlib"/>
 			</Item>
 			<Item Name="Devices" Type="Folder">
 				<Item Name="PPT" Type="Folder">
@@ -264,6 +265,7 @@ DirectoryIndex index.htm
 				<Item Name="Flow_system_EXSCALAB_v04_short.pdf" Type="Document" URL="../../../Consulting/UK Met Office/Documentation/Flow_system_EXSCALAB_v04_short.pdf"/>
 				<Item Name="PXI-6704.pdf" Type="Document" URL="../Support/PXI-6704.pdf"/>
 				<Item Name="PXI-7842R.pdf" Type="Document" URL="../Support/PXI-7842R.pdf"/>
+				<Item Name="ozone_cal.xml" Type="Document" URL="../Support/ozone_cal.xml"/>
 			</Item>
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
