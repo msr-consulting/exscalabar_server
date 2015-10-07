@@ -151,7 +151,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -270,7 +270,7 @@ DirectoryIndex index.htm
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">6</Property>
+					<Property Name="Bld_version.build" Type="Int">7</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -751,21 +751,11 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Sequence" Type="Folder">
 				<Item Name="SEQ" Type="Folder">
-					<Item Name="Switch DBL" Type="Folder"/>
 					<Item Name="Create Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Create Event.vi"/>
 					<Item Name="Read MSG Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Read MSG Event.vi"/>
 					<Item Name="Write MSG Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Write MSG Event.vi"/>
 				</Item>
-				<Item Name="Sequence Execution" Type="Folder">
-					<Item Name="Sequence Execution.lvclass" Type="LVClass" URL="../reusable/Sequence/Sequence Execution/Sequence Execution.lvclass"/>
-				</Item>
-				<Item Name="SUB" Type="Folder">
-					<Item Name="SUB.lvclass" Type="LVClass" URL="../reusable/Sequence/SUB/SUB.lvclass"/>
-				</Item>
 				<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
-				<Item Name="Sequence.aliases" Type="Document" URL="../reusable/Sequence/Sequence.aliases"/>
-				<Item Name="Sequence.lvlps" Type="Document" URL="../reusable/Sequence/Sequence.lvlps"/>
-				<Item Name="Sequence.lvproj" Type="Document" URL="../reusable/Sequence/Sequence.lvproj"/>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 		</Item>
@@ -1833,6 +1823,9 @@ DirectoryIndex index.htm
 			<Item Name="Ctl Method.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Ctl Method.ctl"/>
 			<Item Name="Input Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Input Selection.ctl"/>
 			<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1853,7 +1846,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">42</Property>
+				<Property Name="Bld_version.build" Type="Int">43</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>

@@ -15,5 +15,4 @@
 		<Item Name="STEP.lvclass" Type="LVClass" URL="../STEPS/STEP.lvclass"/>
 	</Item>
 	<Item Name="SEQ.lvclass" Type="LVClass" URL="../SEQ/SEQ.lvclass"/>
-	<Item Name="Sequence Builder.lvclass" Type="LVClass" URL="../Sequence Factory/Sequence Builder.lvclass"/>
 </Library>
