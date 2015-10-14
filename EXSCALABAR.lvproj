@@ -212,6 +212,7 @@ DirectoryIndex index.htm
 				<Item Name="Settings.ctl" Type="VI" URL="../Controls/Settings.ctl"/>
 			</Item>
 			<Item Name="Actors" Type="Folder">
+				<Item Name="Update Switch MSG.lvclass" Type="LVClass" URL="../Controller/Messages/Update Switch State MSG/Update Switch MSG.lvclass"/>
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				<Item Name="Controller.lvlib" Type="Library" URL="../Controller/Controller.lvlib"/>
 				<Item Name="Instrument Library.lvlib" Type="Library" URL="../Instr Actor/Instrument Library.lvlib"/>
