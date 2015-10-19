@@ -20,6 +20,7 @@
 		<Item Name="PowerSupply MSG.lvclass" Type="LVClass" URL="../Messages/Power Supply/PowerSupply MSG.lvclass"/>
 		<Item Name="Purge Switch MSG.lvclass" Type="LVClass" URL="../Messages/Purge Switch Message/Purge Switch MSG.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
+		<Item Name="Start Calibration MSG.lvclass" Type="LVClass" URL="../Messages/Start Calibration MSG/Start Calibration MSG.lvclass"/>
 		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Messages/Stop Subactors/Stop Subactors.lvclass"/>
 		<Item Name="Update Controller Data MSG.lvclass" Type="LVClass" URL="../Update Controller Data MSG.lvclass"/>
 		<Item Name="Update CVT Data.lvclass" Type="LVClass" URL="../Messages/Update CVT/Update CVT Data.lvclass"/>
