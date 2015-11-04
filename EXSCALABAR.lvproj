@@ -29,6 +29,7 @@
 		<Item Name="EXSCALABAR Wiki.htm" Type="Document" URL="../EXSCALABAR Wiki.htm"/>
 		<Item Name="Flow_system_EXSCALAB_v04_short-1.pdf" Type="Document" URL="../Support/Flow_system_EXSCALAB_v04_short-1.pdf"/>
 		<Item Name="Modulation Type.ctl" Type="VI" URL="../reusable/PAS/Controls/Modulation Type.ctl"/>
+		<Item Name="Post-Build Action.vi" Type="VI" URL="../Calibration/Common/Post-Build Action.vi"/>
 		<Item Name="Test Get Cluster Type.vi" Type="VI" URL="../Test/Test Get Cluster Type.vi"/>
 		<Item Name="Test RT.vi" Type="VI" URL="../Test/Test RT.vi"/>
 		<Item Name="Test UDP Send.vi" Type="VI" URL="../Test/Test UDP Send.vi"/>
@@ -130,6 +131,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">3</Property>
 		<Property Name="host.TargetOSID" Type="UInt">15</Property>
+		<Property Name="mathScriptPath" Type="Str">C:\Users\Matt\Documents\LabVIEW Data</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.Deployment_DownloadInstallerPath" Type="Path"></Property>
@@ -150,7 +152,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -211,6 +213,7 @@ DirectoryIndex index.htm
 				<Item Name="Settings.ctl" Type="VI" URL="../Controls/Settings.ctl"/>
 			</Item>
 			<Item Name="Actors" Type="Folder">
+				<Item Name="Update Switch MSG.lvclass" Type="LVClass" URL="../Controller/Messages/Update Switch State MSG/Update Switch MSG.lvclass"/>
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				<Item Name="Controller.lvlib" Type="Library" URL="../Controller/Controller.lvlib"/>
 				<Item Name="Instrument Library.lvlib" Type="Library" URL="../Instr Actor/Instrument Library.lvlib"/>
@@ -218,6 +221,7 @@ DirectoryIndex index.htm
 				<Item Name="DAQ Device.lvlib" Type="Library" URL="../reusable/DAQ Device/DAQ Device.lvlib"/>
 				<Item Name="Network Actor Library.lvlib" Type="Library" URL="../Network Actor/Network Actor Library.lvlib"/>
 				<Item Name="Ex Nested.lvclass" Type="LVClass" URL="../SuperActor/Ex Nested.lvclass"/>
+				<Item Name="Calibration.lvlib" Type="Library" URL="../Calibration/Calibration.lvlib"/>
 			</Item>
 			<Item Name="Devices" Type="Folder">
 				<Item Name="PPT" Type="Folder">
@@ -263,11 +267,12 @@ DirectoryIndex index.htm
 				<Item Name="Flow_system_EXSCALAB_v04_short.pdf" Type="Document" URL="../../../Consulting/UK Met Office/Documentation/Flow_system_EXSCALAB_v04_short.pdf"/>
 				<Item Name="PXI-6704.pdf" Type="Document" URL="../Support/PXI-6704.pdf"/>
 				<Item Name="PXI-7842R.pdf" Type="Document" URL="../Support/PXI-7842R.pdf"/>
+				<Item Name="ozone_cal.xml" Type="Document" URL="../Support/ozone_cal.xml"/>
 			</Item>
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">2</Property>
+					<Property Name="Bld_version.build" Type="Int">8</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -436,6 +441,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 							<Item Name="PurgeSwitch.vi" Type="VI" URL="../Web Services/PurgeSwitch.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
+							<Item Name="PowerSupply.vi" Type="VI" URL="../Web Services/PowerSupply.vi">
 								<Property Name="ws.method" Type="Int">1</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
@@ -743,22 +752,27 @@ DirectoryIndex index.htm
 				<Item Name="File Utilities.lvlib" Type="Library" URL="../reusable/File IO/File Utilities.lvlib"/>
 			</Item>
 			<Item Name="Sequence" Type="Folder">
-				<Item Name="SEQ" Type="Folder">
-					<Item Name="Switch DBL" Type="Folder"/>
-					<Item Name="Create Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Create Event.vi"/>
-					<Item Name="Read MSG Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Read MSG Event.vi"/>
-					<Item Name="Write MSG Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Write MSG Event.vi"/>
+				<Item Name="Step Source" Type="Folder">
+					<Item Name="O2 Valve STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Valve/O2 Valve STEP.lvclass"/>
+					<Item Name="O2 Flow Rate STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Flow Rate/O2 Flow Rate STEP.lvclass"/>
+					<Item Name="Wait STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Wait/Wait STEP.lvclass"/>
+					<Item Name="Speaker STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Speaker/Speaker STEP.lvclass"/>
+					<Item Name="Filter STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Filter Step/Filter STEP.lvclass"/>
+					<Item Name="O3 Level STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Level/O3 Level STEP.lvclass"/>
+					<Item Name="O3 Generator Power STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Generator Power/O3 Generator Power STEP.lvclass"/>
+					<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
+					<Item Name="Post-Build Action.vi" Type="VI" URL="../Calibration/Common/Post-Build Action.vi"/>
 				</Item>
-				<Item Name="Sequence Execution" Type="Folder">
-					<Item Name="Sequence Execution.lvclass" Type="LVClass" URL="../reusable/Sequence/Sequence Execution/Sequence Execution.lvclass"/>
+				<Item Name="SEQ.lvlibp" Type="LVLibp" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp">
+					<Item Name="Steps" Type="Folder">
+						<Item Name="Leaves" Type="Folder">
+							<Item Name="Switch DBL.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/STEPS/LEAVES/Double/Switch DBL.lvclass"/>
+							<Item Name="Switch Step.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/STEPS/LEAVES/Switch/Switch Step.lvclass"/>
+						</Item>
+						<Item Name="STEP.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/STEPS/STEP.lvclass"/>
+					</Item>
+					<Item Name="SEQ.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/SEQ/SEQ.lvclass"/>
 				</Item>
-				<Item Name="SUB" Type="Folder">
-					<Item Name="SUB.lvclass" Type="LVClass" URL="../reusable/Sequence/SUB/SUB.lvclass"/>
-				</Item>
-				<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
-				<Item Name="Sequence.aliases" Type="Document" URL="../reusable/Sequence/Sequence.aliases"/>
-				<Item Name="Sequence.lvlps" Type="Document" URL="../reusable/Sequence/Sequence.lvlps"/>
-				<Item Name="Sequence.lvproj" Type="Document" URL="../reusable/Sequence/Sequence.lvproj"/>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 		</Item>
@@ -1493,6 +1507,7 @@ DirectoryIndex index.htm
 				<Item Name="DAQmx Create Channel (AO-FuncGen).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AO-FuncGen).vi"/>
 				<Item Name="DAQmx Create Channel (AO-Voltage-Basic).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AO-Voltage-Basic).vi"/>
 				<Item Name="DAQmx Create Channel (CI-Count Edges).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Count Edges).vi"/>
+				<Item Name="DAQmx Create Channel (CI-Duty Cycle).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Duty Cycle).vi"/>
 				<Item Name="DAQmx Create Channel (CI-Frequency).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Frequency).vi"/>
 				<Item Name="DAQmx Create Channel (CI-GPS Timestamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-GPS Timestamp).vi"/>
 				<Item Name="DAQmx Create Channel (CI-Period).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (CI-Period).vi"/>
@@ -1548,10 +1563,14 @@ DirectoryIndex index.htm
 				<Item Name="DAQmx Read (Analog Wfm 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog Wfm 1Chan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Analog Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog Wfm 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Counter 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D DBL 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Read (Counter 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Counter 1D Pulse Freq 1 Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D Pulse Freq 1 Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Counter 1D Pulse Ticks 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D Pulse Ticks 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Counter 1D Pulse Time 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D Pulse Time 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Counter 1D U32 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D U32 1Chan NSamp).vi"/>
+				<Item Name="DAQmx Read (Counter 1D U32 NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 1D U32 NChan 1Samp).vi"/>
+				<Item Name="DAQmx Read (Counter 2D DBL NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 2D DBL NChan NSamp).vi"/>
+				<Item Name="DAQmx Read (Counter 2D U32 NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter 2D U32 NChan NSamp).vi"/>
 				<Item Name="DAQmx Read (Counter DBL 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter DBL 1Chan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Counter Pulse Freq 1 Chan 1 Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter Pulse Freq 1 Chan 1 Samp).vi"/>
 				<Item Name="DAQmx Read (Counter Pulse Ticks 1Chan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Counter Pulse Ticks 1Chan 1Samp).vi"/>
@@ -1821,10 +1840,12 @@ DirectoryIndex index.htm
 			<Item Name="Ctl Method.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Ctl Method.ctl"/>
 			<Item Name="Input Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Input Selection.ctl"/>
 			<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{C80DB43B-D113-4EB3-BB4E-AEE71509D345}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{BC061EB4-C982-44A8-99DD-D887D099C069}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
@@ -1842,7 +1863,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">38</Property>
+				<Property Name="Bld_version.build" Type="Int">44</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -1853,7 +1874,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7D9E7C1B-C7F3-4CEE-9462-29FD578C6DC5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{253B8DAF-FBF7-49FE-8932-D956202A8883}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/EXSCALABAR/Main Launch/Launcher.vi</Property>
