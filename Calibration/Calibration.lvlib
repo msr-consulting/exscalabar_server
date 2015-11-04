@@ -4,11 +4,5 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="Common" Type="Folder">
-		<Item Name="BOOL STEP.lvclass" Type="LVClass" URL="../Common/BOOL STEP/BOOL STEP.lvclass"/>
-		<Item Name="DBL STEP.lvclass" Type="LVClass" URL="../Common/DBL STEP/DBL STEP.lvclass"/>
-		<Item Name="Send MSG STEP.lvclass" Type="LVClass" URL="../Common/Send MSG Step/Send MSG STEP.lvclass"/>
-		<Item Name="Wait STEP.lvclass" Type="LVClass" URL="../Common/Wait STEP/Wait STEP.lvclass"/>
-	</Item>
 	<Item Name="Calibration Actor.lvclass" Type="LVClass" URL="../Actor/Calibration Actor.lvclass"/>
 </Library>

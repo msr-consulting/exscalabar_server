@@ -29,6 +29,7 @@
 		<Item Name="EXSCALABAR Wiki.htm" Type="Document" URL="../EXSCALABAR Wiki.htm"/>
 		<Item Name="Flow_system_EXSCALAB_v04_short-1.pdf" Type="Document" URL="../Support/Flow_system_EXSCALAB_v04_short-1.pdf"/>
 		<Item Name="Modulation Type.ctl" Type="VI" URL="../reusable/PAS/Controls/Modulation Type.ctl"/>
+		<Item Name="Post-Build Action.vi" Type="VI" URL="../Calibration/Common/Post-Build Action.vi"/>
 		<Item Name="Test Get Cluster Type.vi" Type="VI" URL="../Test/Test Get Cluster Type.vi"/>
 		<Item Name="Test RT.vi" Type="VI" URL="../Test/Test RT.vi"/>
 		<Item Name="Test UDP Send.vi" Type="VI" URL="../Test/Test UDP Send.vi"/>
@@ -271,7 +272,7 @@ DirectoryIndex index.htm
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">7</Property>
+					<Property Name="Bld_version.build" Type="Int">8</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -751,12 +752,27 @@ DirectoryIndex index.htm
 				<Item Name="File Utilities.lvlib" Type="Library" URL="../reusable/File IO/File Utilities.lvlib"/>
 			</Item>
 			<Item Name="Sequence" Type="Folder">
-				<Item Name="SEQ" Type="Folder">
-					<Item Name="Create Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Create Event.vi"/>
-					<Item Name="Read MSG Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Read MSG Event.vi"/>
-					<Item Name="Write MSG Event.vi" Type="VI" URL="../reusable/Sequence/SEQ/Write MSG Event.vi"/>
+				<Item Name="Step Source" Type="Folder">
+					<Item Name="O2 Valve STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Valve/O2 Valve STEP.lvclass"/>
+					<Item Name="O2 Flow Rate STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Flow Rate/O2 Flow Rate STEP.lvclass"/>
+					<Item Name="Wait STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Wait/Wait STEP.lvclass"/>
+					<Item Name="Speaker STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Speaker/Speaker STEP.lvclass"/>
+					<Item Name="Filter STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Filter Step/Filter STEP.lvclass"/>
+					<Item Name="O3 Level STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Level/O3 Level STEP.lvclass"/>
+					<Item Name="O3 Generator Power STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Generator Power/O3 Generator Power STEP.lvclass"/>
+					<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
+					<Item Name="Post-Build Action.vi" Type="VI" URL="../Calibration/Common/Post-Build Action.vi"/>
 				</Item>
-				<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
+				<Item Name="SEQ.lvlibp" Type="LVLibp" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp">
+					<Item Name="Steps" Type="Folder">
+						<Item Name="Leaves" Type="Folder">
+							<Item Name="Switch DBL.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/STEPS/LEAVES/Double/Switch DBL.lvclass"/>
+							<Item Name="Switch Step.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/STEPS/LEAVES/Switch/Switch Step.lvclass"/>
+						</Item>
+						<Item Name="STEP.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/STEPS/STEP.lvclass"/>
+					</Item>
+					<Item Name="SEQ.lvclass" Type="LVClass" URL="../Calibration/Common/c/exscalabar/steps/SEQ.lvlibp/SEQ/SEQ.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 		</Item>
@@ -1847,7 +1863,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">43</Property>
+				<Property Name="Bld_version.build" Type="Int">44</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -1858,7 +1874,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5FC576BC-1C14-49CA-9722-51371031C72E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{253B8DAF-FBF7-49FE-8932-D956202A8883}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/EXSCALABAR/Main Launch/Launcher.vi</Property>
@@ -1904,6 +1920,7 @@ DirectoryIndex index.htm
 				<Property Name="Source[9].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_companyName" Type="Str">MSR Consulting, LLC</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">EXSCALABAR EXE</Property>
 				<Property Name="TgtF_internalName" Type="Str">EXSCALABAR EXE</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 MSR Consulting, LLC</Property>
