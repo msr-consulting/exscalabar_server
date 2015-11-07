@@ -14,7 +14,6 @@
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Individual Power Supply MSG.lvclass" Type="LVClass" URL="../Messages/Change Individual Power Supply State/Change Individual Power Supply MSG.lvclass"/>
 		<Item Name="Change Inlet MSG.lvclass" Type="LVClass" URL="../Messages/Change Inlet MSG/Change Inlet MSG.lvclass"/>
-		<Item Name="Clear Messages MSG.lvclass" Type="LVClass" URL="../Messages/Clear Messages/Clear Messages MSG.lvclass"/>
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
 		<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
