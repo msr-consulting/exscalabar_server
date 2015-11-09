@@ -10,5 +10,4 @@
 	<Item Name="Get Tau.vi" Type="VI" URL="../Math/Get Tau.vi"/>
 	<Item Name="HB Noise Threshold.vi" Type="VI" URL="../Math/HB Noise Threshold.vi"/>
 	<Item Name="Lorentzian Curve Fit.vit" Type="VI" URL="../Math/Lorentzian Curve Fit.vit"/>
-	<Item Name="Mean-SGL.vi" Type="VI" URL="../Math/Mean-SGL.vi"/>
 </Library>
