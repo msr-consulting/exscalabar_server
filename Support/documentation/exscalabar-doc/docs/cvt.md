@@ -1,3 +1,9 @@
+## Current Value Table (CVT)
+
+The ``Controller`` maintains a **Current Value Table**, or CVT, which maintains the current states of all controls in the application.  The CVT is shared with the user interface via the web service method ``General/cvt?force={value}``.  
+
+The UI polls at a rate of 1 Hz for the CVT.  If the CVT has not changed since the last time it was polled, then the web service will return an empty object.  The client can force an update if they submit a value not equal to 0.  This is useful in the case where a page is reloaded or if it the first time the page has loaded.  
+
 Filter:
 * pos
 * length
