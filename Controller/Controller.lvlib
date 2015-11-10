@@ -23,6 +23,8 @@
 		<Item Name="Speaker MSG.lvclass" Type="LVClass" URL="../Messages/Change Speaker MSG/Speaker MSG.lvclass"/>
 		<Item Name="Start Calibration MSG.lvclass" Type="LVClass" URL="../Messages/Start Calibration MSG/Start Calibration MSG.lvclass"/>
 		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Messages/Stop Subactors/Stop Subactors.lvclass"/>
+		<Item Name="Toggle Filter Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Filter Cycle/Toggle Filter Cycle MSG.lvclass"/>
+		<Item Name="Toggle Speaker Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Speaker Cycle/Toggle Speaker Cycle MSG.lvclass"/>
 		<Item Name="Update Controller Data MSG.lvclass" Type="LVClass" URL="../Update Controller Data MSG.lvclass"/>
 		<Item Name="Update CVT Data.lvclass" Type="LVClass" URL="../Messages/Update CVT/Update CVT Data.lvclass"/>
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
