@@ -8,7 +8,7 @@
 		<Item Name="Change Meerstetter Power.lvclass" Type="LVClass" URL="../Change Power MSG/Change Meerstetter Power.lvclass"/>
 	</Item>
 	<Item Name="Core" Type="Folder">
-		<Item Name="Meerstetter TEC.lvclass" Type="LVClass" URL="../Driver/Meerstetter TEC.lvclass"/>
+		<Item Name="Meerstetter TEC.lvclass" Type="LVClass" URL="../Meerstetter TEC.lvclass"/>
 		<Item Name="mTEC Data.lvclass" Type="LVClass" URL="../Data/mTEC Data.lvclass"/>
 	</Item>
 </Library>
