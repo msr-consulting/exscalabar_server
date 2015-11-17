@@ -742,6 +742,7 @@ DirectoryIndex index.htm
 					<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
 					<Item Name="Post-Build Action.vi" Type="VI" URL="../Calibration/Common/Post-Build Action.vi"/>
 					<Item Name="Cycle State STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Cylce State Step/Cycle State STEP.lvclass"/>
+					<Item Name="Set cycle state STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Set cycle state/Set cycle state STEP.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
@@ -1840,6 +1841,12 @@ DirectoryIndex index.htm
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="CRD CVT2.vi" Type="VI" URL="../Controller/CVT/CRD CVT2.vi"/>
+			<Item Name="PAS CVT.vi" Type="VI" URL="../Controller/CVT/PAS CVT.vi"/>
+			<Item Name="CVT to JSON Core.vi" Type="VI" URL="../Controller/CVT/CVT to JSON Core.vi"/>
+			<Item Name="CVT to JSON.vi" Type="VI" URL="../Controller/CVT/CVT to JSON.vi"/>
+			<Item Name="Insert CVT Data Core.vi" Type="VI" URL="../Controller/Insert CVT Data Core.vi"/>
+			<Item Name="Insert CVT Data.vi" Type="VI" URL="../Controller/CVT/Insert CVT Data.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
