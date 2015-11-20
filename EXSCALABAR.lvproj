@@ -1838,9 +1838,6 @@ DirectoryIndex index.htm
 			<Item Name="Ctl Method.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Ctl Method.ctl"/>
 			<Item Name="Input Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Input Selection.ctl"/>
 			<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="CRD CVT2.vi" Type="VI" URL="../Controller/CVT/CRD CVT2.vi"/>
 			<Item Name="PAS CVT.vi" Type="VI" URL="../Controller/CVT/PAS CVT.vi"/>
 			<Item Name="CVT to JSON Core.vi" Type="VI" URL="../Controller/CVT/CVT to JSON Core.vi"/>
