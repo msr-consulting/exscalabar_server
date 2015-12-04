@@ -283,6 +283,7 @@ DirectoryIndex index.htm
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
 					<Property Name="ws.guid" Type="Str">{D83522D4-BECC-4AFB-9BC9-C1E8002ED617}</Property>
 					<Property Name="ws.modifyLibraryFile" Type="Bool">true</Property>
+					<Property Name="ws.public_folder_name" Type="Str"></Property>
 					<Property Name="ws.remoteDebugging" Type="Bool">false</Property>
 					<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
 					<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
@@ -1844,6 +1845,9 @@ DirectoryIndex index.htm
 			<Item Name="CVT to JSON.vi" Type="VI" URL="../Controller/CVT/CVT to JSON.vi"/>
 			<Item Name="Insert CVT Data Core.vi" Type="VI" URL="../Controller/Insert CVT Data Core.vi"/>
 			<Item Name="Insert CVT Data.vi" Type="VI" URL="../Controller/CVT/Insert CVT Data.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

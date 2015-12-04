@@ -1,0 +1,3 @@
+[submodule "Web Services/Public Content"]
+	path = Web Services/Public Content
+	url = https://github.com/lo-co/exscalabar
