@@ -724,6 +724,12 @@ DirectoryIndex index.htm
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 						</Item>
+						<Item Name="Humidity" Type="HTTP WebResources Container">
+							<Item Name="hPID.vi" Type="VI" URL="../Web Services/hPID.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
+						</Item>
 					</Item>
 					<Item Name="Startup VIs" Type="Startup VIs Container"/>
 				</Item>
@@ -1690,6 +1696,7 @@ DirectoryIndex index.htm
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
@@ -1701,6 +1708,8 @@ DirectoryIndex index.htm
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
+				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
@@ -1839,12 +1848,6 @@ DirectoryIndex index.htm
 			<Item Name="Ctl Method.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Ctl Method.ctl"/>
 			<Item Name="Input Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Input Selection.ctl"/>
 			<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
-			<Item Name="CRD CVT2.vi" Type="VI" URL="../Controller/CVT/CRD CVT2.vi"/>
-			<Item Name="PAS CVT.vi" Type="VI" URL="../Controller/CVT/PAS CVT.vi"/>
-			<Item Name="CVT to JSON Core.vi" Type="VI" URL="../Controller/CVT/CVT to JSON Core.vi"/>
-			<Item Name="CVT to JSON.vi" Type="VI" URL="../Controller/CVT/CVT to JSON.vi"/>
-			<Item Name="Insert CVT Data Core.vi" Type="VI" URL="../Controller/Insert CVT Data Core.vi"/>
-			<Item Name="Insert CVT Data.vi" Type="VI" URL="../Controller/CVT/Insert CVT Data.vi"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
