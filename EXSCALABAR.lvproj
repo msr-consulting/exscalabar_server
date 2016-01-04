@@ -524,6 +524,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.method" Type="Int">1</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
+							<Item Name="Write Ringdown Data.vi" Type="VI" URL="../Web Services/Write Ringdown Data.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
 						</Item>
 						<Item Name="PAS_CMD" Type="HTTP WebResources Container">
 							<Item Name="Spk.vi" Type="VI" URL="../Web Services/Spk.vi">
