@@ -729,7 +729,15 @@ DirectoryIndex index.htm
 							</Item>
 						</Item>
 						<Item Name="Humidity" Type="HTTP WebResources Container">
-							<Item Name="hPID.vi" Type="VI" URL="../Web Services/hPID.vi">
+							<Item Name="hCtlParams.vi" Type="VI" URL="../Web Services/hCtlParams.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
+							<Item Name="hRHsp.vi" Type="VI" URL="../Web Services/hRHsp.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
+							<Item Name="hEnable.vi" Type="VI" URL="../Web Services/Humdifier/hEnable.vi">
 								<Property Name="ws.method" Type="Int">1</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
@@ -1438,7 +1446,6 @@ DirectoryIndex index.htm
 		<Item Name="Retrieve Numeric String.vi" Type="VI" URL="../reusable/General/String Utilities/Retrieve Numeric String.vi"/>
 		<Item Name="Reply Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Reply Msg/Reply Msg.lvclass"/>
 		<Item Name="Mean-SGL.vi" Type="VI" URL="../reusable/General/Math/Mean-SGL.vi"/>
-		<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/examples/DAQmx/_Utility/Get Terminal Name with Device Prefix.vi"/>
 		<Item Name="Ozone State.ctl" Type="VI" URL="../Calibrations/Ozone/Ozone State.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -1856,6 +1863,7 @@ DirectoryIndex index.htm
 			<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
 			<Item Name="Configure Humidifiers.vi" Type="VI" URL="../Controller/Configure Humidifiers.vi"/>
 			<Item Name="Get Current Control Values.vi" Type="VI" URL="../Controller/Get Current Control Values.vi"/>
+			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/examples/DAQmx/_Utility/Get Terminal Name with Device Prefix.vi"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
