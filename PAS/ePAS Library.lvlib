@@ -36,6 +36,7 @@
 			<Item Name="Load New Speaker Chirp.lvclass" Type="LVClass" URL="../Commands/Load New Speaker Chirp/Load New Speaker Chirp.lvclass"/>
 		</Item>
 		<Item Name="Change Denuded Bypass State.lvclass" Type="LVClass" URL="../Commands/Change Denuded Bypass State/Change Denuded Bypass State.lvclass"/>
+		<Item Name="Set Wvfm Write CMD.lvclass" Type="LVClass" URL="../Commands/Set Wvfm Write/Set Wvfm Write CMD.lvclass"/>
 	</Item>
 	<Item Name="Core" Type="Folder">
 		<Item Name="ePAS.lvclass" Type="LVClass" URL="../Instrument/ePAS.lvclass"/>
