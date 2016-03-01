@@ -235,6 +235,7 @@ DirectoryIndex index.htm
 				</Item>
 				<Item Name="TECs" Type="Folder">
 					<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../Devices/Meerstetter TEC/Meerstetter Lib.lvlib"/>
+					<Item Name="TE Cooler.lvlib" Type="Library" URL="../Devices/TE Cooler/TE Cooler.lvlib"/>
 				</Item>
 				<Item Name="Test Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Test/Test Device.lvclass"/>
 				<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
