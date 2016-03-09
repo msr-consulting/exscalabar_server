@@ -30,7 +30,6 @@
 		<Item Name="Update Device Configuration MSG.lvclass" Type="LVClass" URL="../Messages/Update Device Configuration MSG/Update Device Configuration MSG.lvclass"/>
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
-		<Item Name="Update Housekeeping MSG.lvclass" Type="LVClass" URL="../Messages/Update Housekeeping/Update Housekeeping MSG.lvclass"/>
 		<Item Name="Update Humidifier Control MSG.lvclass" Type="LVClass" URL="../Messages/Update Humidifier Control/Update Humidifier Control MSG.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
