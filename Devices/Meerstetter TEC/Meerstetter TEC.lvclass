@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <LVClass LVVersion="14008000">
 	<Property Name="NI.Lib.ContainingLib" Type="Str">Meerstetter Lib.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../Meerstetter Lib.lvlib</Property>
@@ -106,7 +106,34 @@
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1082143248</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+		</Item>
+		<Item Name="Change Output Selection.vi" Type="VI" URL="../Driver/Commands/Change Output Selection.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'Q!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%:!=!!?!!!P&amp;5VF:8*T&gt;'6U&gt;'6S)%RJ9CZM&gt;GRJ9B&gt;.:76S=X2F&gt;(2F=C"525-O&lt;(:D&lt;'&amp;T=Q!-6%6$)$%Q/4!A&lt;X6U!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!:A$R!!!!!!!!!!%54X6U=(6U)&amp;.F&lt;'6D&gt;'FP&lt;CZD&gt;'Q!35!7!!1+5X2B&gt;'FD)%^'2AF4&gt;'&amp;U;7-A4UY,4'FW:3"02E9P4UY*3&amp;=A27ZB9GRF!!!14X6U=(6U)&amp;.F&lt;'6D&gt;'FP&lt;A!!2%"Q!"Y!!#]6476F=H.U:82U:8)A4'FC,GRW&lt;'FC&amp;UVF:8*T&gt;'6U&gt;'6S)&amp;2&amp;1SZM&gt;G.M98.T!!N525-A-4!Z-#"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!)!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+		</Item>
+		<Item Name="Change Sine Ramp Start.vi" Type="VI" URL="../Driver/Commands/Change Sine Ramp Start.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'&gt;!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%:!=!!?!!!P&amp;5VF:8*T&gt;'6U&gt;'6S)%RJ9CZM&gt;GRJ9B&gt;.:76S=X2F&gt;(2F=C"525-O&lt;(:D&lt;'&amp;T=Q!-6%6$)$%Q/4!A&lt;X6U!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!5Q$R!!!!!!!!!!%:5WFO:3"S97VQ)(.U98*U)("P;7ZU,G.U&lt;!!R1"9!!AV.:7&amp;T&gt;8*F:#"U:7VQ#V2B=G&gt;F&gt;#"U:7VQ!!N4&gt;'&amp;S&gt;#"Q&lt;WFO&gt;!"%1(!!(A!!,R6.:76S=X2F&gt;(2F=C"-;7)O&lt;(:M;7)8476F=H.U:82U:8)A6%6$,GRW9WRB=X-!#V2&amp;1S!R-$EQ)'FO!'%!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!A!!!!1!!!.!!!!$!!!!!!!!!!!!!!"!!E!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074278928</Property>
+		</Item>
+		<Item Name="Change Target Temp Source.vi" Type="VI" URL="../Driver/Commands/Change Target Temp Source.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'O!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%:!=!!?!!!P&amp;5VF:8*T&gt;'6U&gt;'6S)%RJ9CZM&gt;GRJ9B&gt;.:76S=X2F&gt;(2F=C"525-O&lt;(:D&lt;'&amp;T=Q!-6%6$)$%Q/4!A&lt;X6U!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!:!$R!!!!!!!!!!%76'&amp;S:W6U)(2F&lt;8!A=W^V=G.F,G.U&lt;!"&amp;1"9!!B*598*H:81A4W*K:7.U)&amp;2F&lt;8!34W*K:7.U)&amp;2B=G&gt;F&gt;#"5:7VQ!"*598*H:81A&gt;'6N=#"T&lt;X6S9W5!!%2!=!!?!!!P&amp;5VF:8*T&gt;'6U&gt;'6S)%RJ9CZM&gt;GRJ9B&gt;.:76S=X2F&gt;(2F=C"525-O&lt;(:D&lt;'&amp;T=Q!,6%6$)$%Q/4!A;7Y!91$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!(!!A$!!"Y!!!.#!!!!!!!!!!!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!#!!!!"!!!!U!!!!-!!!!!!!!!!!!!!%!#1!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 		</Item>
 		<Item Name="Disable Flash Save.vi" Type="VI" URL="../Driver/Commands/Disable Flash Save.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;+!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%:!=!!?!!!P&amp;5VF:8*T&gt;'6U&gt;'6S)%RJ9CZM&gt;GRJ9B&gt;.:76S=X2F&gt;(2F=C"525-O&lt;(:D&lt;'&amp;T=Q!-6%6$)$%Q/4!A&lt;X6U!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!2%"Q!"Y!!#]6476F=H.U:82U:8)A4'FC,GRW&lt;'FC&amp;UVF:8*T&gt;'6U&gt;'6S)&amp;2&amp;1SZM&gt;G.M98.T!!N525-A-4!Z-#"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!1!"Q-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!)!!!!!!</Property>
