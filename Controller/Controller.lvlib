@@ -17,6 +17,7 @@
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
 		<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
+		<Item Name="Pack Message for Shipping .lvclass" Type="LVClass" URL="../Messages/Pack Message for Shipping/Pack Message for Shipping .lvclass"/>
 		<Item Name="PowerSupply MSG.lvclass" Type="LVClass" URL="../Messages/Power Supply/PowerSupply MSG.lvclass"/>
 		<Item Name="Purge Switch MSG.lvclass" Type="LVClass" URL="../Messages/Purge Switch Message/Purge Switch MSG.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
@@ -31,6 +32,7 @@
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
 		<Item Name="Update Humidifier Control MSG.lvclass" Type="LVClass" URL="../Messages/Update Humidifier Control/Update Humidifier Control MSG.lvclass"/>
+		<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TEC PID/Update TEC PID.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
 </Library>
