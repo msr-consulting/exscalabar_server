@@ -494,6 +494,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.useHeaders" Type="Bool">true</Property>
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
+							<Item Name="DenudedBypass.vi" Type="VI" URL="../Web Services/DenudedBypass.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
 						</Item>
 						<Item Name="CRDS_CMD" Type="HTTP WebResources Container">
 							<Item Name="fblue.vi" Type="VI" URL="../Web Services/fblue.vi">
@@ -839,6 +843,16 @@ DirectoryIndex index.htm
 						</Item>
 						<Item Name="tetech" Type="HTTP WebResources Container">
 							<Item Name="pid.vi" Type="VI" URL="../Web Services/tetech/pid.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
+							<Item Name="multipliers.vi" Type="VI" URL="../Web Services/tetech/multipliers.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
+						</Item>
+						<Item Name="meerstetter" Type="HTTP WebResources Container">
+							<Item Name="mctl.vi" Type="VI" URL="../Web Services/mtec/mctl.vi">
 								<Property Name="ws.method" Type="Int">1</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
@@ -1922,13 +1936,13 @@ DirectoryIndex index.htm
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/examples/DAQmx/_Utility/Get Terminal Name with Device Prefix.vi"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="Target temp source.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Target temp source.ctl"/>
 			<Item Name="Sine ramp start point.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Sine ramp start point.ctl"/>
 			<Item Name="Output Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Output Selection.ctl"/>
 			<Item Name="Get Std Devs.vi" Type="VI" URL="../reusable/General/Math/Get Std Devs.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

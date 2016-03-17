@@ -8,14 +8,23 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages" Type="Folder">
+		<Item Name="For mTECs" Type="Folder">
+			<Item Name="Update Meerstetter Ctl Val.lvclass" Type="LVClass" URL="../Messages/Update Meerstetter Ctl Val MSG/Update Meerstetter Ctl Val.lvclass"/>
+		</Item>
+		<Item Name="For TEC" Type="Folder">
+			<Item Name="Update TEC Multipliers.lvclass" Type="LVClass" URL="../Messages/Update TEC Multipliers/Update TEC Multipliers.lvclass"/>
+			<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TEC PID/Update TEC PID.lvclass"/>
+		</Item>
 		<Item Name="From File Actor" Type="Folder">
 			<Item Name="Save Main File MSG.lvclass" Type="LVClass" URL="../Messages/Saving File MSG/Save Main File MSG.lvclass"/>
 		</Item>
+		<Item Name="Change Denuder State MSG.lvclass" Type="LVClass" URL="../Messages/Change Denuder State/Change Denuder State MSG.lvclass"/>
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Individual Power Supply MSG.lvclass" Type="LVClass" URL="../Messages/Change Individual Power Supply State/Change Individual Power Supply MSG.lvclass"/>
 		<Item Name="Change Inlet MSG.lvclass" Type="LVClass" URL="../Messages/Change Inlet MSG/Change Inlet MSG.lvclass"/>
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
+		<Item Name="Exe Write Taus.lvclass" Type="LVClass" URL="../Messages/Execute Write Taus/Exe Write Taus.lvclass"/>
 		<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
 		<Item Name="Pack Message for Shipping .lvclass" Type="LVClass" URL="../Messages/Pack Message for Shipping/Pack Message for Shipping .lvclass"/>
 		<Item Name="PowerSupply MSG.lvclass" Type="LVClass" URL="../Messages/Power Supply/PowerSupply MSG.lvclass"/>
@@ -32,7 +41,6 @@
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
 		<Item Name="Update Humidifier Control MSG.lvclass" Type="LVClass" URL="../Messages/Update Humidifier Control/Update Humidifier Control MSG.lvclass"/>
-		<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TEC PID/Update TEC PID.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
 </Library>

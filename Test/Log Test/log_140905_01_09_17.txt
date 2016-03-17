@@ -1,4 +1,0 @@
-01:09:17.00	Controller is on line.
-01:09:17.01	Instrument "PAS" is in configuration.
-01:09:17.18	Instrument "CRDS" is in configuration.
-01:09:28.53	Controller is closing

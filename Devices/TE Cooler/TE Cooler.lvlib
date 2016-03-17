@@ -11,6 +11,7 @@
 		<Item Name="Test TEC.vi" Type="VI" URL="../Test TEC.vi"/>
 	</Item>
 	<Item Name="TE Cooler.lvclass" Type="LVClass" URL="../TE Cooler.lvclass"/>
+	<Item Name="Constructor.vi" Type="VI" URL="../Constructor.vi"/>
 	<Item Name="Example.vi" Type="VI" URL="../Example.vi"/>
 	<Item Name="TECData.lvclass" Type="LVClass" URL="../Data/TECData.lvclass"/>
 </Library>
