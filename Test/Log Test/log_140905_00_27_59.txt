@@ -1,6 +1,0 @@
-00:27:59.34	Controller is on line.
-00:28:04.56	Instrument "PAS" is in configuration.
-00:28:06.64	Instrument "CRDS" is in configuration.
-00:28:47.38	Instrument "CRDS" shutting down.
-00:28:49.63	Instrument "PAS" shutting down.
-00:28:52.37	Controller is closing

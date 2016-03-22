@@ -19,6 +19,7 @@
 			<Item Name="Set iSpkEn MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Set iSpkEn MSG/Set iSpkEn MSG.lvclass"/>
 			<Item Name="Spk Cycle MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Speaker Cycle MSG/Spk Cycle MSG.lvclass"/>
 		</Item>
+		<Item Name="Ship Wvfm Data MSG.lvclass" Type="LVClass" URL="../Actor/Messages/Ship Wvfm Data Msg/Ship Wvfm Data MSG.lvclass"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
 		<Item Name="Laser" Type="Folder">
