@@ -44,6 +44,7 @@
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
 		<Item Name="Start PAS Waveform File MSG.lvclass" Type="LVClass" URL="../Messages/Start PAS Wvfm File MSG/Start PAS Waveform File MSG.lvclass"/>
 		<Item Name="Update Humidifier Control MSG.lvclass" Type="LVClass" URL="../Messages/Update Humidifier Control/Update Humidifier Control MSG.lvclass"/>
+		<Item Name="Request Write Files.lvclass" Type="LVClass" URL="../Messages/Request File Write/Request Write Files.lvclass"/>
 		<Item Name="Stop PAS Wvfm Write MSG.lvclass" Type="LVClass" URL="../Messages/Stop PAS Wvfm Write MSG/Stop PAS Wvfm Write MSG.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
