@@ -731,6 +731,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.method" Type="Int">1</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
+							<Item Name="WVFM_to_File.vi" Type="VI" URL="../Web Services/PAS/WVFM_to_File.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
 						</Item>
 						<Item Name="Calibration" Type="HTTP WebResources Container">
 							<Item Name="saveCalFile.vi" Type="VI" URL="../Web Services/saveCalFile.vi">
@@ -1935,6 +1939,7 @@ DirectoryIndex index.htm
 			<Item Name="Sine ramp start point.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Sine ramp start point.ctl"/>
 			<Item Name="Output Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Output Selection.ctl"/>
 			<Item Name="Get Std Devs.vi" Type="VI" URL="../reusable/General/Math/Get Std Devs.vi"/>
+			<Item Name="Remove Null Characters.vi" Type="VI" URL="../reusable/General/Remove Null Characters.vi"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
