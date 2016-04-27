@@ -98,15 +98,6 @@
 			<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
 		</Item>
 	</Item>
-	<Item Name="Init Data Object.vi" Type="VI" URL="../Init Data Object.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$5!!!!"!!%!!!!/E"Q!"Y!!#)/1V*%5S"-;7)O&lt;(:M;7)21V*%5S"%982B,GRW9WRB=X-!!!V$5E24)%2B&gt;'%A&lt;X6U!$J!=!!?!!!C$E.32&amp;-A4'FC,GRW&lt;'FC%5.32&amp;-A2'&amp;U93ZM&gt;G.M98.T!!!-1V*%5S"%982B)'FO!!"5!0!!$!!!!!!!!!!"!!!!!!!!!!!!!!!!!!!!!A-!!(A!!!!!!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!EA!!!!!"!!-!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1350574608</Property>
-	</Item>
 	<Item Name="Generate Unique Header.vi" Type="VI" URL="../Generate Unique Header.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;6!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!-0````]'3'6B:'6S!!!51%!!!@````]!"1:):7&amp;E:8)!!$J!=!!?!!!C$E.32&amp;-A4'FC,GRW&lt;'FC%5.32&amp;-A2'&amp;U93ZM&gt;G.M98.T!!!.1V*%5S"%982B)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$J!=!!?!!!C$E.32&amp;-A4'FC,GRW&lt;'FC%5.32&amp;-A2'&amp;U93ZM&gt;G.M98.T!!!-1V*%5S"%982B)'FO!!"5!0!!$!!$!!1!"A!(!!1!"!!%!!1!#!!%!!1!#1-!!(A!!!U)!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!E!!!!!!"!!I!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>

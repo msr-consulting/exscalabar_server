@@ -495,8 +495,19 @@ DirectoryIndex index.htm
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 							<Item Name="DenudedBypass.vi" Type="VI" URL="../Web Services/DenudedBypass.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 						</Item>
 						<Item Name="CRDS_CMD" Type="HTTP WebResources Container">
@@ -728,12 +739,49 @@ DirectoryIndex index.htm
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 							<Item Name="wvfm.vi" Type="VI" URL="../Web Services/wvfm.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 							<Item Name="WVFM_to_File.vi" Type="VI" URL="../Web Services/PAS/WVFM_to_File.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+							</Item>
+							<Item Name="modulation.vi" Type="VI" URL="../Web Services/modulation.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 						</Item>
 						<Item Name="Calibration" Type="HTTP WebResources Container">
@@ -847,18 +895,51 @@ DirectoryIndex index.htm
 						</Item>
 						<Item Name="tetech" Type="HTTP WebResources Container">
 							<Item Name="pid.vi" Type="VI" URL="../Web Services/tetech/pid.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 							<Item Name="multipliers.vi" Type="VI" URL="../Web Services/tetech/multipliers.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 						</Item>
 						<Item Name="meerstetter" Type="HTTP WebResources Container">
 							<Item Name="mctl.vi" Type="VI" URL="../Web Services/mtec/mctl.vi">
+								<Property Name="ws.buffered" Type="Bool">true</Property>
+								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+								<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+								<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.outputFormat" Type="Int">2</Property>
+								<Property Name="ws.outputType" Type="Int">0</Property>
+								<Property Name="ws.permissions" Type="Str"></Property>
+								<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 								<Property Name="ws.type" Type="Int">1</Property>
+								<Property Name="ws.uri" Type="Str"></Property>
+								<Property Name="ws.useHeaders" Type="Bool">true</Property>
+								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
 						</Item>
 					</Item>
