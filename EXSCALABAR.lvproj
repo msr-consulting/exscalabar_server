@@ -2022,10 +2022,10 @@ DirectoryIndex index.htm
 			<Item Name="Output Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Output Selection.ctl"/>
 			<Item Name="Get Std Devs.vi" Type="VI" URL="../reusable/General/Math/Get Std Devs.vi"/>
 			<Item Name="Remove Null Characters.vi" Type="VI" URL="../reusable/General/Remove Null Characters.vi"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
