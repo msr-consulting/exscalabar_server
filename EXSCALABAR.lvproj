@@ -276,6 +276,7 @@ DirectoryIndex index.htm
 				<Item Name="PXI-6704.pdf" Type="Document" URL="../Support/PXI-6704.pdf"/>
 				<Item Name="PXI-7842R.pdf" Type="Document" URL="../Support/PXI-7842R.pdf"/>
 				<Item Name="ozone_cal.xml" Type="Document" URL="../Support/ozone_cal.xml"/>
+				<Item Name="Handle Errors.vi" Type="VI" URL="../../../datid/exscalabar_server/Support/Handle Errors.vi"/>
 			</Item>
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
@@ -976,6 +977,7 @@ DirectoryIndex index.htm
 			<Item Name="Test Build.vi" Type="VI" URL="../Test/Test Build.vi"/>
 			<Item Name="Test Variant.vi" Type="VI" URL="../Test/Test Variant.vi"/>
 			<Item Name="Test XML.vi" Type="VI" URL="../Calibrations/Ozone/Test/Test XML.vi"/>
+			<Item Name="Test Error Handling.vi" Type="VI" URL="../../../datid/exscalabar_server/Test/Test Error Handling.vi"/>
 		</Item>
 		<Item Name="FPGA Target" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
