@@ -228,6 +228,7 @@ DirectoryIndex index.htm
 				<Item Name="Network Actor Library.lvlib" Type="Library" URL="../Network Actor/Network Actor Library.lvlib"/>
 				<Item Name="Ex Nested.lvclass" Type="LVClass" URL="../SuperActor/Ex Nested.lvclass"/>
 				<Item Name="Calibration.lvlib" Type="Library" URL="../Calibration/Calibration.lvlib"/>
+				<Item Name="Power Library.lvlib" Type="Library" URL="../Power/Power Library.lvlib"/>
 			</Item>
 			<Item Name="Devices" Type="Folder">
 				<Item Name="PPT" Type="Folder">
