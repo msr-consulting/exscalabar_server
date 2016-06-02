@@ -603,6 +603,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.useHeaders" Type="Bool">true</Property>
 								<Property Name="ws.useStandardURL" Type="Bool">false</Property>
 							</Item>
+							<Item Name="WriteTausFile.vi" Type="VI" URL="../Web Services/WriteTausFile.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
 						</Item>
 						<Item Name="PAS_CMD" Type="HTTP WebResources Container">
 							<Item Name="Spk.vi" Type="VI" URL="../Web Services/Spk.vi">
@@ -2066,10 +2070,10 @@ DirectoryIndex index.htm
 			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="FPGAServerV2.lvbitx" Type="Document" URL="../FPGA Bitfiles/FPGAServerV2.lvbitx"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="FPGAServerV2.lvbitx" Type="Document" URL="../FPGA Bitfiles/FPGAServerV2.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

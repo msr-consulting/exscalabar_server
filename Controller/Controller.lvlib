@@ -19,14 +19,22 @@
 		<Item Name="From File Actor" Type="Folder">
 			<Item Name="Save Main File MSG.lvclass" Type="LVClass" URL="../Messages/Saving File MSG/Save Main File MSG.lvclass"/>
 		</Item>
+		<Item Name="Writing PASWvfm Data" Type="Folder">
+			<Item Name="Start PAS Waveform File MSG.lvclass" Type="LVClass" URL="../Messages/Start PAS Wvfm File MSG/Start PAS Waveform File MSG.lvclass"/>
+			<Item Name="Stop PAS Wvfm Write MSG.lvclass" Type="LVClass" URL="../Messages/Stop PAS Wvfm Write MSG/Stop PAS Wvfm Write MSG.lvclass"/>
+			<Item Name="Exe Write PAS Waveforms.lvclass" Type="LVClass" URL="../Messages/Exe Write PAS Waveform/Exe Write PAS Waveforms.lvclass"/>
+		</Item>
+		<Item Name="Writing Tau Data" Type="Folder">
+			<Item Name="Exe Write Taus.lvclass" Type="LVClass" URL="../Messages/Execute Write Taus/Exe Write Taus.lvclass"/>
+			<Item Name="Start Tau Write MSG.lvclass" Type="LVClass" URL="../Messages/Start Tau Write MSG/Start Tau Write MSG.lvclass"/>
+			<Item Name="Stop Writing Taus MSG.lvclass" Type="LVClass" URL="../Messages/Stop Writing Taus MSG/Stop Writing Taus MSG.lvclass"/>
+		</Item>
 		<Item Name="Change Denuder State MSG.lvclass" Type="LVClass" URL="../Messages/Change Denuder State/Change Denuder State MSG.lvclass"/>
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Individual Power Supply MSG.lvclass" Type="LVClass" URL="../Messages/Change Individual Power Supply State/Change Individual Power Supply MSG.lvclass"/>
 		<Item Name="Change Inlet MSG.lvclass" Type="LVClass" URL="../Messages/Change Inlet MSG/Change Inlet MSG.lvclass"/>
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
-		<Item Name="Exe Write Taus.lvclass" Type="LVClass" URL="../Messages/Execute Write Taus/Exe Write Taus.lvclass"/>
-		<Item Name="Exe Write PAS Waveforms.lvclass" Type="LVClass" URL="../Messages/Exe Write PAS Waveform/Exe Write PAS Waveforms.lvclass"/>
 		<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
 		<Item Name="Pack Message for Shipping .lvclass" Type="LVClass" URL="../Messages/Pack Message for Shipping/Pack Message for Shipping .lvclass"/>
 		<Item Name="PowerSupply MSG.lvclass" Type="LVClass" URL="../Messages/Power Supply/PowerSupply MSG.lvclass"/>
@@ -42,10 +50,9 @@
 		<Item Name="Update Device Configuration MSG.lvclass" Type="LVClass" URL="../Messages/Update Device Configuration MSG/Update Device Configuration MSG.lvclass"/>
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
-		<Item Name="Start PAS Waveform File MSG.lvclass" Type="LVClass" URL="../Messages/Start PAS Wvfm File MSG/Start PAS Waveform File MSG.lvclass"/>
 		<Item Name="Update Humidifier Control MSG.lvclass" Type="LVClass" URL="../Messages/Update Humidifier Control/Update Humidifier Control MSG.lvclass"/>
 		<Item Name="Request Write Files.lvclass" Type="LVClass" URL="../Messages/Request File Write/Request Write Files.lvclass"/>
-		<Item Name="Stop PAS Wvfm Write MSG.lvclass" Type="LVClass" URL="../Messages/Stop PAS Wvfm Write MSG/Stop PAS Wvfm Write MSG.lvclass"/>
+		<Item Name="Instr Exe Write to File.lvclass" Type="LVClass" URL="../Messages/Instr Exe Write to File/Instr Exe Write to File.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
 </Library>
