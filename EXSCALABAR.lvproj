@@ -789,6 +789,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.useHeaders" Type="Bool">true</Property>
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 							</Item>
+							<Item Name="SpkFilterConnect.vi" Type="VI" URL="../Web Services/PAS/SpkFilterConnect.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
 						</Item>
 						<Item Name="Calibration" Type="HTTP WebResources Container">
 							<Item Name="saveCalFile.vi" Type="VI" URL="../Web Services/saveCalFile.vi">
