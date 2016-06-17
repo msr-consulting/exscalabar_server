@@ -4,14 +4,19 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Controls" Type="Folder">
-		<Item Name="TECData.ctl" Type="VI" URL="../Controls/TECData.ctl"/>
+	<Item Name="Core" Type="Folder">
+		<Item Name="Controls" Type="Folder">
+			<Item Name="TECData.ctl" Type="VI" URL="../Controls/TECData.ctl"/>
+		</Item>
+		<Item Name="Example" Type="Folder">
+			<Item Name="Test TEC.vi" Type="VI" URL="../Test TEC.vi"/>
+		</Item>
+		<Item Name="TE Cooler.lvclass" Type="LVClass" URL="../TE Cooler.lvclass"/>
+		<Item Name="Constructor.vi" Type="VI" URL="../Constructor.vi"/>
+		<Item Name="Example.vi" Type="VI" URL="../Example.vi"/>
+		<Item Name="TECData.lvclass" Type="LVClass" URL="../Data/TECData.lvclass"/>
 	</Item>
-	<Item Name="Example" Type="Folder">
-		<Item Name="Test TEC.vi" Type="VI" URL="../Test TEC.vi"/>
+	<Item Name="Actor" Type="Folder">
+		<Item Name="Change PID Controls MSG.lvclass" Type="LVClass" URL="../Actor/Change PID Controls MSG/Change PID Controls MSG.lvclass"/>
 	</Item>
-	<Item Name="TE Cooler.lvclass" Type="LVClass" URL="../TE Cooler.lvclass"/>
-	<Item Name="Constructor.vi" Type="VI" URL="../Constructor.vi"/>
-	<Item Name="Example.vi" Type="VI" URL="../Example.vi"/>
-	<Item Name="TECData.lvclass" Type="LVClass" URL="../Data/TECData.lvclass"/>
 </Library>

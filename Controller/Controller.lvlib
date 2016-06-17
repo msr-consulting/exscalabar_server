@@ -36,7 +36,6 @@
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
 		<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
-		<Item Name="Pack Message for Shipping .lvclass" Type="LVClass" URL="../Messages/Pack Message for Shipping/Pack Message for Shipping .lvclass"/>
 		<Item Name="PowerSupply MSG.lvclass" Type="LVClass" URL="../Messages/Power Supply/PowerSupply MSG.lvclass"/>
 		<Item Name="Purge Switch MSG.lvclass" Type="LVClass" URL="../Messages/Purge Switch Message/Purge Switch MSG.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
