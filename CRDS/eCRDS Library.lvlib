@@ -13,6 +13,8 @@
 		<Item Name="Update PMT Gains MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Update PMT Gains MSG/Update PMT Gains MSG.lvclass"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
+		<Item Name="Change Laser Gain CMD.lvclass" Type="LVClass" URL="../Commands/Change Laser Gains/Change Laser Gain CMD.lvclass"/>
+		<Item Name="Change PMT Gain CMD.lvclass" Type="LVClass" URL="../Commands/Change PMT Gains/Change PMT Gain CMD.lvclass"/>
 		<Item Name="Laser Enable CMD.lvclass" Type="LVClass" URL="../Commands/Change Laser Enable State/Laser Enable CMD.lvclass"/>
 		<Item Name="Reset Blue Laser Rep Rate.lvclass" Type="LVClass" URL="../Commands/Reset Blue Rep Rate/Reset Blue Laser Rep Rate.lvclass"/>
 		<Item Name="Reset Red Laser Rep Rate.lvclass" Type="LVClass" URL="../Commands/Reset Red Rep Rate/Reset Red Laser Rep Rate.lvclass"/>
