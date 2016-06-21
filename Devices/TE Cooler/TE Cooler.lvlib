@@ -17,6 +17,7 @@
 		<Item Name="TECData.lvclass" Type="LVClass" URL="../Data/TECData.lvclass"/>
 	</Item>
 	<Item Name="Actor" Type="Folder">
-		<Item Name="Change PID Controls MSG.lvclass" Type="LVClass" URL="../Actor/Change PID Controls MSG/Change PID Controls MSG.lvclass"/>
+		<Item Name="Update TEC Multipliers.lvclass" Type="LVClass" URL="../../../Controller/Messages/Update TEC Multipliers/Update TEC Multipliers.lvclass"/>
+		<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../../../Controller/Messages/Update TEC PID/Update TEC PID.lvclass"/>
 	</Item>
 </Library>

@@ -13,8 +13,8 @@
 			<Item Name="Update Meerstetter Ctl Val.lvclass" Type="LVClass" URL="../Messages/Update Meerstetter Ctl Val MSG/Update Meerstetter Ctl Val.lvclass"/>
 		</Item>
 		<Item Name="For TEC" Type="Folder">
-			<Item Name="Update TEC Multipliers.lvclass" Type="LVClass" URL="../Messages/Update TEC Multipliers/Update TEC Multipliers.lvclass"/>
-			<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TEC PID/Update TEC PID.lvclass"/>
+			<Item Name="Update TE Tech PID.lvclass" Type="LVClass" URL="../Messages/Update TE Tech PID/Update TE Tech PID.lvclass"/>
+			<Item Name="Update TE Tech Heating Params.lvclass" Type="LVClass" URL="../Messages/Update TE Tech Heating Params/Update TE Tech Heating Params.lvclass"/>
 		</Item>
 		<Item Name="From File Actor" Type="Folder">
 			<Item Name="Save Main File MSG.lvclass" Type="LVClass" URL="../Messages/Saving File MSG/Save Main File MSG.lvclass"/>

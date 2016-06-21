@@ -2078,7 +2078,6 @@ DirectoryIndex index.htm
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Pack Message for Shipping .lvclass" Type="LVClass" URL="../Controller/Messages/Pack Message for Shipping/Pack Message for Shipping .lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
