@@ -240,6 +240,7 @@ DirectoryIndex index.htm
 				<Item Name="TECs" Type="Folder">
 					<Item Name="Meerstetter Lib.lvlib" Type="Library" URL="../Devices/Meerstetter TEC/Meerstetter Lib.lvlib"/>
 					<Item Name="TE Cooler.lvlib" Type="Library" URL="../Devices/TE Cooler/TE Cooler.lvlib"/>
+					<Item Name="Generic TEC.lvlib" Type="Library" URL="../Devices/Generic TEC/Generic TEC.lvlib"/>
 				</Item>
 				<Item Name="Test Device.lvclass" Type="LVClass" URL="../Devices/Configurable Device/Test/Test Device.lvclass"/>
 				<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
@@ -330,6 +331,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.uri" Type="Str"></Property>
 								<Property Name="ws.useHeaders" Type="Bool">true</Property>
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+							</Item>
+							<Item Name="tec_ctl_params.vi" Type="VI" URL="../Web Services/tec_ctl_params.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
 							<Item Name="Save.vi" Type="VI" URL="../Web Services/Save.vi">
 								<Property Name="ws.buffered" Type="Bool">true</Property>

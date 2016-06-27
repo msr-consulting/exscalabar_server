@@ -18,6 +18,5 @@
 	</Item>
 	<Item Name="Actor" Type="Folder">
 		<Item Name="Update TEC Multipliers.lvclass" Type="LVClass" URL="../../../Controller/Messages/Update TEC Multipliers/Update TEC Multipliers.lvclass"/>
-		<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../../../Controller/Messages/Update TEC PID/Update TEC PID.lvclass"/>
 	</Item>
 </Library>
