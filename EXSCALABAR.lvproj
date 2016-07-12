@@ -1705,6 +1705,7 @@ DirectoryIndex index.htm
 		<Item Name="Input Selection.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Input Selection.ctl"/>
 		<Item Name="Read Parameters.ctl" Type="VI" URL="../Devices/Meerstetter TEC/Driver/Controls/Read Parameters.ctl"/>
 		<Item Name="Cfg Msg.ctl" Type="VI" URL="../reusable/DAQ Device/DAQ Device/Cfg Msg.ctl"/>
+		<Item Name="Test Pulse Train DIO.vi" Type="VI" URL="../Calibration/O3 Frequency Train Actor/Test Pulse Train DIO.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
