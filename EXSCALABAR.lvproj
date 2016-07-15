@@ -283,7 +283,7 @@ DirectoryIndex index.htm
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">10</Property>
+					<Property Name="Bld_version.build" Type="Int">11</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -1571,7 +1571,6 @@ DirectoryIndex index.htm
 					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 				</Item>
-				<Item Name="Laser Modulation.ctl" Type="VI" URL="../../../Reusable/PAS/Main/Controls/Laser Modulation.ctl"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="FPGA Server" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -1940,7 +1939,6 @@ DirectoryIndex index.htm
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get (polymorphic).vi" Type="VI" URL="/&lt;vilib&gt;/addons/JSON API/Get Polymorphic/Get (polymorphic).vi"/>
@@ -1983,7 +1981,6 @@ DirectoryIndex index.htm
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
@@ -2105,7 +2102,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">45</Property>
+				<Property Name="Bld_version.build" Type="Int">46</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>

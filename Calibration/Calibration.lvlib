@@ -4,6 +4,9 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="Messages" Type="Folder">
+		<Item Name="Change O3 Lamp Run MSG.lvclass" Type="LVClass" URL="../O3 Frequency Train Actor/Messages/Run/Change O3 Lamp Run MSG.lvclass"/>
+	</Item>
 	<Item Name="Calibration Actor.lvclass" Type="LVClass" URL="../Actor/Calibration Actor.lvclass"/>
 	<Item Name="O3 Frequency Train Actor.lvclass" Type="LVClass" URL="../O3 Frequency Train Actor/O3 Frequency Train Actor.lvclass"/>
 </Library>
