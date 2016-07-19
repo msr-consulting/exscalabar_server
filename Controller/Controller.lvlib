@@ -29,6 +29,7 @@
 			<Item Name="Start Tau Write MSG.lvclass" Type="LVClass" URL="../Messages/Start Tau Write MSG/Start Tau Write MSG.lvclass"/>
 			<Item Name="Stop Writing Taus MSG.lvclass" Type="LVClass" URL="../Messages/Stop Writing Taus MSG/Stop Writing Taus MSG.lvclass"/>
 		</Item>
+		<Item Name="For Calibration" Type="Folder"/>
 		<Item Name="Change Denuder State MSG.lvclass" Type="LVClass" URL="../Messages/Change Denuder State/Change Denuder State MSG.lvclass"/>
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Individual Power Supply MSG.lvclass" Type="LVClass" URL="../Messages/Change Individual Power Supply State/Change Individual Power Supply MSG.lvclass"/>

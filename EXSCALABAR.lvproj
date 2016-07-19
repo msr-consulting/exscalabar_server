@@ -800,6 +800,10 @@ DirectoryIndex index.htm
 							</Item>
 						</Item>
 						<Item Name="Calibration" Type="HTTP WebResources Container">
+							<Item Name="O3LampFreq.vi" Type="VI" URL="../Web Services/O3 Calibration/O3LampFreq.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
+							</Item>
 							<Item Name="saveCalFile.vi" Type="VI" URL="../Web Services/saveCalFile.vi">
 								<Property Name="ws.buffered" Type="Bool">true</Property>
 								<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
@@ -859,6 +863,10 @@ DirectoryIndex index.htm
 								<Property Name="ws.uri" Type="Str"></Property>
 								<Property Name="ws.useHeaders" Type="Bool">true</Property>
 								<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+							</Item>
+							<Item Name="RunO3Lamp.vi" Type="VI" URL="../Web Services/O3 Calibration/RunO3Lamp.vi">
+								<Property Name="ws.method" Type="Int">1</Property>
+								<Property Name="ws.type" Type="Int">1</Property>
 							</Item>
 						</Item>
 						<Item Name="Humidity" Type="HTTP WebResources Container">
