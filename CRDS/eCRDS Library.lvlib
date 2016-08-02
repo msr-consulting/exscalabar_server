@@ -6,6 +6,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Actor" Type="Folder">
 		<Item Name="Change Blue Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Blue Laser Rate/Change Blue Laser Rate MSG.lvclass"/>
+		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Actor Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Laser Enable State.lvclass" Type="LVClass" URL="../Actor Messages/Change Laser Enable State/Change Laser Enable State.lvclass"/>
 		<Item Name="Change Laser Gain MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change CRD Laser Gain/Change Laser Gain MSG.lvclass"/>
 		<Item Name="Change Red Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Red Laser Rate/Change Red Laser Rate MSG.lvclass"/>
@@ -20,6 +21,7 @@
 		<Item Name="Reset Red Laser Rep Rate.lvclass" Type="LVClass" URL="../Commands/Reset Red Rep Rate/Reset Red Laser Rep Rate.lvclass"/>
 		<Item Name="Set Write Ringdowns CMD.lvclass" Type="LVClass" URL="../Commands/Write Ringdowns/Set Write Ringdowns CMD.lvclass"/>
 		<Item Name="Update Blue DC.lvclass" Type="LVClass" URL="../Commands/Update Blue DC/Update Blue DC.lvclass"/>
+		<Item Name="Update Filter State CMD.lvclass" Type="LVClass" URL="../Commands/Update Filter State/Update Filter State CMD.lvclass"/>
 		<Item Name="Update Housekeeping.lvclass" Type="LVClass" URL="../Commands/Update Housekeeping/Update Housekeeping.lvclass"/>
 	</Item>
 	<Item Name="eCRDS.lvclass" Type="LVClass" URL="../Main/eCRDS.lvclass"/>
