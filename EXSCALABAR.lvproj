@@ -282,7 +282,7 @@ DirectoryIndex index.htm
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">15</Property>
+					<Property Name="Bld_version.build" Type="Int">16</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -2075,7 +2075,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">49</Property>
+				<Property Name="Bld_version.build" Type="Int">50</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
