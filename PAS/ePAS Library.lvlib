@@ -19,6 +19,7 @@
 			<Item Name="Set iSpkEn MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Set iSpkEn MSG/Set iSpkEn MSG.lvclass"/>
 			<Item Name="Spk Cycle MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Speaker Cycle MSG/Spk Cycle MSG.lvclass"/>
 		</Item>
+		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Actor/Messages/Update Filter MSG/Change Filter State.lvclass"/>
 		<Item Name="Ship Wvfm Data MSG.lvclass" Type="LVClass" URL="../Actor/Messages/Ship Wvfm Data Msg/Ship Wvfm Data MSG.lvclass"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
@@ -38,6 +39,7 @@
 		</Item>
 		<Item Name="Change Denuded Bypass State.lvclass" Type="LVClass" URL="../Commands/Change Denuded Bypass State/Change Denuded Bypass State.lvclass"/>
 		<Item Name="Set Wvfm Write CMD.lvclass" Type="LVClass" URL="../Commands/Set Wvfm Write/Set Wvfm Write CMD.lvclass"/>
+		<Item Name="Update Filter State CMD.lvclass" Type="LVClass" URL="../Commands/Update Filter State/Update Filter State CMD.lvclass"/>
 	</Item>
 	<Item Name="Core" Type="Folder">
 		<Item Name="ePAS.lvclass" Type="LVClass" URL="../Instrument/ePAS.lvclass"/>
