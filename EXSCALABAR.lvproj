@@ -158,7 +158,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -260,7 +260,6 @@ DirectoryIndex index.htm
 			</Item>
 			<Item Name="Session APIs" Type="Folder">
 				<Item Name="Config Data.lvclass" Type="LVClass" URL="../reusable/Session APIs/File Access/Config Data/Config Data.lvclass"/>
-				<Item Name="File Session.lvclass" Type="LVClass" URL="../reusable/Session APIs/File Access/Base/File Session.lvclass"/>
 				<Item Name="Serial Session.lvclass" Type="LVClass" URL="../reusable/Session APIs/Serial/Serial Session.lvclass"/>
 				<Item Name="Session - Root.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/_Session Fwk/Session - Root.lvclass"/>
 				<Item Name="System Log.lvclass" Type="LVClass" URL="../reusable/Session APIs/Session Log/System Log.lvclass"/>
@@ -282,7 +281,7 @@ DirectoryIndex index.htm
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">16</Property>
+					<Property Name="Bld_version.build" Type="Int">17</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -2066,7 +2065,6 @@ DirectoryIndex index.htm
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{05A42BFA-A5B8-4B4B-8E05-6EB6E08E84BF}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">EXSCALABAR EXE</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/EXSCALABAR EXE</Property>
@@ -2075,7 +2073,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">50</Property>
+				<Property Name="Bld_version.build" Type="Int">51</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -2086,7 +2084,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7B13E826-7403-4997-81DC-E80D4DA02005}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F6BAC386-C0FD-4DE8-A148-797B5595A8A9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/EXSCALABAR/Main Launch/Launcher.vi</Property>
@@ -2182,11 +2180,11 @@ DirectoryIndex index.htm
 				<Property Name="Source[27].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[27].type" Type="Str">Library</Property>
 				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[28].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/File Session.lvclass</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Instrument.lvclass</Property>
 				<Property Name="Source[28].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[28].type" Type="Str">Library</Property>
 				<Property Name="Source[29].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[29].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Instrument.lvclass</Property>
+				<Property Name="Source[29].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Update CVT CMD.lvclass</Property>
 				<Property Name="Source[29].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[29].type" Type="Str">Library</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
@@ -2195,37 +2193,33 @@ DirectoryIndex index.htm
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
 				<Property Name="Source[30].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[30].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Update CVT CMD.lvclass</Property>
+				<Property Name="Source[30].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/eCRDS Library.lvlib</Property>
+				<Property Name="Source[30].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[30].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[30].type" Type="Str">Library</Property>
 				<Property Name="Source[31].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[31].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/eCRDS Library.lvlib</Property>
+				<Property Name="Source[31].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/CRDS Lib.lvlib</Property>
 				<Property Name="Source[31].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[31].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[31].type" Type="Str">Library</Property>
 				<Property Name="Source[32].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[32].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/CRDS Lib.lvlib</Property>
+				<Property Name="Source[32].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/ePAS Library.lvlib</Property>
 				<Property Name="Source[32].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[32].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[32].type" Type="Str">Library</Property>
 				<Property Name="Source[33].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[33].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/ePAS Library.lvlib</Property>
+				<Property Name="Source[33].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/PAS Library.lvlib</Property>
 				<Property Name="Source[33].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[33].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[33].type" Type="Str">Library</Property>
 				<Property Name="Source[34].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[34].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/PAS Library.lvlib</Property>
-				<Property Name="Source[34].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[34].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/CVT.lvclass</Property>
 				<Property Name="Source[34].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[34].type" Type="Str">Library</Property>
 				<Property Name="Source[35].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[35].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/CVT.lvclass</Property>
+				<Property Name="Source[35].itemID" Type="Ref">/EXSCALABAR/Root/Support/Send Data Msg.lvclass</Property>
 				<Property Name="Source[35].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[35].type" Type="Str">Library</Property>
-				<Property Name="Source[36].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[36].itemID" Type="Ref">/EXSCALABAR/Root/Support/Send Data Msg.lvclass</Property>
-				<Property Name="Source[36].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[36].type" Type="Str">Library</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/EXSCALABAR/Root/Base Data Class.lvlib</Property>
 				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
@@ -2251,7 +2245,7 @@ DirectoryIndex index.htm
 				<Property Name="Source[9].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Exscalabar FPGA.lvclass</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">37</Property>
+				<Property Name="SourceCount" Type="Int">36</Property>
 				<Property Name="TgtF_companyName" Type="Str">MSR Consulting, LLC</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">EXSCALABAR EXE</Property>
