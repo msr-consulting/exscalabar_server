@@ -12,7 +12,7 @@
 		<Item Name="For mTECs" Type="Folder">
 			<Item Name="Update Meerstetter Ctl Val.lvclass" Type="LVClass" URL="../Messages/Update Meerstetter Ctl Val MSG/Update Meerstetter Ctl Val.lvclass"/>
 		</Item>
-		<Item Name="For TEC" Type="Folder">
+		<Item Name="TEC" Type="Folder">
 			<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TE Tech PID/Update TEC PID.lvclass"/>
 			<Item Name="Update TE Tech Heating Params.lvclass" Type="LVClass" URL="../Messages/Update TE Tech Heating Params/Update TE Tech Heating Params.lvclass"/>
 		</Item>
@@ -29,22 +29,27 @@
 			<Item Name="Start Tau Write MSG.lvclass" Type="LVClass" URL="../Messages/Start Tau Write MSG/Start Tau Write MSG.lvclass"/>
 			<Item Name="Stop Writing Taus MSG.lvclass" Type="LVClass" URL="../Messages/Stop Writing Taus MSG/Stop Writing Taus MSG.lvclass"/>
 		</Item>
-		<Item Name="For Calibration" Type="Folder"/>
-		<Item Name="Change Denuder State MSG.lvclass" Type="LVClass" URL="../Messages/Change Denuder State/Change Denuder State MSG.lvclass"/>
-		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
+		<Item Name="For Calibration" Type="Folder">
+			<Item Name="Start Calibration MSG.lvclass" Type="LVClass" URL="../Messages/Start Calibration MSG/Start Calibration MSG.lvclass"/>
+			<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
+		</Item>
+		<Item Name="Valves" Type="Folder">
+			<Item Name="Change Denuder State MSG.lvclass" Type="LVClass" URL="../Messages/Change Denuder State/Change Denuder State MSG.lvclass"/>
+			<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Messages/Change Filter State/Change Filter State.lvclass"/>
+		</Item>
+		<Item Name="Cycles" Type="Folder">
+			<Item Name="Toggle Filter Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Filter Cycle/Toggle Filter Cycle MSG.lvclass"/>
+			<Item Name="Toggle Speaker Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Speaker Cycle/Toggle Speaker Cycle MSG.lvclass"/>
+		</Item>
 		<Item Name="Change Individual Power Supply MSG.lvclass" Type="LVClass" URL="../Messages/Change Individual Power Supply State/Change Individual Power Supply MSG.lvclass"/>
 		<Item Name="Change Inlet MSG.lvclass" Type="LVClass" URL="../Messages/Change Inlet MSG/Change Inlet MSG.lvclass"/>
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
 		<Item Name="Exe Write Main.lvclass" Type="LVClass" URL="../Messages/Execute Write Main/Exe Write Main.lvclass"/>
-		<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
 		<Item Name="PowerSupply MSG.lvclass" Type="LVClass" URL="../Messages/Power Supply/PowerSupply MSG.lvclass"/>
 		<Item Name="Purge Switch MSG.lvclass" Type="LVClass" URL="../Messages/Purge Switch Message/Purge Switch MSG.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
 		<Item Name="Speaker MSG.lvclass" Type="LVClass" URL="../Messages/Change Speaker MSG/Speaker MSG.lvclass"/>
-		<Item Name="Start Calibration MSG.lvclass" Type="LVClass" URL="../Messages/Start Calibration MSG/Start Calibration MSG.lvclass"/>
 		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Messages/Stop Subactors/Stop Subactors.lvclass"/>
-		<Item Name="Toggle Filter Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Filter Cycle/Toggle Filter Cycle MSG.lvclass"/>
-		<Item Name="Toggle Speaker Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Speaker Cycle/Toggle Speaker Cycle MSG.lvclass"/>
 		<Item Name="Update Controller Data MSG.lvclass" Type="LVClass" URL="../Update Controller Data MSG.lvclass"/>
 		<Item Name="Update CVT Data.lvclass" Type="LVClass" URL="../Messages/Update CVT/Update CVT Data.lvclass"/>
 		<Item Name="Update Device Configuration MSG.lvclass" Type="LVClass" URL="../Messages/Update Device Configuration MSG/Update Device Configuration MSG.lvclass"/>

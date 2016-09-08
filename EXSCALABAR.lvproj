@@ -281,7 +281,7 @@ DirectoryIndex index.htm
 			<Item Name="Communication" Type="Folder">
 				<Item Name="xService" Type="Web Service">
 					<Property Name="Bld_buildSpecName" Type="Str"></Property>
-					<Property Name="Bld_version.build" Type="Int">17</Property>
+					<Property Name="Bld_version.build" Type="Int">20</Property>
 					<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 					<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 					<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -998,6 +998,7 @@ DirectoryIndex index.htm
 			<Item Name="Test Variant.vi" Type="VI" URL="../Test/Test Variant.vi"/>
 			<Item Name="Test XML.vi" Type="VI" URL="../Calibrations/Ozone/Test/Test XML.vi"/>
 			<Item Name="Test Error Handling.vi" Type="VI" URL="../../../datid/exscalabar_server/Test/Test Error Handling.vi"/>
+			<Item Name="Test Launch.vi" Type="VI" URL="../Test/Test Launch.vi"/>
 		</Item>
 		<Item Name="FPGA Target" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
@@ -2060,20 +2061,17 @@ DirectoryIndex index.htm
 				<Property Name="App_INI_aliasGUID" Type="Str">{C80DB43B-D113-4EB3-BB4E-AEE71509D345}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{BC061EB4-C982-44A8-99DD-D887D099C069}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_webService.count" Type="Int">1</Property>
-				<Property Name="App_webService[0].itemID" Type="Ref">/EXSCALABAR/Root/Communication/xService</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{05A42BFA-A5B8-4B4B-8E05-6EB6E08E84BF}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">EXSCALABAR EXE</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/EXSCALABAR EXE</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3D9CFEA5-CDC6-44FE-BBB6-E1C61525CFE6}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/EXSCALABAR/EXSCALABAR/EXSCALABAR EXE/c/ni-rt/startup/EXSCALABAR_EXSCALABAR EXE_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">51</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -2084,166 +2082,134 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F6BAC386-C0FD-4DE8-A148-797B5595A8A9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{88EA5D76-A589-4C7C-B791-E86DF4DE8F4C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/EXSCALABAR/Main Launch/Launcher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/EXSCALABAR/Exponential Fit Library.lvlib</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/EXSCALABAR/Root/Actors/File Library.lvlib</Property>
 				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[10].type" Type="Str">Library</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/EXSCALABAR/Root/Actors/File Library.lvlib</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/EXSCALABAR/Root/Actors/DAQ Device.lvlib</Property>
 				<Property Name="Source[11].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[11].type" Type="Str">Library</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/EXSCALABAR/Root/Actors/DAQ Device.lvlib</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Network Actor Library.lvlib</Property>
 				<Property Name="Source[12].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[12].type" Type="Str">Library</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Network Actor Library.lvlib</Property>
-				<Property Name="Source[13].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Ex Nested.lvclass</Property>
 				<Property Name="Source[13].type" Type="Str">Library</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Ex Nested.lvclass</Property>
-				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Calibration.lvlib</Property>
+				<Property Name="Source[14].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[14].type" Type="Str">Library</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Calibration.lvlib</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Power Library.lvlib</Property>
 				<Property Name="Source[15].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">Library</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Power Library.lvlib</Property>
-				<Property Name="Source[16].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Update Switch MSG.lvclass</Property>
 				<Property Name="Source[16].type" Type="Str">Library</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Update Switch MSG.lvclass</Property>
-				<Property Name="Source[17].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/EXSCALABAR/Root/Devices/PPT/PPT Library.lvlib</Property>
+				<Property Name="Source[17].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[17].type" Type="Str">Library</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/EXSCALABAR/Root/Devices/PPT/PPT Library.lvlib</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/EXSCALABAR/Root/Devices/Vaisala/Vaisala Library.lvlib</Property>
 				<Property Name="Source[18].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[18].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[18].type" Type="Str">Library</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/EXSCALABAR/Root/Devices/Vaisala/Vaisala Library.lvlib</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/EXSCALABAR/Root/Devices/TECs/Meerstetter Lib.lvlib</Property>
 				<Property Name="Source[19].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[19].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Controller.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Library</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/EXSCALABAR/Root/Devices/TECs/Meerstetter Lib.lvlib</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/EXSCALABAR/Root/Devices/TECs/TE Cooler.lvlib</Property>
 				<Property Name="Source[20].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[20].type" Type="Str">Library</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/EXSCALABAR/Root/Devices/TECs/TE Cooler.lvlib</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/EXSCALABAR/Root/Devices/TECs/Generic TEC.lvlib</Property>
 				<Property Name="Source[21].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[21].type" Type="Str">Library</Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/EXSCALABAR/Root/Devices/TECs/Generic TEC.lvlib</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/EXSCALABAR/Root/Devices/Alicat Lib.lvlib</Property>
 				<Property Name="Source[22].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[22].type" Type="Str">Library</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/EXSCALABAR/Root/Devices/Alicat Lib.lvlib</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/EXSCALABAR/Root/Devices/Device.lvlib</Property>
 				<Property Name="Source[23].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[23].type" Type="Str">Library</Property>
 				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/EXSCALABAR/Root/Devices/Device.lvlib</Property>
-				<Property Name="Source[24].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/EXSCALABAR/Root/Support/Command.lvclass</Property>
 				<Property Name="Source[24].type" Type="Str">Library</Property>
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[25].itemID" Type="Ref">/EXSCALABAR/Root/Support/Command.lvclass</Property>
-				<Property Name="Source[25].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/EXSCALABAR/Root/Support/xData.lvclass</Property>
 				<Property Name="Source[25].type" Type="Str">Library</Property>
 				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[26].itemID" Type="Ref">/EXSCALABAR/Root/Support/xData.lvclass</Property>
-				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/EXSCALABAR/Root/Support/Switch.lvclass</Property>
 				<Property Name="Source[26].type" Type="Str">Library</Property>
 				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[27].itemID" Type="Ref">/EXSCALABAR/Root/Support/Switch.lvclass</Property>
-				<Property Name="Source[27].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[27].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Instrument.lvclass</Property>
 				<Property Name="Source[27].type" Type="Str">Library</Property>
 				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[28].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Instrument.lvclass</Property>
-				<Property Name="Source[28].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Update CVT CMD.lvclass</Property>
 				<Property Name="Source[28].type" Type="Str">Library</Property>
 				<Property Name="Source[29].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[29].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/Update CVT CMD.lvclass</Property>
-				<Property Name="Source[29].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[29].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/eCRDS Library.lvlib</Property>
+				<Property Name="Source[29].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[29].type" Type="Str">Library</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Instrument Library.lvlib</Property>
 				<Property Name="Source[3].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
 				<Property Name="Source[30].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[30].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/eCRDS Library.lvlib</Property>
+				<Property Name="Source[30].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/CRDS Lib.lvlib</Property>
 				<Property Name="Source[30].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[30].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[30].type" Type="Str">Library</Property>
 				<Property Name="Source[31].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[31].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/CRDS/CRDS Lib.lvlib</Property>
+				<Property Name="Source[31].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/ePAS Library.lvlib</Property>
 				<Property Name="Source[31].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[31].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[31].type" Type="Str">Library</Property>
 				<Property Name="Source[32].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[32].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/ePAS Library.lvlib</Property>
+				<Property Name="Source[32].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/PAS Library.lvlib</Property>
 				<Property Name="Source[32].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[32].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[32].type" Type="Str">Library</Property>
 				<Property Name="Source[33].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[33].itemID" Type="Ref">/EXSCALABAR/Root/Instrument/PAS/PAS Library.lvlib</Property>
-				<Property Name="Source[33].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[33].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[33].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/CVT.lvclass</Property>
 				<Property Name="Source[33].type" Type="Str">Library</Property>
 				<Property Name="Source[34].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[34].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/CVT.lvclass</Property>
-				<Property Name="Source[34].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[34].itemID" Type="Ref">/EXSCALABAR/Root/Support/Send Data Msg.lvclass</Property>
 				<Property Name="Source[34].type" Type="Str">Library</Property>
 				<Property Name="Source[35].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[35].itemID" Type="Ref">/EXSCALABAR/Root/Support/Send Data Msg.lvclass</Property>
+				<Property Name="Source[35].itemID" Type="Ref">/EXSCALABAR/Root/Actors/Actor Framework.lvlib</Property>
+				<Property Name="Source[35].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[35].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[35].type" Type="Str">Library</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/EXSCALABAR/Root/Base Data Class.lvlib</Property>
 				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].type" Type="Str">Library</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[5].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Config Data.lvclass</Property>
-				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Library</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[6].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Serial Session.lvclass</Property>
-				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].type" Type="Str">Library</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[7].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Session - Root.lvclass</Property>
-				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">Library</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[8].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/System Log.lvclass</Property>
-				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">Library</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/EXSCALABAR/Root/Session APIs/Exscalabar FPGA.lvclass</Property>
-				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">36</Property>
 				<Property Name="TgtF_companyName" Type="Str">MSR Consulting, LLC</Property>
@@ -2253,6 +2219,47 @@ DirectoryIndex index.htm
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 MSR Consulting, LLC</Property>
 				<Property Name="TgtF_productName" Type="Str">EXSCALABAR EXE</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{90987AE5-FC97-47D3-87EC-7CE73B66664B}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
+			</Item>
+			<Item Name="Test Launcher" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+				<Property Name="App_INI_aliasGUID" Type="Str">{766D7527-2342-42D0-A509-7FB4883D7F4D}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{51928100-EFEA-4D1C-BE83-AE95B2426F76}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{C9F7A2EB-6D1D-4427-9059-A1AE304929F2}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Launcher</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Test Launcher</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{7FF58E4B-4AC0-4330-A91C-8078FB343249}</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
+				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CC98EF24-A17E-4877-9E80-1CCE8F3CD921}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/EXSCALABAR/Test/Test Launch.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Launcher</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Launcher</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 </Property>
+				<Property Name="TgtF_productName" Type="Str">Test Launcher</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{A504C80C-1730-4283-9ADC-4BC260A87EC5}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
 		</Item>
