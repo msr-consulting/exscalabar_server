@@ -8,12 +8,7 @@
 		<Item Name="Controls" Type="Folder">
 			<Item Name="TECData.ctl" Type="VI" URL="../Controls/TECData.ctl"/>
 		</Item>
-		<Item Name="Example" Type="Folder">
-			<Item Name="Test TEC.vi" Type="VI" URL="../Test TEC.vi"/>
-		</Item>
 		<Item Name="TE Cooler.lvclass" Type="LVClass" URL="../TE Cooler.lvclass"/>
-		<Item Name="Constructor.vi" Type="VI" URL="../Constructor.vi"/>
-		<Item Name="Example.vi" Type="VI" URL="../Example.vi"/>
 		<Item Name="TECData.lvclass" Type="LVClass" URL="../Data/TECData.lvclass"/>
 	</Item>
 	<Item Name="Actor" Type="Folder">

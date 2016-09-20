@@ -40,9 +40,7 @@
 			</Item>
 		</Item>
 		<Item Name="Sequence Execution.lvclass" Type="LVClass" URL="../Sequence Execution/Sequence Execution.lvclass"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="Base Data Class.lvlib" Type="Library" URL="../../Data/Base Data Class.lvlib"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>

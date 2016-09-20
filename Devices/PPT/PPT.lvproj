@@ -22,26 +22,18 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
-		<Item Name="Alicat Data.lvclass" Type="LVClass" URL="../../Alicat/Session Based/Data/Alicat Data.lvclass"/>
-		<Item Name="Alicat Device.lvclass" Type="LVClass" URL="../../Alicat/Session Based/Alicat Device.lvclass"/>
 		<Item Name="Base Data Class.lvlib" Type="Library" URL="../../../reusable/Data/Base Data Class.lvlib"/>
 		<Item Name="Config Data.lvclass" Type="LVClass" URL="../../../reusable/Session APIs/File Access/Config Data/Config Data.lvclass"/>
-		<Item Name="Configurable Device.lvclass" Type="LVClass" URL="../../Configurable Device/Configurable Device.lvclass"/>
 		<Item Name="DAQ Device.lvlib" Type="Library" URL="../../../reusable/DAQ Device/DAQ Device.lvlib"/>
 		<Item Name="Device Test.lvlib" Type="Library" URL="../../../Device Test/Device Test.lvlib"/>
 		<Item Name="Example.vi" Type="VI" URL="../Example.vi"/>
 		<Item Name="exscalabar.ini" Type="Document" URL="../../../Configuration/exscalabar.ini"/>
-		<Item Name="M data.lvclass" Type="LVClass" URL="../../Alicat/Session Based/Data/M/M data.lvclass"/>
-		<Item Name="MC Data.lvclass" Type="LVClass" URL="../../Alicat/Session Based/Data/MC/MC Data.lvclass"/>
-		<Item Name="PPT.lvclass" Type="LVClass" URL="../PPT.lvclass"/>
-		<Item Name="Retrieve Numeric String.vi" Type="VI" URL="../../../reusable/General/String Utilities/Retrieve Numeric String.vi"/>
 		<Item Name="Send Data Msg.lvclass" Type="LVClass" URL="../../../reusable/DAQ Device/Messages/Send Data Msg.lvclass"/>
 		<Item Name="Serial Session.lvclass" Type="LVClass" URL="../../../reusable/Session APIs/Serial/Serial Session.lvclass"/>
 		<Item Name="Self-Addressed Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Self-Addressed Msg/Self-Addressed Msg.lvclass"/>
 		<Item Name="Reply Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Reply Msg/Reply Msg.lvclass"/>
 		<Item Name="Remove Nested Actor.lvclass" Type="LVClass" URL="../../../Device Test/UI Actor/Remove Nested Actor.lvclass"/>
 		<Item Name="Atmospheric Library.lvlib" Type="Library" URL="../../../reusable/General/Atmospheric/Atmospheric Library.lvlib"/>
-		<Item Name="Vaisala.lvclass" Type="LVClass" URL="../../Vaisala Probe/Vaisala.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -81,25 +73,36 @@
 				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
 				<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
 				<Item Name="Waveform Subtype Enum__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Waveform Subtype Enum__ogtk.ctl"/>
+				<Item Name="Format Variant Into String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Format Variant Into String__ogtk.vi"/>
+				<Item Name="Get Waveform Type Enum from Data__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Waveform Type Enum from Data__ogtk.vi"/>
+				<Item Name="Get Refnum Type Enum from Data__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Refnum Type Enum from Data__ogtk.vi"/>
+				<Item Name="Get Refnum Type Enum from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Refnum Type Enum from TD__ogtk.vi"/>
+				<Item Name="Refnum Subtype Enum__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Refnum Subtype Enum__ogtk.ctl"/>
+				<Item Name="Resolve Timestamp Format__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Resolve Timestamp Format__ogtk.vi"/>
+				<Item Name="Index Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Index Array__ogtk.vi"/>
+				<Item Name="Compute 1D Index__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Compute 1D Index__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Tools_String.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tools/String/Tools_String.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="System Log.lvclass" Type="LVClass" URL="../../../reusable/Session APIs/Session Log/System Log.lvclass"/>
+			<Item Name="Device.lvlib" Type="Library" URL="../../Configurable Device/Device.lvlib"/>
+			<Item Name="CVT.lvclass" Type="LVClass" URL="../../../reusable/Session APIs/CVT/CVT.lvclass"/>
+			<Item Name="SuperClass.lvclass" Type="LVClass" URL="../../../SuperActor/SuperClass.lvclass"/>
+			<Item Name="xGlobal Data.vi" Type="VI" URL="../../../Controller/xGlobal Data.vi"/>
+			<Item Name="PPT Library.lvlib" Type="Library" URL="../PPT Library.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

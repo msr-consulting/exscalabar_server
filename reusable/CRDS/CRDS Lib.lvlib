@@ -10,5 +10,4 @@
 	</Item>
 	<Item Name="CRDS Cell.lvclass" Type="LVClass" URL="../Cell/CRDS Cell.lvclass"/>
 	<Item Name="CRDS.lvclass" Type="LVClass" URL="../Main/CRDS.lvclass"/>
-	<Item Name="extParam Ctl.ctl" Type="VI" URL="../Cell/extParam Ctl.ctl"/>
 </Library>

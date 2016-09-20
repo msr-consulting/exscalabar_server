@@ -12,20 +12,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Send MSG STEP.lvlibp" Type="LVLibp" URL="../../../Calibration/Send MSG STEP.lvlibp">
-			<Item Name="Actor Framework.lvlib" Type="Library" URL="../../../Calibration/Send MSG STEP.lvlibp/1abvi3w/vi.lib/ActorFramework/Actor Framework.lvlib"/>
-			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Calibration/Send MSG STEP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-			<Item Name="Send MSG STEP.lvclass" Type="LVClass" URL="../../../Calibration/Send MSG STEP.lvlibp/Send MSG STEP.lvclass"/>
+		<Item Name="Send MSG STEP.lvlibp" Type="LVLibp" URL="../../../Calibration/Common/Send MSG STEP.lvlibp">
+			<Item Name="Actor Framework.lvlib" Type="Library" URL="../../../Calibration/Common/Send MSG STEP.lvlibp/1abvi3w/vi.lib/ActorFramework/Actor Framework.lvlib"/>
+			<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Calibration/Common/Send MSG STEP.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+			<Item Name="Send MSG STEP.lvclass" Type="LVClass" URL="../../../Calibration/Common/Send MSG STEP.lvlibp/Send MSG STEP.lvclass"/>
 		</Item>
-		<Item Name="SEQ.lvlibp" Type="LVLibp" URL="../SEQ.lvlibp">
+		<Item Name="SEQ.lvlibp" Type="LVLibp" URL="../../../Calibration/Common/SEQ.lvlibp">
 			<Item Name="Steps" Type="Folder">
 				<Item Name="Leaves" Type="Folder">
-					<Item Name="Switch DBL.lvclass" Type="LVClass" URL="../SEQ.lvlibp/STEPS/LEAVES/Double/Switch DBL.lvclass"/>
-					<Item Name="Switch Step.lvclass" Type="LVClass" URL="../SEQ.lvlibp/STEPS/LEAVES/Switch/Switch Step.lvclass"/>
+					<Item Name="Switch DBL.lvclass" Type="LVClass" URL="../../../Calibration/Common/SEQ.lvlibp/STEPS/LEAVES/Double/Switch DBL.lvclass"/>
+					<Item Name="Switch Step.lvclass" Type="LVClass" URL="../../../Calibration/Common/SEQ.lvlibp/STEPS/LEAVES/Switch/Switch Step.lvclass"/>
 				</Item>
-				<Item Name="STEP.lvclass" Type="LVClass" URL="../SEQ.lvlibp/STEPS/STEP.lvclass"/>
+				<Item Name="STEP.lvclass" Type="LVClass" URL="../../../Calibration/Common/SEQ.lvlibp/STEPS/STEP.lvclass"/>
 			</Item>
-			<Item Name="SEQ.lvclass" Type="LVClass" URL="../SEQ.lvlibp/SEQ/SEQ.lvclass"/>
+			<Item Name="SEQ.lvclass" Type="LVClass" URL="../../../Calibration/Common/SEQ.lvlibp/SEQ/SEQ.lvclass"/>
 		</Item>
 		<Item Name="Test Plugins.vi" Type="VI" URL="../../../Calibration/Common/Test Plugins.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">

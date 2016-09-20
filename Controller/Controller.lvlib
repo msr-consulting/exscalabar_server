@@ -9,9 +9,6 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Messages" Type="Folder">
-		<Item Name="For mTECs" Type="Folder">
-			<Item Name="Update Meerstetter Ctl Val.lvclass" Type="LVClass" URL="../Messages/Update Meerstetter Ctl Val MSG/Update Meerstetter Ctl Val.lvclass"/>
-		</Item>
 		<Item Name="TEC" Type="Folder">
 			<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TE Tech PID/Update TEC PID.lvclass"/>
 			<Item Name="Update TE Tech Heating Params.lvclass" Type="LVClass" URL="../Messages/Update TE Tech Heating Params/Update TE Tech Heating Params.lvclass"/>
@@ -49,14 +46,10 @@
 		<Item Name="Purge Switch MSG.lvclass" Type="LVClass" URL="../Messages/Purge Switch Message/Purge Switch MSG.lvclass"/>
 		<Item Name="Save Data MSG.lvclass" Type="LVClass" URL="../Messages/Save Data MSG/Save Data MSG.lvclass"/>
 		<Item Name="Speaker MSG.lvclass" Type="LVClass" URL="../Messages/Change Speaker MSG/Speaker MSG.lvclass"/>
-		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Messages/Stop Subactors/Stop Subactors.lvclass"/>
 		<Item Name="Update Controller Data MSG.lvclass" Type="LVClass" URL="../Update Controller Data MSG.lvclass"/>
-		<Item Name="Update CVT Data.lvclass" Type="LVClass" URL="../Messages/Update CVT/Update CVT Data.lvclass"/>
 		<Item Name="Update Device Configuration MSG.lvclass" Type="LVClass" URL="../Messages/Update Device Configuration MSG/Update Device Configuration MSG.lvclass"/>
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
-		<Item Name="Update Humidifier Control MSG.lvclass" Type="LVClass" URL="../Messages/Update Humidifier Control/Update Humidifier Control MSG.lvclass"/>
-		<Item Name="Request Write Files.lvclass" Type="LVClass" URL="../Messages/Request File Write/Request Write Files.lvclass"/>
 		<Item Name="Instr Exe Write to File.lvclass" Type="LVClass" URL="../Messages/Instr Exe Write to File/Instr Exe Write to File.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
