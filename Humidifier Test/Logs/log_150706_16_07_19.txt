@@ -1,4 +1,0 @@
-16:07:19.55	[mTEC] Live communication set to DISABLE.
-16:07:19.63	[mTEC] Live communication set to ENABLE.
-16:07:19.67	[mTEC] New input selection for controller test0.  Value is now Live Current/Voltage.
-16:25:35.57	[test0] Device stopping.

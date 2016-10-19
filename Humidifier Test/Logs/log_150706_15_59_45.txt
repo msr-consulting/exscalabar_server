@@ -1,3 +1,0 @@
-15:59:47.66	[mTEC] Live communication set to DISABLE.
-15:59:48.01	[mTEC] Live communication set to ENABLE.
-15:59:48.07	[mTEC] New input selection for controller test0.  Value is now Live Current/Voltage.

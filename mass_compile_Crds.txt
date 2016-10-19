@@ -1,0 +1,9 @@
+#### Starting Mass Compile: 19 Oct 2016 17:26:47
+  Directory: "C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS"
+Search failed to find "Change PMT Gain.lvclass" previously from "C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS\Commands\Change PMT Gains\Change PMT Gain.lvclass"
+  ### Bad VI:    "Change PMT Gain.lvclass:Read Vpmt.vi"	Path="C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS\Commands\Change PMT Gains\Read Vpmt.vi"
+  ### Bad VI:    "Change PMT Gain.lvclass:Write Vpmt.vi"	Path="C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS\Commands\Change PMT Gains\Write Vpmt.vi"
+  ### Bad VI:    "Set Write Ringdowns CMD.lvclass:Write write_.vi"	Path="C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS\Commands\Write Ringdowns\Write write_.vi"
+  ### Bad VI:    "eCRDS.lvclass:Read PMT Gain.vi"	Path="C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS\Main\Accessors\Read PMT Gain.vi"
+  ### Bad VI:    "eCRDS.lvclass:Write PMT Gain.vi"	Path="C:\Users\Exscalabar\Documents\sw_repo\exscalabar_server\CRDS\Main\Accessors\Write PMT Gain.vi"
+#### Finished Mass Compile: 19 Oct 2016 17:27:22
