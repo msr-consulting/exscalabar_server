@@ -38,6 +38,11 @@
 			<Item Name="Toggle Filter Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Filter Cycle/Toggle Filter Cycle MSG.lvclass"/>
 			<Item Name="Toggle Speaker Cycle MSG.lvclass" Type="LVClass" URL="../Messages/Toggle Speaker Cycle/Toggle Speaker Cycle MSG.lvclass"/>
 		</Item>
+		<Item Name="CRD RD Data" Type="Folder">
+			<Item Name="Exe Write CRD RDs.lvclass" Type="LVClass" URL="../Messages/Exe CRD RD Write/Exe Write CRD RDs.lvclass"/>
+			<Item Name="Stop CRD RD Write MSG.lvclass" Type="LVClass" URL="../Messages/Stop CRD RD Data MSG/Stop CRD RD Write MSG.lvclass"/>
+			<Item Name="Start CRD RD File MSG.lvclass" Type="LVClass" URL="../Messages/Start CRD RD File MSG/Start CRD RD File MSG.lvclass"/>
+		</Item>
 		<Item Name="Change Individual Power Supply MSG.lvclass" Type="LVClass" URL="../Messages/Change Individual Power Supply State/Change Individual Power Supply MSG.lvclass"/>
 		<Item Name="Change Inlet MSG.lvclass" Type="LVClass" URL="../Messages/Change Inlet MSG/Change Inlet MSG.lvclass"/>
 		<Item Name="Device Init CVT MSG.lvclass" Type="LVClass" URL="../Messages/Device Init CVT/Device Init CVT MSG.lvclass"/>
