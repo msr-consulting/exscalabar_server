@@ -1,13 +1,5 @@
 [ProjectWindow_Data]
-ProjectExplorer.ClassicPosition[String] = "86,219,661,900"
-
-[AB_Cache_{F90A9C47-FD25-4EDA-BBE6-FBB14DCA316E}]
-Cache_Path[Path] Line0001 = "/C/Users/Exscalabar/AppData/Local/Temp/AB_Cache_{F"
-Cache_Path[Path] Line0002 = "90A9C47-FD25-4EDA-BBE6-FBB14DCA316E}.txt"
-
-[AB_Cache_{8AACC0B4-7A15-40C0-A122-0A451E0DF18C}]
-Cache_Path[Path] Line0001 = "/C/Users/Exscalabar/AppData/Local/Temp/AB_Cache_{8"
-Cache_Path[Path] Line0002 = "AACC0B4-7A15-40C0-A122-0A451E0DF18C}.txt"
+ProjectExplorer.ClassicPosition[String] = "45,130,620,811"
 
 [AB_Cache_{05A42BFA-A5B8-4B4B-8E05-6EB6E08E84BF}]
 Cache_Path[Path] Line0001 = "/C/Users/Exscalabar/AppData/Local/Temp/AB_Cache_{0"
