@@ -56,6 +56,7 @@
 		<Item Name="Update Device Setpoint.lvclass" Type="LVClass" URL="../Messages/Update Device Setpoint MSG/Update Device Setpoint.lvclass"/>
 		<Item Name="Update Filter Cycle Params MSG.lvclass" Type="LVClass" URL="../Messages/Update Filter State Params/Update Filter Cycle Params MSG.lvclass"/>
 		<Item Name="Instr Exe Write to File.lvclass" Type="LVClass" URL="../Messages/Instr Exe Write to File/Instr Exe Write to File.lvclass"/>
+		<Item Name="Send Log Message MSG.lvclass" Type="LVClass" URL="../Messages/Log Message MSG/Send Log Message MSG.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
 </Library>
