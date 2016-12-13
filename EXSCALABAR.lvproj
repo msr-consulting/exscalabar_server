@@ -54,7 +54,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -168,6 +168,7 @@ DirectoryIndex index.htm
 					<Item Name="O2 Valve STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Valve/O2 Valve STEP.lvclass"/>
 					<Item Name="O2 Flow Rate STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Flow Rate/O2 Flow Rate STEP.lvclass"/>
 					<Item Name="Wait STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Wait/Wait STEP.lvclass"/>
+					<Item Name="Denuder STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Denuder/Denuder STEP.lvclass"/>
 					<Item Name="Speaker STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Speaker/Speaker STEP.lvclass"/>
 					<Item Name="Filter STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Filter/Filter Step/Filter STEP.lvclass"/>
 					<Item Name="O3 Lamp Frequency STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Level/O3 Lamp Frequency STEP.lvclass"/>
@@ -186,7 +187,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
 				<Property Name="ws.guid" Type="Str">{D83522D4-BECC-4AFB-9BC9-C1E8002ED617}</Property>
 				<Property Name="ws.modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="ws.public_folder_name" Type="Str">deployed web stuff</Property>
+				<Property Name="ws.public_folder_name" Type="Str"></Property>
 				<Property Name="ws.remoteDebugging" Type="Bool">false</Property>
 				<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
 				<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
@@ -197,7 +198,9 @@ DirectoryIndex index.htm
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
-				<Item Name="Public Content" Type="Folder"/>
+				<Item Name="deployed web stuff" Type="Folder" URL="../../deployed web stuff">
+					<Property Name="NI.DISK" Type="Bool">true</Property>
+				</Item>
 				<Item Name="Web Resources" Type="HTTP WebResources Container">
 					<Item Name="General" Type="HTTP WebResources Container">
 						<Item Name="Data.vi" Type="VI" URL="../Web Services/Data.vi">
@@ -1600,7 +1603,6 @@ DirectoryIndex index.htm
 		<Item Name="xGlobal Data.vi" Type="VI" URL="../Controller/xGlobal Data.vi"/>
 		<Item Name="Stop Subactors.lvclass" Type="LVClass" URL="../Controller/Messages/Stop Subactors/Stop Subactors.lvclass"/>
 		<Item Name="FPGAServerV2.lvbitx" Type="Document" URL="../FPGA Bitfiles/FPGAServerV2.lvbitx"/>
-		<Item Name="startup.aliases" Type="Document" URL="../startup.aliases"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Trim Whitespace (String)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Trim Whitespace (String)__ogtk.vi"/>
@@ -1849,14 +1851,11 @@ DirectoryIndex index.htm
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_INI_aliasGUID" Type="Str">{C80DB43B-D113-4EB3-BB4E-AEE71509D345}</Property>
-				<Property Name="App_INI_aliasItemID" Type="Ref">/EXSCALABAR/startup.aliases</Property>
+				<Property Name="App_INI_aliasItemID" Type="Ref"></Property>
 				<Property Name="App_INI_GUID" Type="Str">{BC061EB4-C982-44A8-99DD-D887D099C069}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_webService.count" Type="Int">1</Property>
