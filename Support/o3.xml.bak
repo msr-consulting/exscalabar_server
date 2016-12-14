@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OZONE>
+	<Wait>20</Wait>
+	<Filter>FALSE</Filter>
+	<Cabin>FALSE</Cabin>
+	<Denuder>FALSE</Denuder>
+	<Speaker>20</Speaker>
+	<O2-Valve>FALSE</O2-Valve>
+	<O3-Valve>FALSE</O3-Valve>
+	<O3-Level>1</O3-Level>
+	<O2-Flow-Rate>100</O2-Flow-Rate>
+	<O3-Dump-Rate>100</O3-Dump-Rate>
+	<O3-Lamp-Rate>25</O3-Lamp-Rate>
+</OZONE>
