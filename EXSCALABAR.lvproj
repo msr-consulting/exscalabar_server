@@ -168,6 +168,7 @@ DirectoryIndex index.htm
 					<Item Name="O2 Valve STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Valve/O2 Valve STEP.lvclass"/>
 					<Item Name="O2 Flow Rate STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Flow Rate/O2 Flow Rate STEP.lvclass"/>
 					<Item Name="Wait STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Wait/Wait STEP.lvclass"/>
+					<Item Name="O3 DumpRate STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Dump Rate Step/O3 Dump Rate STEP/O3 DumpRate STEP.lvclass"/>
 					<Item Name="Denuder STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Denuder/Denuder STEP.lvclass"/>
 					<Item Name="Speaker STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Speaker/Speaker STEP.lvclass"/>
 					<Item Name="Filter STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Filter/Filter Step/Filter STEP.lvclass"/>
@@ -175,19 +176,20 @@ DirectoryIndex index.htm
 					<Item Name="O3 Generator Power STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O3 Generator Power/O3 Generator Power STEP.lvclass"/>
 					<Item Name="Sequence Composition.lvlib" Type="Library" URL="../reusable/Sequence/Sequence Composition.lvlib"/>
 					<Item Name="Cycle State STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Cylce State Step/Cycle State STEP.lvclass"/>
+					<Item Name="Reset cycle state STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Reset Cycle State STEP/Reset cycle state STEP.lvclass"/>
 					<Item Name="Set cycle state STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Set cycle state/Set cycle state STEP.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="xService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">69</Property>
+				<Property Name="Bld_version.build" Type="Int">73</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
 				<Property Name="ws.guid" Type="Str">{D83522D4-BECC-4AFB-9BC9-C1E8002ED617}</Property>
 				<Property Name="ws.modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="ws.public_folder_name" Type="Str"></Property>
+				<Property Name="ws.public_folder_name" Type="Str">deployed web stuff</Property>
 				<Property Name="ws.remoteDebugging" Type="Bool">false</Property>
 				<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
 				<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
@@ -198,7 +200,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
-				<Item Name="deployed web stuff" Type="Folder" URL="../../deployed web stuff">
+				<Item Name="Public Content" Type="Folder" URL="../../deployed web stuff">
 					<Property Name="NI.DISK" Type="Bool">true</Property>
 				</Item>
 				<Item Name="Web Resources" Type="HTTP WebResources Container">
@@ -221,8 +223,8 @@ DirectoryIndex index.htm
 						<Item Name="Stop.vi" Type="VI" URL="../Web Services/Stop.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -236,8 +238,8 @@ DirectoryIndex index.htm
 						<Item Name="tec_ctl_params.vi" Type="VI" URL="../Web Services/tec_ctl_params.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -251,8 +253,8 @@ DirectoryIndex index.htm
 						<Item Name="Save.vi" Type="VI" URL="../Web Services/Save.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -266,8 +268,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateFilter.vi" Type="VI" URL="../Web Services/UpdateFilter.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -281,8 +283,8 @@ DirectoryIndex index.htm
 						<Item Name="NewFile.vi" Type="VI" URL="../Web Services/NewFile.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -296,8 +298,8 @@ DirectoryIndex index.htm
 						<Item Name="FilterCycle.vi" Type="VI" URL="../Web Services/FilterCycle.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -311,8 +313,8 @@ DirectoryIndex index.htm
 						<Item Name="SetTime.vi" Type="VI" URL="../Web Services/SetTime.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -326,8 +328,8 @@ DirectoryIndex index.htm
 						<Item Name="Cabin.vi" Type="VI" URL="../Web Services/Cabin.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -341,8 +343,8 @@ DirectoryIndex index.htm
 						<Item Name="DevSP.vi" Type="VI" URL="../Web Services/DevSP.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -371,8 +373,8 @@ DirectoryIndex index.htm
 						<Item Name="PurgeSwitch.vi" Type="VI" URL="../Web Services/PurgeSwitch.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -386,8 +388,8 @@ DirectoryIndex index.htm
 						<Item Name="PowerSupply.vi" Type="VI" URL="../Web Services/PowerSupply.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -401,8 +403,8 @@ DirectoryIndex index.htm
 						<Item Name="DenudedBypass.vi" Type="VI" URL="../Web Services/DenudedBypass.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -418,8 +420,8 @@ DirectoryIndex index.htm
 						<Item Name="fblue.vi" Type="VI" URL="../Web Services/fblue.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -433,8 +435,8 @@ DirectoryIndex index.htm
 						<Item Name="fred.vi" Type="VI" URL="../Web Services/fred.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -448,8 +450,8 @@ DirectoryIndex index.htm
 						<Item Name="Vpmt.vi" Type="VI" URL="../Web Services/Vpmt.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -463,8 +465,8 @@ DirectoryIndex index.htm
 						<Item Name="LaserGain.vi" Type="VI" URL="../Web Services/LaserGain.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -478,8 +480,8 @@ DirectoryIndex index.htm
 						<Item Name="LaserEnable.vi" Type="VI" URL="../Web Services/LaserEnable.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -493,8 +495,8 @@ DirectoryIndex index.htm
 						<Item Name="RingdownData.vi" Type="VI" URL="../Web Services/RingdownData.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -508,8 +510,8 @@ DirectoryIndex index.htm
 						<Item Name="WriteTausFile.vi" Type="VI" URL="../Web Services/WriteTausFile.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -525,8 +527,8 @@ DirectoryIndex index.htm
 						<Item Name="Spk.vi" Type="VI" URL="../Web Services/Spk.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -540,8 +542,8 @@ DirectoryIndex index.htm
 						<Item Name="SpkSw.vi" Type="VI" URL="../Web Services/SpkSw.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -555,8 +557,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateFr.vi" Type="VI" URL="../Web Services/UpdateFr.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -570,8 +572,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateLaserEnable.vi" Type="VI" URL="../Web Services/UpdateLaserEnable.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -585,8 +587,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateVrange.vi" Type="VI" URL="../Web Services/UpdateVrange.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -600,8 +602,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateVoffset.vi" Type="VI" URL="../Web Services/UpdateVoffset.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -615,8 +617,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateiSpkEn.vi" Type="VI" URL="../Web Services/UpdateiSpkEn.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -630,8 +632,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateSpkVparams.vi" Type="VI" URL="../Web Services/UpdateSpkVparams.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -645,8 +647,8 @@ DirectoryIndex index.htm
 						<Item Name="UpdateSpkCycle.vi" Type="VI" URL="../Web Services/UpdateSpkCycle.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -660,8 +662,8 @@ DirectoryIndex index.htm
 						<Item Name="wvfm.vi" Type="VI" URL="../Web Services/wvfm.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -675,8 +677,8 @@ DirectoryIndex index.htm
 						<Item Name="WVFM_to_File.vi" Type="VI" URL="../Web Services/PAS/WVFM_to_File.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -690,8 +692,8 @@ DirectoryIndex index.htm
 						<Item Name="modulation.vi" Type="VI" URL="../Web Services/modulation.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -705,8 +707,8 @@ DirectoryIndex index.htm
 						<Item Name="SpkFilterConnect.vi" Type="VI" URL="../Web Services/PAS/SpkFilterConnect.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -722,8 +724,8 @@ DirectoryIndex index.htm
 						<Item Name="StartCal.vi" Type="VI" URL="../Web Services/StartCal.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -737,8 +739,8 @@ DirectoryIndex index.htm
 						<Item Name="O3LampFreq.vi" Type="VI" URL="../Web Services/O3 Calibration/O3LampFreq.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -752,8 +754,8 @@ DirectoryIndex index.htm
 						<Item Name="saveCalFile.vi" Type="VI" URL="../Web Services/saveCalFile.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">3</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">1</Property>
@@ -767,8 +769,8 @@ DirectoryIndex index.htm
 						<Item Name="ChangeO3Valve.vi" Type="VI" URL="../Web Services/ChangeO3Valve.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -782,8 +784,8 @@ DirectoryIndex index.htm
 						<Item Name="getO3FolderContent.vi" Type="VI" URL="../Web Services/getO3FolderContent.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">1</Property>
 							<Property Name="ws.outputType" Type="Int">1</Property>
@@ -797,8 +799,8 @@ DirectoryIndex index.htm
 						<Item Name="getDefaultO3Cal.vi" Type="VI" URL="../Web Services/getDefaultO3Cal.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">1</Property>
@@ -814,8 +816,8 @@ DirectoryIndex index.htm
 						<Item Name="hCtlParams.vi" Type="VI" URL="../Web Services/hCtlParams.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -829,8 +831,8 @@ DirectoryIndex index.htm
 						<Item Name="hRHsp.vi" Type="VI" URL="../Web Services/hRHsp.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -845,7 +847,7 @@ DirectoryIndex index.htm
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
 							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -861,8 +863,8 @@ DirectoryIndex index.htm
 						<Item Name="pid.vi" Type="VI" URL="../Web Services/tetech/pid.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -876,8 +878,8 @@ DirectoryIndex index.htm
 						<Item Name="multipliers.vi" Type="VI" URL="../Web Services/tetech/multipliers.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -893,8 +895,8 @@ DirectoryIndex index.htm
 						<Item Name="mctl.vi" Type="VI" URL="../Web Services/mtec/mctl.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">false</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">false</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.outputFormat" Type="Int">2</Property>
 							<Property Name="ws.outputType" Type="Int">0</Property>
@@ -1851,6 +1853,9 @@ DirectoryIndex index.htm
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EXSCALABAR EXE" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1871,7 +1876,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3D9CFEA5-CDC6-44FE-BBB6-E1C61525CFE6}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">102</Property>
+				<Property Name="Bld_version.build" Type="Int">106</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>

@@ -5,9 +5,7 @@
 	<Cabin>FALSE</Cabin>
 	<Denuder>FALSE</Denuder>
 	<Speaker>20</Speaker>
-	<O2-Valve>FALSE</O2-Valve>
 	<O3-Valve>FALSE</O3-Valve>
-	<O3-Level>1</O3-Level>
 	<O2-Flow-Rate>100</O2-Flow-Rate>
 	<O3-Dump-Rate>100</O3-Dump-Rate>
 </OZONE>

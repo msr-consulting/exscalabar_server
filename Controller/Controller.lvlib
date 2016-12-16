@@ -29,6 +29,7 @@
 		<Item Name="For Calibration" Type="Folder">
 			<Item Name="Start Calibration MSG.lvclass" Type="LVClass" URL="../Messages/Start Calibration MSG/Start Calibration MSG.lvclass"/>
 			<Item Name="O3 Valve MSG.lvclass" Type="LVClass" URL="../Messages/O3 Valve MSG/O3 Valve MSG.lvclass"/>
+			<Item Name="Send Change Frequency MSG.lvclass" Type="LVClass" URL="../Messages/Send Change Frequency MSG/Send Change Frequency MSG.lvclass"/>
 		</Item>
 		<Item Name="Valves" Type="Folder">
 			<Item Name="Change Denuder State MSG.lvclass" Type="LVClass" URL="../Messages/Change Denuder State/Change Denuder State MSG.lvclass"/>
