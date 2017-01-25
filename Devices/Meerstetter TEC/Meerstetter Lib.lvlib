@@ -6,6 +6,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Actor" Type="Folder">
 		<Item Name="Change Meerstetter Power.lvclass" Type="LVClass" URL="../Change Power MSG/Change Meerstetter Power.lvclass"/>
+		<Item Name="Meerstetter output.lvclass" Type="LVClass" URL="../Meerstetter Output/Meerstetter output.lvclass"/>
 	</Item>
 	<Item Name="Core" Type="Folder">
 		<Item Name="Meerstetter TEC.lvclass" Type="LVClass" URL="../Meerstetter TEC.lvclass"/>

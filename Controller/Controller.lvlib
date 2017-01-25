@@ -12,6 +12,7 @@
 		<Item Name="TEC" Type="Folder">
 			<Item Name="Update TEC PID.lvclass" Type="LVClass" URL="../Messages/Update TE Tech PID/Update TEC PID.lvclass"/>
 			<Item Name="Update TE Tech Heating Params.lvclass" Type="LVClass" URL="../Messages/Update TE Tech Heating Params/Update TE Tech Heating Params.lvclass"/>
+			<Item Name="Turn mTEC on.lvclass" Type="LVClass" URL="../Messages/Turn mTEC on/Turn mTEC on.lvclass"/>
 		</Item>
 		<Item Name="From File Actor" Type="Folder">
 			<Item Name="Save Main File MSG.lvclass" Type="LVClass" URL="../Messages/Saving File MSG/Save Main File MSG.lvclass"/>
