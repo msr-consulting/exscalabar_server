@@ -110,6 +110,7 @@ DirectoryIndex index.htm
 		<Item Name="Main Launch" Type="Folder">
 			<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 			<Item Name="LEDflash.vi" Type="VI" URL="../LEDflash.vi"/>
+			<Item Name="Stop_server.vi" Type="VI" URL="../Stop_server.vi"/>
 		</Item>
 		<Item Name="Root" Type="Folder">
 			<Item Name="Actors" Type="Folder">
@@ -163,6 +164,7 @@ DirectoryIndex index.htm
 				<Item Name="Switch.lvclass" Type="LVClass" URL="../reusable/Switch/Switch.lvclass"/>
 				<Item Name="exscalabar.ini" Type="Document" URL="../Support/exscalabar.ini"/>
 				<Item Name="ozone_cal.xml" Type="Document" URL="../Support/ozone_cal.xml"/>
+				<Item Name="humData.lvclass" Type="LVClass" URL="../Data/humidity/humData.lvclass"/>
 			</Item>
 			<Item Name="Sequence" Type="Folder">
 				<Item Name="Step Source" Type="Folder">
@@ -182,7 +184,7 @@ DirectoryIndex index.htm
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="xService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">104</Property>
+				<Property Name="Bld_version.build" Type="Int">109</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
@@ -195,7 +197,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.serveDefaultDoc" Type="Bool">false</Property>
 				<Property Name="ws.SSE2" Type="Bool">true</Property>
 				<Property Name="ws.static_permissions" Type="Str"></Property>
-				<Property Name="ws.version.build" Type="Int">19</Property>
+				<Property Name="ws.version.build" Type="Int">24</Property>
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
@@ -2316,7 +2318,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5BBFE505-8525-4530-AE6F-A45FDE8B7014}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
