@@ -42,9 +42,6 @@ time = np.empty(j)
 pd_data = np.empty([j, i[0], i[1]])
 spk_data = np.empty([j, m[0], m[1]])
 
-
-dt = np.dtype('>i2', (i[0], i[1]))
-
 # Reset the file position
 fid.seek(0)
 # Loop again - this time we know how far to roll
