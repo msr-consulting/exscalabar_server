@@ -112,6 +112,14 @@ DirectoryIndex index.htm
 			<Item Name="LEDflash.vi" Type="VI" URL="../LEDflash.vi"/>
 		</Item>
 		<Item Name="Root" Type="Folder">
+			<Item Name="Support" Type="Folder">
+				<Item Name="xData.lvclass" Type="LVClass" URL="../Data/xData.lvclass"/>
+				<Item Name="Command.lvclass" Type="LVClass" URL="../reusable/Command/Command.lvclass"/>
+				<Item Name="Switch.lvclass" Type="LVClass" URL="../reusable/Switch/Switch.lvclass"/>
+				<Item Name="exscalabar.ini" Type="Document" URL="../Support/exscalabar.ini"/>
+				<Item Name="ozone_cal.xml" Type="Document" URL="../Support/ozone_cal.xml"/>
+				<Item Name="humData.lvclass" Type="LVClass" URL="../Data/humidity/humData.lvclass"/>
+			</Item>
 			<Item Name="Actors" Type="Folder">
 				<Item Name="Update Switch MSG.lvclass" Type="LVClass" URL="../Controller/Messages/Update Switch State MSG/Update Switch MSG.lvclass"/>
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -157,14 +165,6 @@ DirectoryIndex index.htm
 				<Item Name="Alicat Lib.lvlib" Type="Library" URL="../Devices/Alicat/Session Based/Alicat Lib.lvlib"/>
 				<Item Name="Device.lvlib" Type="Library" URL="../Devices/Configurable Device/Device.lvlib"/>
 			</Item>
-			<Item Name="Support" Type="Folder">
-				<Item Name="xData.lvclass" Type="LVClass" URL="../Data/xData.lvclass"/>
-				<Item Name="Command.lvclass" Type="LVClass" URL="../reusable/Command/Command.lvclass"/>
-				<Item Name="Switch.lvclass" Type="LVClass" URL="../reusable/Switch/Switch.lvclass"/>
-				<Item Name="exscalabar.ini" Type="Document" URL="../Support/exscalabar.ini"/>
-				<Item Name="ozone_cal.xml" Type="Document" URL="../Support/ozone_cal.xml"/>
-				<Item Name="humData.lvclass" Type="LVClass" URL="../Data/humidity/humData.lvclass"/>
-			</Item>
 			<Item Name="Sequence" Type="Folder">
 				<Item Name="Step Source" Type="Folder">
 					<Item Name="O2 Valve STEP.lvclass" Type="LVClass" URL="../Calibration/Common/O2 Valve/O2 Valve STEP.lvclass"/>
@@ -183,7 +183,7 @@ DirectoryIndex index.htm
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="xService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">121</Property>
+				<Property Name="Bld_version.build" Type="Int">122</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
@@ -196,7 +196,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.serveDefaultDoc" Type="Bool">false</Property>
 				<Property Name="ws.SSE2" Type="Bool">true</Property>
 				<Property Name="ws.static_permissions" Type="Str"></Property>
-				<Property Name="ws.version.build" Type="Int">36</Property>
+				<Property Name="ws.version.build" Type="Int">37</Property>
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
