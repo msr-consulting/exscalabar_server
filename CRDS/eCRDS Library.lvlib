@@ -12,6 +12,7 @@
 		<Item Name="Change Red Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Red Laser Rate/Change Red Laser Rate MSG.lvclass"/>
 		<Item Name="Update Housekeeping MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Update Housekeeping/Update Housekeeping MSG.lvclass"/>
 		<Item Name="Update PMT Gains MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Update PMT Gains MSG/Update PMT Gains MSG.lvclass"/>
+		<Item Name="Update Write Ringdowns MSG.lvclass" Type="LVClass" URL="../Actor Messages/Update RD Write/Update Write Ringdowns MSG.lvclass"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
 		<Item Name="Change Laser Gain CMD.lvclass" Type="LVClass" URL="../Commands/Change Laser Gains/Change Laser Gain CMD.lvclass"/>
