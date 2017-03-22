@@ -54,7 +54,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -179,12 +179,13 @@ DirectoryIndex index.htm
 					<Item Name="Cycle State STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Cylce State Step/Cycle State STEP.lvclass"/>
 					<Item Name="Pressure Control Rate STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Pressure Control Rate STEP/Pressure Control Rate STEP.lvclass"/>
 					<Item Name="Set cycle state STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Set cycle state/Set cycle state STEP.lvclass"/>
+					<Item Name="Inlet STEP.lvclass" Type="LVClass" URL="../Calibration/Common/Inlet STEP/Inlet STEP.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="xService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">130</Property>
+				<Property Name="Bld_version.build" Type="Int">132</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
@@ -197,7 +198,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.serveDefaultDoc" Type="Bool">false</Property>
 				<Property Name="ws.SSE2" Type="Bool">true</Property>
 				<Property Name="ws.static_permissions" Type="Str"></Property>
-				<Property Name="ws.version.build" Type="Int">45</Property>
+				<Property Name="ws.version.build" Type="Int">47</Property>
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
