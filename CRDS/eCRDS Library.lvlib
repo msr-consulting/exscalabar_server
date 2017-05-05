@@ -7,6 +7,7 @@
 	<Item Name="Actor" Type="Folder">
 		<Item Name="Change Blue DC MSG.lvclass" Type="LVClass" URL="../Actor Messages/Change Blue DC MSG/Change Blue DC MSG.lvclass"/>
 		<Item Name="Change Blue Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Blue Laser Rate/Change Blue Laser Rate MSG.lvclass"/>
+		<Item Name="Change DC MSG.lvclass" Type="LVClass" URL="../Actor Messages/Change DC/Change DC MSG.lvclass"/>
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Actor Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Laser Enable State.lvclass" Type="LVClass" URL="../Actor Messages/Change Laser Enable State/Change Laser Enable State.lvclass"/>
 		<Item Name="Change Laser Gain MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change CRD Laser Gain/Change Laser Gain MSG.lvclass"/>
