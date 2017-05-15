@@ -23,11 +23,11 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
 	<Item Name="Accessors" Type="Folder">
-		<Item Name="DC" Type="Property Definition">
-			<Property Name="NI.ClassItem.Property.LongName" Type="Str">DC</Property>
-			<Property Name="NI.ClassItem.Property.ShortName" Type="Str">DC</Property>
+		<Item Name="DutyCycle" Type="Property Definition">
+			<Property Name="NI.ClassItem.Property.LongName" Type="Str">DutyCycle</Property>
+			<Property Name="NI.ClassItem.Property.ShortName" Type="Str">DutyCycle</Property>
 			<Property Name="NI.ClassItem.Property.SortKey" Type="Int">-1</Property>
-			<Item Name="Write DC.vi" Type="VI" URL="../Write DC.vi">
+			<Item Name="Write Duty Cycle.vi" Type="VI" URL="../Write Duty Cycle.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'.!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;Z!=!!?!!!W%W6$5E24)%RJ9H*B=HEO&lt;(:M;7)A68"E982F)%RB=W6S)(*B&gt;'5A97ZE)%2$,GRW9WRB=X-!!"R6='2B&gt;'5A4'&amp;T:8)A=G&amp;U:3"B&lt;G1A2%-A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!!F!#A!#2%-!!&amp;R!=!!?!!!W%W6$5E24)%RJ9H*B=HEO&lt;(:M;7)A68"E982F)%RB=W6S)(*B&gt;'5A97ZE)%2$,GRW9WRB=X-!!"N6='2B&gt;'5A4'&amp;T:8)A=G&amp;U:3"B&lt;G1A2%-A;7Y!91$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!(!!A#!!"Y!!!.#!!!!!!!!!!!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!%!!!!")!!!U!!!!-!!!!!!!!!!!!!!%!#1!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">16777216</Property>
