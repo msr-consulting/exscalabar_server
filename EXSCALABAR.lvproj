@@ -54,7 +54,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -185,7 +185,7 @@ DirectoryIndex index.htm
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="xService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">154</Property>
+				<Property Name="Bld_version.build" Type="Int">156</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
@@ -198,7 +198,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.serveDefaultDoc" Type="Bool">false</Property>
 				<Property Name="ws.SSE2" Type="Bool">true</Property>
 				<Property Name="ws.static_permissions" Type="Str"></Property>
-				<Property Name="ws.version.build" Type="Int">69</Property>
+				<Property Name="ws.version.build" Type="Int">71</Property>
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
