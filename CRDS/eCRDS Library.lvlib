@@ -11,6 +11,7 @@
 		<Item Name="Change Filter State.lvclass" Type="LVClass" URL="../Actor Messages/Change Filter State/Change Filter State.lvclass"/>
 		<Item Name="Change Laser Enable State.lvclass" Type="LVClass" URL="../Actor Messages/Change Laser Enable State/Change Laser Enable State.lvclass"/>
 		<Item Name="Change Laser Gain MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change CRD Laser Gain/Change Laser Gain MSG.lvclass"/>
+		<Item Name="Change Laser Rep Rate.lvclass" Type="LVClass" URL="../Actor Messages/Change Laser Rep Rate/Change Laser Rep Rate.lvclass"/>
 		<Item Name="Change Red DC MSG.lvclass" Type="LVClass" URL="../Actor Messages/Change Red DC MSG/Change Red DC MSG.lvclass"/>
 		<Item Name="Change Red Laser Rate MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Change Red Laser Rate/Change Red Laser Rate MSG.lvclass"/>
 		<Item Name="Update Housekeeping MSG.lvclass" Type="LVClass" URL="../../Instr Actor/Messages/Update Housekeeping/Update Housekeeping MSG.lvclass"/>
@@ -18,7 +19,6 @@
 		<Item Name="Update Write Ringdowns MSG.lvclass" Type="LVClass" URL="../Actor Messages/Update RD Write/Update Write Ringdowns MSG.lvclass"/>
 	</Item>
 	<Item Name="Commands" Type="Folder">
-		<Item Name=" Update Red DC.lvclass" Type="LVClass" URL="../Commands/Update Red DC/ Update Red DC.lvclass"/>
 		<Item Name="Change Laser Gain CMD.lvclass" Type="LVClass" URL="../Commands/Change Laser Gains/Change Laser Gain CMD.lvclass"/>
 		<Item Name="Change PMT Gain CMD.lvclass" Type="LVClass" URL="../Commands/Change PMT Gains/Change PMT Gain CMD.lvclass"/>
 		<Item Name="Laser Enable CMD.lvclass" Type="LVClass" URL="../Commands/Change Laser Enable State/Laser Enable CMD.lvclass"/>
@@ -28,6 +28,8 @@
 		<Item Name="Update Blue DC.lvclass" Type="LVClass" URL="../Commands/Update Blue DC/Update Blue DC.lvclass"/>
 		<Item Name="Update Filter State CMD.lvclass" Type="LVClass" URL="../Commands/Update Filter State/Update Filter State CMD.lvclass"/>
 		<Item Name="Update Housekeeping.lvclass" Type="LVClass" URL="../Commands/Update Housekeeping/Update Housekeeping.lvclass"/>
+		<Item Name="Update Red DC.lvclass" Type="LVClass" URL="../Commands/Update Red DC/Update Red DC.lvclass"/>
 	</Item>
 	<Item Name="eCRDS.lvclass" Type="LVClass" URL="../Main/eCRDS.lvclass"/>
+	<Item Name="Update Laser rate and DC.lvclass" Type="LVClass" URL="../Commands/Update Laser/Update Laser rate and DC.lvclass"/>
 </Library>
