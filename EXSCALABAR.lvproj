@@ -477,6 +477,21 @@ DirectoryIndex index.htm
 							<Property Name="ws.useHeaders" Type="Bool">true</Property>
 							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 						</Item>
+						<Item Name="fileInfo.vi" Type="VI" URL="../Web Services/fileInfo.vi">
+							<Property Name="ws.buffered" Type="Bool">true</Property>
+							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+							<Property Name="ws.method" Type="Int">1</Property>
+							<Property Name="ws.outputFormat" Type="Int">2</Property>
+							<Property Name="ws.outputType" Type="Int">1</Property>
+							<Property Name="ws.permissions" Type="Str"></Property>
+							<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
+							<Property Name="ws.type" Type="Int">1</Property>
+							<Property Name="ws.uri" Type="Str"></Property>
+							<Property Name="ws.useHeaders" Type="Bool">true</Property>
+							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+						</Item>
 						<Item Name="getINI.vi" Type="VI" URL="../Calibration/Common/getINI.vi">
 							<Property Name="ws.buffered" Type="Bool">true</Property>
 							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
@@ -600,8 +615,19 @@ DirectoryIndex index.htm
 							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 						</Item>
 						<Item Name="ChangeDC.vi" Type="VI" URL="../Web Services/CRDS/ChangeDC.vi">
+							<Property Name="ws.buffered" Type="Bool">true</Property>
+							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
+							<Property Name="ws.outputFormat" Type="Int">2</Property>
+							<Property Name="ws.outputType" Type="Int">0</Property>
+							<Property Name="ws.permissions" Type="Str"></Property>
+							<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 							<Property Name="ws.type" Type="Int">1</Property>
+							<Property Name="ws.uri" Type="Str"></Property>
+							<Property Name="ws.useHeaders" Type="Bool">true</Property>
+							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 						</Item>
 					</Item>
 					<Item Name="PAS_CMD" Type="HTTP WebResources Container">
@@ -893,8 +919,19 @@ DirectoryIndex index.htm
 							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 						</Item>
 						<Item Name="StopCalibration.vi" Type="VI" URL="../Web Services/StopCalibration.vi">
+							<Property Name="ws.buffered" Type="Bool">true</Property>
+							<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+							<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+							<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
 							<Property Name="ws.method" Type="Int">1</Property>
+							<Property Name="ws.outputFormat" Type="Int">2</Property>
+							<Property Name="ws.outputType" Type="Int">0</Property>
+							<Property Name="ws.permissions" Type="Str"></Property>
+							<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 							<Property Name="ws.type" Type="Int">1</Property>
+							<Property Name="ws.uri" Type="Str"></Property>
+							<Property Name="ws.useHeaders" Type="Bool">true</Property>
+							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 						</Item>
 					</Item>
 					<Item Name="Humidity" Type="HTTP WebResources Container">
