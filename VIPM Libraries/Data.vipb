@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-05-24 11:57:06" Modified_Date="2017-05-24 11:59:02" Creator="mrichardson" Comments="" ID="e8d8efb98983ac99a7685ca56e3ecd7b">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-05-24 11:57:06" Modified_Date="2017-05-31 12:09:53" Creator="mrichardson" Comments="" ID="76ceb609567dbc18fd552e018e7d7532">
   <Library_General_Settings>
     <Package_File_Name>MSR_Consulting_LLC_lib_Data</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>1.0.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\reusable\Data</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -106,9 +106,6 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
     </Source_Files>
     <License_Agreement_Filepath/>
     <Licensing_and_Activation>
@@ -460,7 +457,7 @@
         <Path>..\reusable\Data\Write write time.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>17510A130C298762E26E190EE63EC9BC</GUID>
+      <GUID>27A9E5E1053038F41C026D1E48BCB233</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -523,7 +520,7 @@
         <Path>..\reusable\Data\Array Data\Single 1-D</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>14D452521384655151B54905BEA850D5</GUID>
+      <GUID>A7681832F6CC94EA4A5A4EFA20B7ADFF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -572,7 +569,7 @@
         <Path>..\reusable\Data\Boolean\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C7A0CDE1333BB7DEA05F19F4083725D4</GUID>
+      <GUID>D578C51803F4122968DE89905C774302</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -621,7 +618,7 @@
         <Path>..\reusable\Data\Double\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3825B55E7735AC463DA720330529F4DA</GUID>
+      <GUID>EC0470D452CE55E2BCB140B0A5C482D3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -670,7 +667,7 @@
         <Path>..\reusable\Data\Single\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6C7DBC2294AB720195A24902925B5A24</GUID>
+      <GUID>861CAD51D36CCE6D3E889F5F4721B099</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -719,7 +716,7 @@
         <Path>..\reusable\Data\String\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D77A3E8FB764B8952C7BBAF584FCEF6D</GUID>
+      <GUID>3A4923D814BC9B00A758FF1CB2938410</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -768,7 +765,7 @@
         <Path>..\reusable\Data\String Data\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7283FDE84AF484C9542305B2EDA2FD6B</GUID>
+      <GUID>B3AAAC3F3FDF25C3F30D498B736E9066</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -817,7 +814,7 @@
         <Path>..\reusable\Data\U16\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3335FF67D92F2C0BC3700DCC335D163E</GUID>
+      <GUID>A4916C5B91F808038EBE4982137B74EE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -866,7 +863,7 @@
         <Path>..\reusable\Data\Waveform\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E62FED8502B5F2C765436425F663F283</GUID>
+      <GUID>2FC22A0F37DAF5FE06B4D9B9ADCFA1D8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -929,7 +926,7 @@
         <Path>..\reusable\Data\Array Data\2D Single\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>44227B3CB9A8BE3ED70B6B95EEE63D0B</GUID>
+      <GUID>8D9D4AB4DFCC710809137C997E20A072</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -978,7 +975,7 @@
         <Path>..\reusable\Data\Array Data\Double 1-D\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B441081FD5457E943DDA3EE2F5F4EFA8</GUID>
+      <GUID>A1864696198E406B2CD6D3E88AFD9666</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1097,7 +1094,7 @@
         <Path>..\reusable\Data\Array Data\Single 1-D\Write Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7FDDD52CA4B1ADD37DCA1FF68444B226</GUID>
+      <GUID>6D7E0A5291861ED3D5DEA0CFE4BC062F</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
