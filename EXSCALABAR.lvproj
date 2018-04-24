@@ -135,6 +135,7 @@ DirectoryIndex index.htm
 				<Item Name="CRDS" Type="Folder">
 					<Item Name="eCRDS Library.lvlib" Type="Library" URL="../CRDS/eCRDS Library.lvlib"/>
 					<Item Name="CRDS Lib.lvlib" Type="Library" URL="../reusable/CRDS/CRDS Lib.lvlib"/>
+					<Item Name="TestACQ.vi" Type="VI" URL="../CRDS/TestACQ.vi"/>
 				</Item>
 				<Item Name="PAS" Type="Folder">
 					<Item Name="ePAS Library.lvlib" Type="Library" URL="../PAS/ePAS Library.lvlib"/>
@@ -1930,6 +1931,7 @@ DirectoryIndex index.htm
 				<Item Name="Create_1kHz_TSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/TimedLoop/scheduler/LVUserAPI/_suppVIs/Create_1kHz_TSource.vi"/>
 				<Item Name="Create_1MHz_TSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/TimedLoop/scheduler/LVUserAPI/_suppVIs/Create_1MHz_TSource.vi"/>
 				<Item Name="Create_SoftwareTrigger_TSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/TimedLoop/scheduler/LVUserAPI/_suppVIs/Create_SoftwareTrigger_TSource.vi"/>
+				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
