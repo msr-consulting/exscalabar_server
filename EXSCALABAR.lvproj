@@ -186,7 +186,7 @@ DirectoryIndex index.htm
 			<Item Name="Base Data Class.lvlib" Type="Library" URL="../reusable/Data/Base Data Class.lvlib"/>
 			<Item Name="xService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">172</Property>
+				<Property Name="Bld_version.build" Type="Int">175</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">true</Property>
@@ -199,7 +199,7 @@ DirectoryIndex index.htm
 				<Property Name="ws.serveDefaultDoc" Type="Bool">false</Property>
 				<Property Name="ws.SSE2" Type="Bool">true</Property>
 				<Property Name="ws.static_permissions" Type="Str"></Property>
-				<Property Name="ws.version.build" Type="Int">87</Property>
+				<Property Name="ws.version.build" Type="Int">90</Property>
 				<Property Name="ws.version.fix" Type="Int">0</Property>
 				<Property Name="ws.version.major" Type="Int">1</Property>
 				<Property Name="ws.version.minor" Type="Int">0</Property>
@@ -867,6 +867,10 @@ DirectoryIndex index.htm
 							<Property Name="ws.method" Type="Int">1</Property>
 							<Property Name="ws.type" Type="Int">1</Property>
 						</Item>
+						<Item Name="O3manifold.vi" Type="VI" URL="../Web Services/O3 Calibration/O3manifold.vi">
+							<Property Name="ws.method" Type="Int">1</Property>
+							<Property Name="ws.type" Type="Int">1</Property>
+						</Item>
 					</Item>
 					<Item Name="Humidity" Type="HTTP WebResources Container">
 						<Item Name="hCtlParams.vi" Type="VI" URL="../Web Services/hCtlParams.vi">
@@ -913,6 +917,10 @@ DirectoryIndex index.htm
 							<Property Name="ws.uri" Type="Str"></Property>
 							<Property Name="ws.useHeaders" Type="Bool">true</Property>
 							<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+						</Item>
+						<Item Name="Pump.vi" Type="VI" URL="../Web Services/Humdifier/Pump.vi">
+							<Property Name="ws.method" Type="Int">1</Property>
+							<Property Name="ws.type" Type="Int">1</Property>
 						</Item>
 					</Item>
 					<Item Name="tetech" Type="HTTP WebResources Container">
