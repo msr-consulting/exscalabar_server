@@ -62,4 +62,5 @@
 		<Item Name="Send Log Message MSG.lvclass" Type="LVClass" URL="../Messages/Log Message MSG/Send Log Message MSG.lvclass"/>
 	</Item>
 	<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller.lvclass"/>
+	<Item Name="ControlHumidifierPump.lvclass" Type="LVClass" URL="../Messages/ControlHumidifierPump/ControlHumidifierPump.lvclass"/>
 </Library>
